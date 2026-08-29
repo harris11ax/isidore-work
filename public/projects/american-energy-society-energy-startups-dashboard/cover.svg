@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,sans-serif">
+	<defs>
+		<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+			<stop offset="0" stop-color="#0f1220"/>
+			<stop offset="1" stop-color="#1b2140"/>
+		</linearGradient>
+	</defs>
+	<rect width="800" height="500" fill="url(#bg)"/>
+	<!-- header -->
+	<text x="48" y="70" fill="#e9ecf5" font-size="30" font-weight="700">Energy Startups Dashboard</text>
+	<rect x="360" y="48" width="150" height="26" rx="13" fill="#3b2f0b" stroke="#6b5514"/>
+	<text x="375" y="66" fill="#f5c451" font-size="13" font-weight="600">DEMO · synthetic</text>
+	<text x="48" y="98" fill="#9aa3c0" font-size="15">Interactive D3 / Plotly · funding, stage &amp; sector</text>
+	<!-- kpi tiles -->
+	<g>
+		<rect x="48" y="120" width="165" height="70" rx="12" fill="#171b2e" stroke="#262c47"/>
+		<text x="64" y="158" fill="#e9ecf5" font-size="26" font-weight="700">64</text>
+		<text x="64" y="178" fill="#9aa3c0" font-size="11">COMPANIES</text>
+		<rect x="225" y="120" width="165" height="70" rx="12" fill="#171b2e" stroke="#262c47"/>
+		<text x="241" y="158" fill="#e9ecf5" font-size="26" font-weight="700">$760M</text>
+		<text x="241" y="178" fill="#9aa3c0" font-size="11">TOTAL FUNDING</text>
+		<rect x="402" y="120" width="165" height="70" rx="12" fill="#171b2e" stroke="#262c47"/>
+		<text x="418" y="158" fill="#e9ecf5" font-size="26" font-weight="700">$5.9M</text>
+		<text x="418" y="178" fill="#9aa3c0" font-size="11">MEDIAN RAISE</text>
+	</g>
+	<!-- bar chart mock -->
+	<g>
+		<rect x="48" y="215" width="519" height="240" rx="12" fill="#171b2e" stroke="#262c47"/>
+		<text x="66" y="243" fill="#c7cde3" font-size="14" font-weight="600">Funding by sector ($M)</text>
+		<g>
+			<rect x="180" y="262" width="360" height="16" rx="3" fill="#2563eb"/>
+			<rect x="180" y="288" width="300" height="16" rx="3" fill="#22c55e"/>
+			<rect x="180" y="314" width="250" height="16" rx="3" fill="#f59e0b"/>
+			<rect x="180" y="340" width="205" height="16" rx="3" fill="#e11d48"/>
+			<rect x="180" y="366" width="160" height="16" rx="3" fill="#a855f7"/>
+			<rect x="180" y="392" width="120" height="16" rx="3" fill="#06b6d4"/>
+			<rect x="180" y="418" width="80"  height="16" rx="3" fill="#eab308"/>
+		</g>
+		<g fill="#9aa3c0" font-size="12" text-anchor="end">
+			<text x="168" y="275">Grid Storage</text>
+			<text x="168" y="301">Hydrogen</text>
+			<text x="168" y="327">Nuclear/SMR</text>
+			<text x="168" y="353">Wind</text>
+			<text x="168" y="379">Solar</text>
+			<text x="168" y="405">Geothermal</text>
+			<text x="168" y="431">EV Charging</text>
+		</g>
+	</g>
+	<!-- donut mock -->
+	<g transform="translate(680,335)">
+		<circle r="82" fill="none" stroke="#2563eb" stroke-width="30"/>
+		<circle r="82" fill="none" stroke="#22c55e" stroke-width="30" stroke-dasharray="140 515" transform="rotate(-90)"/>
+		<circle r="82" fill="none" stroke="#f59e0b" stroke-width="30" stroke-dasharray="90 515" stroke-dashoffset="-140" transform="rotate(-90)"/>
+		<circle r="55" fill="#171b2e"/>
+		<text y="5" text-anchor="middle" fill="#c7cde3" font-size="13">Stages</text>
+	</g>
+</svg>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Energy Startups Dashboard (demo)</title>
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<style>
+	:root{--bg:#0f1220;--panel:#171b2e;--ink:#e9ecf5;--mut:#9aa3c0;--acc:#2563eb;--line:#262c47;}
+	*{box-sizing:border-box}
+	body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 ui-sans-serif,system-ui,Segoe UI,Roboto,sans-serif}
+	header{padding:20px 24px;border-bottom:1px solid var(--line)}
+	h1{margin:0;font-size:1.3rem}
+	.sub{color:var(--mut);font-size:.85rem;margin-top:4px}
+	.badge{display:inline-block;background:#3b2f0b;color:#f5c451;border:1px solid #6b5514;border-radius:999px;padding:2px 10px;font-size:.72rem;margin-left:8px;vertical-align:middle}
+	.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;padding:18px 24px}
+	.kpi{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+	.kpi .n{font-size:1.6rem;font-weight:700}
+	.kpi .l{color:var(--mut);font-size:.78rem;text-transform:uppercase;letter-spacing:.04em}
+	.controls{display:flex;gap:10px;flex-wrap:wrap;padding:0 24px 8px}
+	select{background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:7px 10px}
+	.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:8px 24px 28px}
+	.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px}
+	.card h3{margin:.2rem .4rem .6rem;font-size:.95rem;font-weight:600}
+	.full{grid-column:1/-1}
+	@media(max-width:820px){.kpis{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+	<h1>Energy Startups Dashboard <span class="badge">DEMO · synthetic data</span></h1>
+	<div class="sub">Interactive D3/Plotly rebuild — all companies and figures below are fabricated for portfolio display.</div>
+</header>
+
+<div class="kpis" id="kpis"></div>
+<div class="controls">
+	<label>Sector <select id="fSector"><option value="">All</option></select></label>
+	<label>Stage <select id="fStage"><option value="">All</option></select></label>
+</div>
+<div class="grid">
+	<div class="card"><h3>Total funding by sector ($M)</h3><div id="cSector"></div></div>
+	<div class="card"><h3>Stage distribution</h3><div id="cStage"></div></div>
+	<div class="card full"><h3>Funding vs. headcount</h3><div id="cScatter"></div></div>
+	<div class="card full"><h3>New companies founded per year</h3><div id="cYear"></div></div>
+</div>
+
+<script>
+// ---- synthetic dataset (procedurally generated, no real companies) ----
+const SECTORS=["Solar","Wind","Grid Storage","Hydrogen","Nuclear/SMR","Geothermal","EV Charging","Carbon Capture"];
+const STAGES=["Pre-Seed","Seed","Series A","Series B","Growth"];
+const STATES=["CA","TX","MA","NY","CO","WA","IL","PA","GA","MI"];
+const PRE=["Volt","Helio","Aero","Terra","Ion","Nimbus","Flux","Cinder","Strato","Quanta","Ember","Aster","Boron","Cobalt","Delta","Verge","Lumen","Kestrel"];
+const SUF=["Grid","Works","Labs","Power","Energy","Dynamics","Systems","Cell","Forge","Nova","Field","Core"];
+// deterministic PRNG so the demo is stable
+let s=1337; const rnd=()=>{s=(s*1103515245+12345)&0x7fffffff;return s/0x7fffffff;};
+const pick=a=>a[Math.floor(rnd()*a.length)];
+const DATA=Array.from({length:64},(_,i)=>{
+	const sector=pick(SECTORS), stage=pick(STAGES);
+	const stageMult={"Pre-Seed":.4,"Seed":1,"Series A":3,"Series B":8,"Growth":22}[stage];
+	const funding=+(stageMult*(0.6+rnd()*1.8)).toFixed(1);
+	const employees=Math.max(2,Math.round(funding*(3+rnd()*6)));
+	return {name:pick(PRE)+" "+pick(SUF)+(rnd()<.15?" "+(i):""),sector,stage,funding,employees,
+		founded:2012+Math.floor(rnd()*13),hq:pick(STATES)};
+});
+
+const $=id=>document.getElementById(id);
+const uniq=k=>[...new Set(DATA.map(d=>d[k]))];
+uniq("sector").forEach(v=>fSector.add(new Option(v,v)));
+uniq("stage").sort((a,b)=>STAGES.indexOf(a)-STAGES.indexOf(b)).forEach(v=>fStage.add(new Option(v,v)));
+
+const L={paper_bgcolor:"rgba(0,0,0,0)",plot_bgcolor:"rgba(0,0,0,0)",font:{color:"#c7cde3"},
+	margin:{l:48,r:16,t:10,b:40},colorway:["#2563eb","#22c55e","#f59e0b","#e11d48","#a855f7","#06b6d4","#eab308","#f97316"]};
+const cfg={displayModeBar:false,responsive:true};
+
+function filtered(){const s=fSector.value,g=fStage.value;
+	return DATA.filter(d=>(!s||d.sector===s)&&(!g||d.stage===g));}
+
+function render(){
+	const D=filtered();
+	const totF=D.reduce((a,d)=>a+d.funding,0);
+	const kpi=[["Companies",D.length],["Total funding","$"+totF.toFixed(0)+"M"],
+		["Median raise","$"+(median(D.map(d=>d.funding))||0).toFixed(1)+"M"],["Sectors",new Set(D.map(d=>d.sector)).size]];
+	$("kpis").innerHTML=kpi.map(([l,n])=>`<div class="kpi"><div class="n">${n}</div><div class="l">${l}</div></div>`).join("");
+
+	const bySector=SECTORS.map(s=>[s,D.filter(d=>d.sector===s).reduce((a,d)=>a+d.funding,0)]).filter(x=>x[1]>0).sort((a,b)=>b[1]-a[1]);
+	Plotly.newPlot("cSector",[{type:"bar",x:bySector.map(x=>x[1]),y:bySector.map(x=>x[0]),orientation:"h",marker:{color:"#2563eb"}}],{...L,margin:{l:110,r:16,t:6,b:30},height:260},cfg);
+
+	const byStage=STAGES.map(s=>D.filter(d=>d.stage===s).length);
+	Plotly.newPlot("cStage",[{type:"pie",labels:STAGES,values:byStage,hole:.55,textinfo:"label+percent"}],{...L,height:260,showlegend:false},cfg);
+
+	Plotly.newPlot("cScatter",[{type:"scatter",mode:"markers",
+		x:D.map(d=>d.employees),y:D.map(d=>d.funding),text:D.map(d=>`${d.name} · ${d.sector} · ${d.stage}`),
+		marker:{size:D.map(d=>8+Math.sqrt(d.funding)*2),color:D.map(d=>SECTORS.indexOf(d.sector)),colorscale:"Viridis",opacity:.85}}],
+		{...L,height:340,xaxis:{title:"Employees"},yaxis:{title:"Funding ($M)"}},cfg);
+
+	const years={};D.forEach(d=>years[d.founded]=(years[d.founded]||0)+1);
+	const yk=Object.keys(years).sort();
+	Plotly.newPlot("cYear",[{type:"bar",x:yk,y:yk.map(y=>years[y]),marker:{color:"#22c55e"}}],{...L,height:280,xaxis:{title:"Year founded"},yaxis:{title:"Companies"}},cfg);
+}
+function median(a){if(!a.length)return 0;const b=[...a].sort((x,y)=>x-y),m=b.length>>1;return b.length%2?b[m]:(b[m-1]+b[m])/2;}
+fSector.onchange=fStage.onchange=render;
+render();
+</script>
+</body>
+</html>

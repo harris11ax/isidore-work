@@ -1,0 +1,1378 @@
+[
+	{
+		"slug": "openboard-lecture-to-concept-map-automation-pipeline",
+		"name": "OpenBoard Lecture-to-Concept-Map Automation Pipeline (LLM + OCR + NetworkX -> self-hosted OpenBoard)",
+		"date": "2026-08-27",
+		"domain": "software-data",
+		"category": "Personal",
+		"audience": "Self",
+		"effort": "High",
+		"timeHours": "15-30+",
+		"summary": "Pipeline turning lecture recordings into concept maps — LLM + OCR extract concepts, NetworkX builds the graph, served to a self-hosted OpenBoard.",
+		"hasVisuals": false,
+		"tags": [
+			"python",
+			"llm",
+			"ocr",
+			"networkx"
+		],
+		"assets": []
+	},
+	{
+		"slug": "text-and-pdf-to-audiobook-converter",
+		"name": "Text & PDF to Audiobook Converter (edge-tts, CLI + tkinter GUI)",
+		"date": "2026-08-25",
+		"domain": "software-data",
+		"category": "Personal",
+		"audience": "Self",
+		"effort": "Medium",
+		"timeHours": "6-12",
+		"summary": "Converts text and PDFs into spoken audiobooks via edge-tts, with both a CLI and a tkinter GUI.",
+		"hasVisuals": false,
+		"tags": [
+			"python",
+			"tts",
+			"tkinter",
+			"cli"
+		],
+		"assets": []
+	},
+	{
+		"slug": "rkc-detroit-historical-canal-tour-and-tour-guide-manual",
+		"name": "RKC Detroit Historical Canal Tour & Tour Guide Manual",
+		"date": "2019-06-13",
+		"domain": "teaching-field",
+		"category": "Work",
+		"audience": "Tourists / program students",
+		"effort": "Medium-High",
+		"timeHours": "20+",
+		"summary": "Designed a historical canal tour of Detroit and wrote the accompanying tour-guide training manual.",
+		"hasVisuals": false,
+		"tags": [
+			"curriculum",
+			"writing",
+			"program-design"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/rkc-detroit-historical-canal-tour-and-tour-guide-manual/A_Detroit_Architect_s_Journal__Eastside_Venice__The_Fox_Creek_Canals.pdf",
+				"caption": "A Detroit Architect s Journal Eastside Venice The Fox Creek Canals"
+			}
+		]
+	},
+	{
+		"slug": "rkc-coaching-records-and-fun-start-lesson-plans",
+		"name": "RKC Coaching Records & Fun Start Lesson Plans",
+		"date": "2018-05-10",
+		"domain": "teaching-field",
+		"category": "Work",
+		"audience": "Students / program staff",
+		"effort": "Medium",
+		"timeHours": "10",
+		"summary": "Coaching records and 'Fun Start' beginner lesson plans for a rowing program.",
+		"hasVisuals": true,
+		"tags": [
+			"coaching",
+			"lesson-plans",
+			"program-design"
+		],
+		"assets": [
+			{
+				"type": "image",
+				"src": "/projects/rkc-coaching-records-and-fun-start-lesson-plans/coaching_record.jpg",
+				"caption": "coaching record"
+			},
+			{
+				"type": "image",
+				"src": "/projects/rkc-coaching-records-and-fun-start-lesson-plans/IMG_07061_01.png",
+				"caption": "IMG 07061 01"
+			},
+			{
+				"type": "image",
+				"src": "/projects/rkc-coaching-records-and-fun-start-lesson-plans/IMG_07071_02.png",
+				"caption": "IMG 07071 02"
+			},
+			{
+				"type": "image",
+				"src": "/projects/rkc-coaching-records-and-fun-start-lesson-plans/record_of_experience.jpg",
+				"caption": "record of experience"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/rkc-coaching-records-and-fun-start-lesson-plans/coaching_record.pdf",
+				"caption": "coaching record"
+			}
+		]
+	},
+	{
+		"slug": "american-energy-society-energy-startups-dashboard",
+		"name": "American Energy Society - Energy Startups Dashboard (D3.js)",
+		"date": "2026-08-05",
+		"domain": "software-data",
+		"category": "Work",
+		"audience": "Internship employer (AES)",
+		"effort": "Medium-High",
+		"timeHours": "10-20",
+		"summary": "Interactive D3/Plotly dashboard profiling energy-sector startups by funding, stage, and sector. Rebuilt here with entirely synthetic data.",
+		"hasVisuals": true,
+		"tags": [
+			"d3",
+			"plotly",
+			"dataviz",
+			"javascript"
+		],
+		"assets": [
+			{
+				"type": "embed",
+				"src": "/projects/american-energy-society-energy-startups-dashboard/dashboard.html",
+				"caption": "Live demo (synthetic data)"
+			}
+		],
+		"cover": "/projects/american-energy-society-energy-startups-dashboard/cover.svg"
+	},
+	{
+		"slug": "dominion-energy-summer-internship",
+		"name": "Dominion Energy Summer Internship (Design Team, field visits, feedback)",
+		"date": "2025-09-27",
+		"domain": "power-energy",
+		"category": "Work",
+		"audience": "Internship employer",
+		"effort": "Medium",
+		"timeHours": "8",
+		"summary": "Summer internship on Dominion Energy's design team — field visits, design reviews, and structured feedback.",
+		"hasVisuals": false,
+		"tags": [
+			"internship",
+			"power-systems",
+			"design"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/dominion-energy-summer-internship/Design_Team.pdf",
+				"caption": "Design Team"
+			}
+		]
+	},
+	{
+		"slug": "ece-4440-4991-capstone-autobleedr-automated-bicycle-brake-bl",
+		"name": "ECE 4440/4991 Capstone - AutoBleedr automated bicycle brake bleeder (proposal)",
+		"date": "2026-08-26",
+		"domain": "embedded-hw",
+		"category": "School",
+		"audience": "Capstone committee / faculty",
+		"effort": "High",
+		"timeHours": "40+ (ongoing)",
+		"summary": "Capstone proposal for AutoBleedr, an automated bicycle brake-bleeding machine.",
+		"hasVisuals": true,
+		"tags": [
+			"capstone",
+			"mechatronics",
+			"hardware"
+		],
+		"assets": [
+			{
+				"type": "image",
+				"src": "/projects/ece-4440-4991-capstone-autobleedr-automated-bicycle-brake-bl/initial_doodle_August_17_2026.png",
+				"caption": "initial doodle August 17 2026"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/ece-4440-4991-capstone-autobleedr-automated-bicycle-brake-bl/Project_Proposal.pdf",
+				"caption": "Project Proposal"
+			}
+		]
+	},
+	{
+		"slug": "ece-4907-gupta-lab-rare-earth-element-recovery-from-hdds-res",
+		"name": "ECE 4907 Gupta Lab - Rare-Earth Element recovery from HDDs (LIBS/EDS/laser ablation) research report",
+		"date": "2026-05-27",
+		"domain": "research-lab",
+		"category": "School",
+		"audience": "Research advisor / lab",
+		"effort": "High",
+		"timeHours": "60+ (semester)",
+		"summary": "Lab research on recovering rare-earth elements from scrapped hard drives using LIBS/EDS and laser ablation.",
+		"hasVisuals": true,
+		"tags": [
+			"spectroscopy",
+			"materials",
+			"research"
+		],
+		"assets": [
+			{
+				"type": "image",
+				"src": "/projects/ece-4907-gupta-lab-rare-earth-element-recovery-from-hdds-res/70_hatch_30_power_single_pass_20X.png",
+				"caption": "70 hatch 30 power single pass 20X"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-4907-gupta-lab-rare-earth-element-recovery-from-hdds-res/70_hatch_30_power_single_pass_50X.png",
+				"caption": "70 hatch 30 power single pass 50X"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-4907-gupta-lab-rare-earth-element-recovery-from-hdds-res/70_hatch_70_power_single_pass_20X.png",
+				"caption": "70 hatch 70 power single pass 20X"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-4907-gupta-lab-rare-earth-element-recovery-from-hdds-res/85_hatch_10_power_single_pass_50X_above_debond_EDF.png",
+				"caption": "85 hatch 10 power single pass 50X above debond EDF"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/ece-4907-gupta-lab-rare-earth-element-recovery-from-hdds-res/LaRocco_Undergrad_Research_Report_2026_Spring_FIRST_SUBMISSION.pdf",
+				"caption": "LaRocco Undergrad Research Report 2026 Spring FIRST SUBMISSION"
+			}
+		]
+	},
+	{
+		"slug": "sts-3020-policy-memo-1",
+		"name": "STS 3020 Policy Memo #1",
+		"date": "2026-01-15",
+		"domain": "policy-writing",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "6",
+		"summary": "Science-and-technology policy memo analyzing a current federal policy question.",
+		"hasVisuals": true,
+		"tags": [
+			"policy",
+			"writing"
+		],
+		"assets": [
+			{
+				"type": "image",
+				"src": "/projects/sts-3020-policy-memo-1/20260114_102610.jpg",
+				"caption": "20260114 102610"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/sts-3020-policy-memo-1/Policy_Memo_1_-_Isidore_LaRocco_Resume.pdf",
+				"caption": "Policy Memo 1 Isidore LaRocco Resume"
+			}
+		]
+	},
+	{
+		"slug": "sts-3020-policy-memo-2",
+		"name": "STS 3020 Policy Memo #2 (sustainable development / STI)",
+		"date": "2026-02-01",
+		"domain": "policy-writing",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "6",
+		"summary": "Policy memo on sustainable development and science-technology-innovation (STI) strategy.",
+		"hasVisuals": false,
+		"tags": [
+			"policy",
+			"sustainability",
+			"writing"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/sts-3020-policy-memo-2/The-Sustainable-Development-Goals-Report-2025.pdf",
+				"caption": "The Sustainable Development Goals Report 2025"
+			}
+		]
+	},
+	{
+		"slug": "sts-3020-policy-memo-3",
+		"name": "STS 3020 Policy Memo #3 (NSF indirect costs / research funding)",
+		"date": "2026-02-22",
+		"domain": "policy-writing",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "6",
+		"summary": "Policy memo on NSF indirect-cost rates and federal research funding.",
+		"hasVisuals": false,
+		"tags": [
+			"policy",
+			"research-funding",
+			"writing"
+		],
+		"assets": []
+	},
+	{
+		"slug": "sts-3020-policy-memo-4",
+		"name": "STS 3020 Policy Memo #4 (health agencies / public confidence)",
+		"date": "2026-04-05",
+		"domain": "policy-writing",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "6",
+		"summary": "Policy memo on health agencies and rebuilding public confidence.",
+		"hasVisuals": false,
+		"tags": [
+			"policy",
+			"public-health",
+			"writing"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/sts-3020-policy-memo-4/2025-ReadyOrNot-FINALr.pdf",
+				"caption": "2025 ReadyOrNot FINALr"
+			}
+		]
+	},
+	{
+		"slug": "sts-3020-issue-advocacy-deliverable-1-virginia-transit-prese",
+		"name": "STS 3020 Issue Advocacy Deliverable 1 - Virginia transit (CAT) presentation + summary",
+		"date": "2026-02-08",
+		"domain": "policy-writing",
+		"category": "School",
+		"audience": "Course instructor / group",
+		"effort": "Medium",
+		"timeHours": "8",
+		"summary": "Issue-advocacy presentation and summary on Virginia transit (Charlottesville Area Transit).",
+		"hasVisuals": false,
+		"tags": [
+			"policy",
+			"transit",
+			"advocacy"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/sts-3020-issue-advocacy-deliverable-1-virginia-transit-prese/Deliverable_1_presentation_Transportation.pdf",
+				"caption": "Deliverable 1 presentation Transportation"
+			}
+		]
+	},
+	{
+		"slug": "sts-3020-issue-advocacy-deliverable-2-transportation-impact",
+		"name": "STS 3020 Issue Advocacy Deliverable 2 - Transportation IMPACT",
+		"date": "2026-03-01",
+		"domain": "policy-writing",
+		"category": "School",
+		"audience": "Course instructor / group",
+		"effort": "Medium",
+		"timeHours": "8",
+		"summary": "Transportation IMPACT advocacy deliverable — building the case for local transit investment.",
+		"hasVisuals": false,
+		"tags": [
+			"policy",
+			"transit",
+			"advocacy"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/sts-3020-issue-advocacy-deliverable-2-transportation-impact/Deliverable_2_Transportation_IMPACT.pdf",
+				"caption": "Deliverable 2 Transportation IMPACT"
+			}
+		]
+	},
+	{
+		"slug": "sts-3020-issue-advocacy-deliverable-4-impact-assembly-reflec",
+		"name": "STS 3020 Issue Advocacy Deliverable 4 - IMPACT Assembly Reflections",
+		"date": "2026-03-29",
+		"domain": "policy-writing",
+		"category": "School",
+		"audience": "Course instructor / group",
+		"effort": "Low",
+		"timeHours": "2",
+		"summary": "Reflections on the IMPACT assembly and the issue-advocacy campaign outcome.",
+		"hasVisuals": false,
+		"tags": [
+			"policy",
+			"advocacy",
+			"reflection"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/sts-3020-issue-advocacy-deliverable-4-impact-assembly-reflec/IMPACT_March_9_Follow_up.pdf",
+				"caption": "IMPACT March 9 Follow up"
+			}
+		]
+	},
+	{
+		"slug": "sts-3020-course-paper-problem-statement",
+		"name": "STS 3020 Course Paper - Problem Statement (SMR nuclear regulation)",
+		"date": "2026-02-18",
+		"domain": "policy-writing",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "8",
+		"summary": "Problem statement framing SMR nuclear regulation as the course-paper research question.",
+		"hasVisuals": false,
+		"tags": [
+			"policy",
+			"nuclear",
+			"smr"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/sts-3020-course-paper-problem-statement/World_Bank_Group_Annual_Report_2025.pdf",
+				"caption": "World Bank Group Annual Report 2025"
+			}
+		]
+	},
+	{
+		"slug": "sts-3020-course-paper-presentation-poster",
+		"name": "STS 3020 Course Paper - Presentation + Poster (Accelerate Nuclear Power with Modular Regulations)",
+		"date": "2026-04-13",
+		"domain": "policy-writing",
+		"category": "School",
+		"audience": "Course instructor / peers",
+		"effort": "Medium",
+		"timeHours": "8",
+		"summary": "Presentation and poster: accelerating nuclear power through modular regulation.",
+		"hasVisuals": true,
+		"tags": [
+			"policy",
+			"nuclear",
+			"poster"
+		],
+		"assets": [
+			{
+				"type": "image",
+				"src": "/projects/sts-3020-course-paper-presentation-poster/student-pwr.gif",
+				"caption": "student pwr"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/sts-3020-course-paper-presentation-poster/poster.pdf",
+				"caption": "poster"
+			}
+		]
+	},
+	{
+		"slug": "sts-3020-course-paper-final-research-paper",
+		"name": "STS 3020 Course Paper - Final Research Paper (SMR policy)",
+		"date": "2026-05-03",
+		"domain": "policy-writing",
+		"category": "School",
+		"audience": "Course instructor / JSPG",
+		"effort": "High",
+		"timeHours": "30+",
+		"summary": "Final research paper arguing for modular regulation to accelerate small modular reactor (SMR) deployment.",
+		"hasVisuals": false,
+		"tags": [
+			"policy",
+			"nuclear",
+			"smr"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/sts-3020-course-paper-final-research-paper/Draft_1.pdf",
+				"caption": "Draft 1"
+			}
+		]
+	},
+	{
+		"slug": "ece-3250-transformer-design-project",
+		"name": "ECE 3250 Transformer Design Project (Python design code + report)",
+		"date": "2026-02-25",
+		"domain": "power-energy",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "10",
+		"summary": "Transformer design project — Python design code plus an engineering report.",
+		"hasVisuals": false,
+		"tags": [
+			"python",
+			"transformers",
+			"power"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/ece-3250-transformer-design-project/laminations_singlephase.pdf",
+				"caption": "laminations singlephase"
+			}
+		]
+	},
+	{
+		"slug": "ece-3250-research-project-advanced-transmission-grid-reliabi",
+		"name": "ECE 3250 Research Project - Advanced transmission / grid reliability (group)",
+		"date": "2026-04-19",
+		"domain": "power-energy",
+		"category": "School",
+		"audience": "Course instructor (group)",
+		"effort": "Medium",
+		"timeHours": "8-15",
+		"summary": "Group research on advanced transmission technologies and grid reliability.",
+		"hasVisuals": false,
+		"tags": [
+			"grid",
+			"transmission",
+			"research"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/ece-3250-research-project-advanced-transmission-grid-reliabi/Quanta-Technology-Report-Advanced-Transmission-Technologies-Planning-Guide.pdf",
+				"caption": "Quanta Technology Report Advanced Transmission Technologies Planning Guide"
+			}
+		]
+	},
+	{
+		"slug": "ece-3250-individual-research-report",
+		"name": "ECE 3250 Individual Research Report",
+		"date": "2026-04-24",
+		"domain": "power-energy",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "8",
+		"summary": "Individual research report on an electromechanical energy-conversion topic.",
+		"hasVisuals": false,
+		"tags": [
+			"power",
+			"research",
+			"writing"
+		],
+		"assets": []
+	},
+	{
+		"slug": "ece-3251-lab-1-single-phase",
+		"name": "ECE 3251 Lab 1 - Single-Phase",
+		"date": "2026-01-29",
+		"domain": "power-energy",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "2-4",
+		"summary": "Lab: single-phase transformer characterization and measurements.",
+		"hasVisuals": false,
+		"tags": [
+			"power-lab",
+			"transformers"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/ece-3251-lab-1-single-phase/ECE3251_Lab1_Single-Phase_26S.pdf",
+				"caption": "ECE3251 Lab1 Single Phase 26S"
+			}
+		]
+	},
+	{
+		"slug": "ece-3251-lab-2-three-phase",
+		"name": "ECE 3251 Lab 2 - Three-Phase",
+		"date": "2026-02-25",
+		"domain": "power-energy",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "2-4",
+		"summary": "Lab: three-phase transformer connections and measurements.",
+		"hasVisuals": false,
+		"tags": [
+			"power-lab",
+			"three-phase"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/ece-3251-lab-2-three-phase/ECE3251_Lab2_Three-Phase_26S.pdf",
+				"caption": "ECE3251 Lab2 Three Phase 26S"
+			}
+		]
+	},
+	{
+		"slug": "ece-3251-lab-3-solenoid",
+		"name": "ECE 3251 Lab 3 - Solenoid",
+		"date": "2026-02-25",
+		"domain": "power-energy",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "2-4",
+		"summary": "Lab: solenoid actuator characterization.",
+		"hasVisuals": false,
+		"tags": [
+			"power-lab",
+			"magnetics"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/ece-3251-lab-3-solenoid/ECE3251_Lab3_Solenoid_26S.pdf",
+				"caption": "ECE3251 Lab3 Solenoid 26S"
+			}
+		]
+	},
+	{
+		"slug": "ece-3251-lab-4-magnetic-non-linearities",
+		"name": "ECE 3251 Lab 4 - Magnetic Non-Linearities",
+		"date": "2026-03-26",
+		"domain": "power-energy",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "2-4",
+		"summary": "Lab: measuring magnetic non-linearities and hysteresis.",
+		"hasVisuals": true,
+		"tags": [
+			"power-lab",
+			"magnetics"
+		],
+		"assets": [
+			{
+				"type": "image",
+				"src": "/projects/ece-3251-lab-4-magnetic-non-linearities/120v_current.png",
+				"caption": "120v current"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-3251-lab-4-magnetic-non-linearities/120v_hysteresis.png",
+				"caption": "120v hysteresis"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-3251-lab-4-magnetic-non-linearities/120v_resistive_hysteresis.png",
+				"caption": "120v resistive hysteresis"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-3251-lab-4-magnetic-non-linearities/80v_current.png",
+				"caption": "80v current"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/ece-3251-lab-4-magnetic-non-linearities/ECE3251_Lab4_MagneticNonLinearities_26S.pdf",
+				"caption": "ECE3251 Lab4 MagneticNonLinearities 26S"
+			}
+		]
+	},
+	{
+		"slug": "ece-3251-lab-5-iron-core-transformers",
+		"name": "ECE 3251 Lab 5 - Iron-Core Transformers",
+		"date": "2026-03-27",
+		"domain": "power-energy",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "2-4",
+		"summary": "Lab: iron-core transformer behavior and losses.",
+		"hasVisuals": false,
+		"tags": [
+			"power-lab",
+			"transformers"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/ece-3251-lab-5-iron-core-transformers/ECE3251_Lab5_Iron-CoreTransformers_26S.pdf",
+				"caption": "ECE3251 Lab5 Iron CoreTransformers 26S"
+			}
+		]
+	},
+	{
+		"slug": "ece-3251-lab-6-reverse-engineering",
+		"name": "ECE 3251 Lab 6 - Reverse Engineering",
+		"date": "2026-03-13",
+		"domain": "power-energy",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "2-4",
+		"summary": "Lab: reverse-engineering an unknown electromagnetic device from measurements.",
+		"hasVisuals": false,
+		"tags": [
+			"power-lab",
+			"measurement"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/ece-3251-lab-6-reverse-engineering/ECE3250_Lect17_3PhaseTransformers_26S.pdf",
+				"caption": "ECE3250 Lect17 3PhaseTransformers 26S"
+			}
+		]
+	},
+	{
+		"slug": "ece-3251-lab-7-transformer-verification",
+		"name": "ECE 3251 Lab 7 - Transformer Verification",
+		"date": "2026-04-10",
+		"domain": "power-energy",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "2-4",
+		"summary": "Lab: verifying a transformer model against measured data.",
+		"hasVisuals": false,
+		"tags": [
+			"power-lab",
+			"transformers"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/ece-3251-lab-7-transformer-verification/ECE3251_Lab7_TransformerVerification_26S.pdf",
+				"caption": "ECE3251 Lab7 TransformerVerification 26S"
+			}
+		]
+	},
+	{
+		"slug": "ece-3251-lab-8-induction-machine",
+		"name": "ECE 3251 Lab 8 - Induction Machine",
+		"date": "2026-04-03",
+		"domain": "power-energy",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "2-4",
+		"summary": "Lab: induction-machine testing and performance curves.",
+		"hasVisuals": false,
+		"tags": [
+			"power-lab",
+			"machines"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/ece-3251-lab-8-induction-machine/ECE3250_Lect23_InductionMachineMeasurements_26S.pdf",
+				"caption": "ECE3250 Lect23 InductionMachineMeasurements 26S"
+			}
+		]
+	},
+	{
+		"slug": "ece-3251-lab-9-dc-machine",
+		"name": "ECE 3251 Lab 9 - DC Machine",
+		"date": "2026-04-10",
+		"domain": "power-energy",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "2-4",
+		"summary": "Lab: DC-machine characterization under varying load.",
+		"hasVisuals": false,
+		"tags": [
+			"power-lab",
+			"machines"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/ece-3251-lab-9-dc-machine/ECE3251_Lab9_DC_Machine_26S.pdf",
+				"caption": "ECE3251 Lab9 DC Machine 26S"
+			}
+		]
+	},
+	{
+		"slug": "ece-3251-lab-10-synchronous-machines",
+		"name": "ECE 3251 Lab 10 - Synchronous Machines",
+		"date": "2026-04-17",
+		"domain": "power-energy",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "2-4",
+		"summary": "Lab: synchronous-machine testing and characteristic curves.",
+		"hasVisuals": true,
+		"tags": [
+			"power-lab",
+			"machines"
+		],
+		"assets": [
+			{
+				"type": "image",
+				"src": "/projects/ece-3251-lab-10-synchronous-machines/Lab10Graph.png",
+				"caption": "Lab10Graph"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-3251-lab-10-synchronous-machines/Lab10Graph_v2.png",
+				"caption": "Lab10Graph v2"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/ece-3251-lab-10-synchronous-machines/Lab10_Report_Final.pdf",
+				"caption": "Lab10 Report Final"
+			}
+		]
+	},
+	{
+		"slug": "ece-2300-applied-circuits-boost-converter-pcb-project",
+		"name": "ECE 2300 Applied Circuits - Boost Converter PCB Project (KiCad + Multisim)",
+		"date": "2025-04-30",
+		"domain": "embedded-hw",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "High",
+		"timeHours": "20",
+		"summary": "Designed and laid out a boost-converter PCB in KiCad, validated in Multisim.",
+		"hasVisuals": true,
+		"tags": [
+			"pcb",
+			"kicad",
+			"power-electronics"
+		],
+		"assets": [
+			{
+				"type": "image",
+				"src": "/projects/ece-2300-applied-circuits-boost-converter-pcb-project/BoostConverterWaveForm.png",
+				"caption": "BoostConverterWaveForm"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-2300-applied-circuits-boost-converter-pcb-project/Copy_of_Screenshot_2025-03-26_210549.png",
+				"caption": "Copy of Screenshot 2025 03 26 210549"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-2300-applied-circuits-boost-converter-pcb-project/Screenshot_2025-03-26_210549.png",
+				"caption": "Screenshot 2025 03 26 210549"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/ece-2300-applied-circuits-boost-converter-pcb-project/Practical_Waveforms_25S.pdf",
+				"caption": "Practical Waveforms 25S"
+			}
+		]
+	},
+	{
+		"slug": "ece-2600-electronics-audio-analyzer-final-project",
+		"name": "ECE 2600 Electronics - Audio Analyzer Final Project",
+		"date": "2025-12-15",
+		"domain": "embedded-hw",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "High",
+		"timeHours": "20",
+		"summary": "Final project: an audio analyzer built from discrete analog and mixed-signal stages.",
+		"hasVisuals": true,
+		"tags": [
+			"analog",
+			"audio",
+			"electronics"
+		],
+		"assets": [
+			{
+				"type": "image",
+				"src": "/projects/ece-2600-electronics-audio-analyzer-final-project/peak_detector_graph.png",
+				"caption": "peak detector graph"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-2600-electronics-audio-analyzer-final-project/PWM_waveforms.png",
+				"caption": "PWM waveforms"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-2600-electronics-audio-analyzer-final-project/summing_amp_graph.png",
+				"caption": "summing amp graph"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-2600-electronics-audio-analyzer-final-project/summing_amp_waveforms.png",
+				"caption": "summing amp waveforms"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/ece-2600-electronics-audio-analyzer-final-project/AudioAnalyzer_Schematic_zdn5uf.pdf",
+				"caption": "AudioAnalyzer Schematic zdn5uf"
+			}
+		]
+	},
+	{
+		"slug": "ece-2600-electronics-studios-1-8",
+		"name": "ECE 2600 Electronics - Studios 1-8 (lab activities)",
+		"date": "2025-11-23",
+		"domain": "embedded-hw",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "16",
+		"summary": "Studio lab sequence covering core analog electronics building blocks.",
+		"hasVisuals": true,
+		"tags": [
+			"analog",
+			"electronics",
+			"labs"
+		],
+		"assets": [
+			{
+				"type": "image",
+				"src": "/projects/ece-2600-electronics-studios-1-8/Studio3_Diode_1N4001_waveform.png",
+				"caption": "Studio3 Diode 1N4001 waveform"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-2600-electronics-studios-1-8/Studio3_Red_LED_waveform.png",
+				"caption": "Studio3 Red LED waveform"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-2600-electronics-studios-1-8/studio4_differentiator_bode_plot.png",
+				"caption": "studio4 differentiator bode plot"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-2600-electronics-studios-1-8/studio6_graph_I_D_over_V_RD.png",
+				"caption": "studio6 graph I D over V RD"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/ece-2600-electronics-studios-1-8/2._Bode_Plot.pdf",
+				"caption": "2. Bode Plot"
+			}
+		]
+	},
+	{
+		"slug": "ece-2700-signals-and-systems-dc-ac-converter-final-project",
+		"name": "ECE 2700 Signals & Systems - DC-AC Converter Final Project",
+		"date": "2025-12-12",
+		"domain": "embedded-hw",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "High",
+		"timeHours": "20",
+		"summary": "Final project: a DC-AC converter (inverter) analyzed through a signals-and-systems lens.",
+		"hasVisuals": true,
+		"tags": [
+			"power-electronics",
+			"signals",
+			"inverter"
+		],
+		"assets": [
+			{
+				"type": "image",
+				"src": "/projects/ece-2700-signals-and-systems-dc-ac-converter-final-project/ECE2700_Final_Project.png",
+				"caption": "ECE2700 Final Project"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-2700-signals-and-systems-dc-ac-converter-final-project/flowchart.png",
+				"caption": "flowchart"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-2700-signals-and-systems-dc-ac-converter-final-project/Simulation_Results.png",
+				"caption": "Simulation Results"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/ece-2700-signals-and-systems-dc-ac-converter-final-project/schematic.pdf",
+				"caption": "schematic"
+			}
+		]
+	},
+	{
+		"slug": "ece-3430-embedded-systems-final-project",
+		"name": "ECE 3430 Embedded Systems - Final Project (Booster Pack / SPI)",
+		"date": "2025-12-03",
+		"domain": "embedded-hw",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "High",
+		"timeHours": "20",
+		"summary": "Embedded final project on a TI booster pack using SPI peripherals.",
+		"hasVisuals": true,
+		"tags": [
+			"embedded",
+			"spi",
+			"firmware"
+		],
+		"assets": [
+			{
+				"type": "image",
+				"src": "/projects/ece-3430-embedded-systems-final-project/Data_Flow_Diagram-Display_LCD.png",
+				"caption": "Data Flow Diagram Display LCD"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-3430-embedded-systems-final-project/Data_Flow_Diagram-main.png",
+				"caption": "Data Flow Diagram main"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-3430-embedded-systems-final-project/Data_Flow_Diagram-Play_Note.png",
+				"caption": "Data Flow Diagram Play Note"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-3430-embedded-systems-final-project/Data_Flow_Diagram-UpdateFSM.png",
+				"caption": "Data Flow Diagram UpdateFSM"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/ece-3430-embedded-systems-final-project/BOOSTXL-EDUMKII_Schematic.pdf",
+				"caption": "BOOSTXL EDUMKII Schematic"
+			}
+		]
+	},
+	{
+		"slug": "ece-3430-embedded-systems-final-project-video",
+		"name": "ECE 3430 Embedded Systems - Final Project Video (Team 20)",
+		"date": "2025-12-16",
+		"domain": "embedded-hw",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium-High",
+		"timeHours": "10-20",
+		"summary": "Demo video for the Team 20 embedded-systems final project.",
+		"hasVisuals": false,
+		"tags": [
+			"embedded",
+			"demo",
+			"video"
+		],
+		"assets": []
+	},
+	{
+		"slug": "ece-3209-electromagnetic-fields-labs-1-6",
+		"name": "ECE 3209 Electromagnetic Fields - Labs 1-6",
+		"date": "2025-08-25",
+		"domain": "research-lab",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "18",
+		"summary": "Electromagnetic-fields lab sequence (Labs 1–6): measurement and field analysis.",
+		"hasVisuals": true,
+		"tags": [
+			"em-fields",
+			"labs",
+			"measurement"
+		],
+		"assets": [
+			{
+				"type": "image",
+				"src": "/projects/ece-3209-electromagnetic-fields-labs-1-6/experimental_simulation.png",
+				"caption": "experimental simulation"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-3209-electromagnetic-fields-labs-1-6/matched_load_experimental_simulation.png",
+				"caption": "matched load experimental simulation"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-3209-electromagnetic-fields-labs-1-6/oc_experimental_simulation.png",
+				"caption": "oc experimental simulation"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-3209-electromagnetic-fields-labs-1-6/sc_experimental_simulation.png",
+				"caption": "sc experimental simulation"
+			},
+			{
+				"type": "video",
+				"src": "/projects/ece-3209-electromagnetic-fields-labs-1-6/20251028_133549.mp4",
+				"thumb": "/projects/ece-3209-electromagnetic-fields-labs-1-6/20251028_133549-poster.jpg",
+				"caption": "20251028 133549"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/ece-3209-electromagnetic-fields-labs-1-6/Basic_Oscilloscope_Fundamentals.pdf",
+				"caption": "Basic Oscilloscope Fundamentals"
+			}
+		]
+	},
+	{
+		"slug": "ece-4103-solid-state-devices-project-1",
+		"name": "ECE 4103 Solid State Devices - Project 1 (MATLAB)",
+		"date": "2025-01-24",
+		"domain": "software-data",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Low",
+		"timeHours": "4",
+		"summary": "MATLAB project modeling solid-state device behavior for renewable-energy conversion.",
+		"hasVisuals": false,
+		"tags": [
+			"matlab",
+			"semiconductors",
+			"modeling"
+		],
+		"assets": []
+	},
+	{
+		"slug": "ece-4103-hw8-solar-cell-lab",
+		"name": "ECE 4103 - HW8 Solar Cell Lab",
+		"date": "2025-04-17",
+		"domain": "power-energy",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "4-8",
+		"summary": "Solar-cell characterization lab — I-V curves and efficiency.",
+		"hasVisuals": true,
+		"tags": [
+			"solar",
+			"semiconductors",
+			"lab"
+		],
+		"assets": [
+			{
+				"type": "image",
+				"src": "/projects/ece-4103-hw8-solar-cell-lab/20250417_132716.jpg",
+				"caption": "20250417 132716"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-4103-hw8-solar-cell-lab/20250417_142512.jpg",
+				"caption": "20250417 142512"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-4103-hw8-solar-cell-lab/20250417_151947.jpg",
+				"caption": "20250417 151947"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-4103-hw8-solar-cell-lab/Power_measurement.jpg",
+				"caption": "Power measurement"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/ece-4103-hw8-solar-cell-lab/HW8_Solar_cell_lab_final.pdf",
+				"caption": "HW8 Solar cell lab final"
+			}
+		]
+	},
+	{
+		"slug": "apma-3080-linear-algebra-project-1",
+		"name": "APMA 3080 Linear Algebra - Project 1 (MATLAB)",
+		"date": "2025-02-05",
+		"domain": "software-data",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "6",
+		"summary": "MATLAB linear-algebra project applying matrix methods to an applied problem.",
+		"hasVisuals": false,
+		"tags": [
+			"matlab",
+			"linear-algebra",
+			"numerics"
+		],
+		"assets": []
+	},
+	{
+		"slug": "apma-3100-probability-project-1",
+		"name": "APMA 3100 Probability - Project 1",
+		"date": "2024-10-13",
+		"domain": "software-data",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "6",
+		"summary": "Applied probability project — modeling and simulation of a stochastic problem.",
+		"hasVisuals": true,
+		"tags": [
+			"probability",
+			"modeling"
+		],
+		"assets": [
+			{
+				"type": "image",
+				"src": "/projects/apma-3100-probability-project-1/2b.jpg",
+				"caption": "2b"
+			},
+			{
+				"type": "image",
+				"src": "/projects/apma-3100-probability-project-1/2b_problem.jpg",
+				"caption": "2b problem"
+			},
+			{
+				"type": "image",
+				"src": "/projects/apma-3100-probability-project-1/4A.jpg",
+				"caption": "4A"
+			},
+			{
+				"type": "image",
+				"src": "/projects/apma-3100-probability-project-1/4b.jpg",
+				"caption": "4b"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/apma-3100-probability-project-1/APMA_3100_Project_1_zdn5uf.pdf",
+				"caption": "APMA 3100 Project 1 zdn5uf"
+			}
+		]
+	},
+	{
+		"slug": "apma-3100-probability-project-2",
+		"name": "APMA 3100 Probability - Project 2 (Jupyter notebook + report + appendix)",
+		"date": "2024-11-03",
+		"domain": "software-data",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "8-12",
+		"summary": "Probability project in a Jupyter notebook with report and appendix — simulation and analysis.",
+		"hasVisuals": false,
+		"tags": [
+			"python",
+			"jupyter",
+			"probability"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/apma-3100-probability-project-2/Project_2_-_Stage_2.pdf",
+				"caption": "Project 2 Stage 2"
+			}
+		]
+	},
+	{
+		"slug": "ece-2410-intro-to-ml-final-project",
+		"name": "ECE 2410 Intro to ML - Final Project (student performance, kNN + linear regression)",
+		"date": "2024-12-02",
+		"domain": "software-data",
+		"category": "School",
+		"audience": "Course instructor (group)",
+		"effort": "Medium",
+		"timeHours": "10-20",
+		"summary": "Group ML final project predicting student performance with kNN and linear regression.",
+		"hasVisuals": false,
+		"tags": [
+			"machine-learning",
+			"knn",
+			"regression"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/ece-2410-intro-to-ml-final-project/Project_Summary.pdf",
+				"caption": "Project Summary"
+			}
+		]
+	},
+	{
+		"slug": "ece-2330-digital-logic-design-learning-activities",
+		"name": "ECE 2330 Digital Logic Design - Learning Activities (FPGA/VHDL, LA0-LA7)",
+		"date": "2024-09-20",
+		"domain": "embedded-hw",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "16",
+		"summary": "Digital-logic learning activities (LA0–LA7) in FPGA/VHDL.",
+		"hasVisuals": true,
+		"tags": [
+			"fpga",
+			"vhdl",
+			"digital-logic"
+		],
+		"assets": [
+			{
+				"type": "image",
+				"src": "/projects/ece-2330-digital-logic-design-learning-activities/LA3_logic_table.png",
+				"caption": "LA3 logic table"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-2330-digital-logic-design-learning-activities/LA9_Part_2_Function_Flow_Chart.png",
+				"caption": "LA9 Part 2 Function Flow Chart"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/ece-2330-digital-logic-design-learning-activities/LA10_Waveform.pdf",
+				"caption": "LA10 Waveform"
+			}
+		]
+	},
+	{
+		"slug": "cs-2130-computer-systems-and-org-1-labs-1-13",
+		"name": "CS 2130 Computer Systems & Org 1 - Labs 1-13 (C programming)",
+		"date": "2025-01-21",
+		"domain": "software-data",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "20",
+		"summary": "Computer-systems lab sequence (Labs 1–13) in C — memory, systems programming, and tooling.",
+		"hasVisuals": false,
+		"tags": [
+			"c",
+			"systems",
+			"labs"
+		],
+		"assets": []
+	},
+	{
+		"slug": "hoohacks-2025",
+		"name": "HooHacks 2025 (hackathon - topic brainstorm)",
+		"date": "2025-03-30",
+		"domain": "software-data",
+		"category": "School",
+		"audience": "Hackathon",
+		"effort": "Low",
+		"timeHours": "3",
+		"summary": "HooHacks 2025 hackathon — project ideation and topic brainstorming.",
+		"hasVisuals": false,
+		"tags": [
+			"hackathon",
+			"ideation"
+		],
+		"assets": []
+	},
+	{
+		"slug": "bio-2870-anatomy-lab-6-study-guide",
+		"name": "BIO 2870 Anatomy - Lab 6 Study Guide (group)",
+		"date": "2018-03-13",
+		"domain": "research-lab",
+		"category": "School",
+		"audience": "Course peers",
+		"effort": "Low",
+		"timeHours": "3",
+		"summary": "Group-authored anatomy study guide for Lab 6.",
+		"hasVisuals": false,
+		"tags": [
+			"biology",
+			"study-guide"
+		],
+		"assets": []
+	},
+	{
+		"slug": "chm-111-general-chemistry-i-lab-reports",
+		"name": "CHM 111 General Chemistry I - Lab reports",
+		"date": "2021-08-01",
+		"domain": "research-lab",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "15",
+		"summary": "General Chemistry I lab reports — experiments, data, and analysis.",
+		"hasVisuals": true,
+		"tags": [
+			"chemistry",
+			"lab-reports"
+		],
+		"assets": [
+			{
+				"type": "image",
+				"src": "/projects/chm-111-general-chemistry-i-lab-reports/module_2_laboratory_safety_map_-_Isidore_Harris.png",
+				"caption": "module 2 laboratory safety map Isidore Harris"
+			},
+			{
+				"type": "image",
+				"src": "/projects/chm-111-general-chemistry-i-lab-reports/module_3_graph.PNG",
+				"caption": "module 3 graph"
+			},
+			{
+				"type": "image",
+				"src": "/projects/chm-111-general-chemistry-i-lab-reports/module_3_scatter_chart.PNG",
+				"caption": "module 3 scatter chart"
+			},
+			{
+				"type": "image",
+				"src": "/projects/chm-111-general-chemistry-i-lab-reports/module_3_scatter_plot_graph.PNG",
+				"caption": "module 3 scatter plot graph"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/chm-111-general-chemistry-i-lab-reports/jet_fuel.pdf",
+				"caption": "jet fuel"
+			}
+		]
+	}
+]

@@ -1,0 +1,70 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { projects, getProjectBySlug } from '../../lib/projects';
+import { domainMap } from '../../data/domains';
+
+export function getStaticPaths() {
+	return projects.map((p) => ({ params: { slug: p.slug }, props: { slug: p.slug } }));
+}
+
+const { slug } = Astro.props as { slug: string };
+const project = getProjectBySlug(slug)!;
+const domain = domainMap[project.domain];
+const cover = project.assets.find((a) => a.type === 'image' || a.thumb);
+const coverImg = cover && (cover.type === 'image' ? cover.src : cover.thumb);
+---
+
+<Layout title={project.name} description={project.summary || project.name} image={coverImg || '/blog-placeholder-1.jpg'}>
+	<article class="project-detail">
+		<a href="/" class="back">&larr; All projects</a>
+
+		<div class="detail-tag" style={`background:${domain.color}`}>{domain.label}</div>
+		<h1>{project.name}</h1>
+
+		<div class="detail-meta">
+			<span>{project.date}</span>
+			<span>·</span>
+			<span>{project.category}</span>
+			<span>·</span>
+			<span>Audience: {project.audience}</span>
+			<span>·</span>
+			<span>Effort: {project.effort}</span>
+			<span>·</span>
+			<span>{project.timeHours} hrs</span>
+		</div>
+
+		{project.summary ? <p class="detail-summary">{project.summary}</p> : null}
+
+		{project.tags.length ? (
+			<div class="card-tags">
+				{project.tags.map((t) => <span class="tag">{t}</span>)}
+			</div>
+		) : null}
+
+		{project.assets.length ? (
+			<div class="gallery">
+				{project.assets.map((a) => (
+					<figure class="gallery-item">
+						{a.type === 'image' ? (
+							<img src={a.src} alt={a.caption || project.name} loading="lazy" />
+						) : a.type === 'video' ? (
+							<video src={a.src} controls poster={a.thumb} preload="metadata"></video>
+						) : a.type === 'pdf' ? (
+							<a href={a.src} target="_blank" rel="noopener" class="pdf-embed">
+								{a.thumb ? <img src={a.thumb} alt={a.caption || 'PDF preview'} loading="lazy" /> : null}
+								<span>Open PDF ↗</span>
+							</a>
+						) : (
+							<iframe src={a.src} title={a.caption || project.name} loading="lazy"></iframe>
+						)}
+						{a.caption ? <figcaption>{a.caption}</figcaption> : null}
+					</figure>
+				))}
+			</div>
+		) : (
+			<div class="no-assets" style={`border-color:${domain.color}`}>
+				<p>This is a text-based deliverable. Source materials live in the project archive.</p>
+			</div>
+		)}
+	</article>
+</Layout>

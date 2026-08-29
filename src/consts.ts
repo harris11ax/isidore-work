@@ -1,5 +1,7 @@
-// Place any global data in this file.
-// You can import this data from anywhere in your site by using the `import` keyword.
-
-export const SITE_TITLE = "Astro Blog";
-export const SITE_DESCRIPTION = "Welcome to my website!";
+export const SITE_TITLE = "isidore.work";
+export const SITE_DESCRIPTION = "Projects across power & energy, embedded hardware, software & data, research, and policy.";
+export const EMAIL = "isidore@virginia.edu";
+export const EMAIL2 = "isidore2048@gmail.com";
+export const GITHUB_URL = "https://github.com/harris11ax";
+// TODO: replace with your real LinkedIn profile URL
+export const LINKEDIN_URL = "https://www.linkedin.com/";
