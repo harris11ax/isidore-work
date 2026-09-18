@@ -289,6 +289,7 @@ main { width: 1100px; max-width: calc(100% - 2em); }
 .chip.cat.on { background: rgb(var(--gray-dark)); color: #fff; border-color: rgb(var(--gray-dark)); }
 .chip.clear { border-color: #d33; color: #d33; }
 .result-count { font-size: 0.8em; color: rgb(var(--gray)); margin-top: 0.3em; }
+.filter-hint { margin-left: 0.6em; opacity: 0.75; }
 
 /* domain sections */
 .domain-section { margin: 2.5em 0; }

@@ -8,42 +8,43 @@ interface Props {
 	categories: string[];
 }
 
-const domainColor = (domains: Domain[], slug: string) =>
-	domains.find((d) => d.slug === slug)?.color ?? "#666";
-const domainLabel = (domains: Domain[], slug: string) =>
-	domains.find((d) => d.slug === slug)?.label ?? slug;
-
 export default function FilterableProjects({ projects, domains, categories }: Props) {
-	const [activeDomains, setActiveDomains] = useState<Set<string>>(new Set());
-	const [activeCats, setActiveCats] = useState<Set<string>>(new Set());
+	// one selection per row: picking a chip replaces the previous one, clicking the
+	// active chip clears the row. No multi-select by design.
+	const [domain, setDomain] = useState<string | null>(null);
+	const [category, setCategory] = useState<string | null>(null);
 	const [q, setQ] = useState("");
 
-	const toggle = (set: Set<string>, val: string, setter: (s: Set<string>) => void) => {
-		const next = new Set(set);
-		next.has(val) ? next.delete(val) : next.add(val);
-		setter(next);
-	};
+	const pick = (current: string | null, value: string, setter: (v: string | null) => void) =>
+		setter(current === value ? null : value);
 
 	const filtered = useMemo(() => {
 		const needle = q.trim().toLowerCase();
 		return projects.filter((p) => {
-			if (activeDomains.size && !activeDomains.has(p.domain)) return false;
-			if (activeCats.size && !activeCats.has(p.category)) return false;
+			if (domain && p.domain !== domain) return false;
+			if (category && p.category !== category) return false;
 			if (needle) {
 				const hay = (p.name + " " + p.summary + " " + p.tags.join(" ") + " " + (p.course ?? "") + " " + (p.org ?? "")).toLowerCase();
 				if (!hay.includes(needle)) return false;
 			}
 			return true;
 		});
-	}, [projects, activeDomains, activeCats, q]);
+	}, [projects, domain, category, q]);
 
-	const grouped = useMemo(() => {
-		return domains
-			.map((d) => ({ domain: d, items: filtered.filter((p) => p.domain === d.slug) }))
-			.filter((g) => g.items.length > 0);
-	}, [filtered, domains]);
+	const grouped = useMemo(
+		() =>
+			domains
+				.map((d) => ({ domain: d, items: filtered.filter((p) => p.domain === d.slug) }))
+				.filter((g) => g.items.length > 0),
+		[filtered, domains],
+	);
 
-	const anyFilter = activeDomains.size || activeCats.size || q.trim();
+	const anyFilter = Boolean(domain || category || q.trim());
+	const clearAll = () => {
+		setDomain(null);
+		setCategory(null);
+		setQ("");
+	};
 
 	return (
 		<div>
@@ -56,38 +57,52 @@ export default function FilterableProjects({ projects, domains, categories }: Pr
 					onChange={(e) => setQ(e.target.value)}
 					aria-label="Search projects"
 				/>
-				<div className="chip-row">
-					{domains.map((d) => (
-						<button
-							key={d.slug}
-							className={"chip" + (activeDomains.has(d.slug) ? " on" : "")}
-							style={activeDomains.has(d.slug) ? { background: d.color, borderColor: d.color, color: "#fff" } : { borderColor: d.color, color: d.color }}
-							onClick={() => toggle(activeDomains, d.slug, setActiveDomains)}
-						>
-							{d.label}
-						</button>
-					))}
+				<div className="chip-row" role="radiogroup" aria-label="Domain">
+					{domains.map((d) => {
+						const on = domain === d.slug;
+						return (
+							<button
+								key={d.slug}
+								className={"chip" + (on ? " on" : "")}
+								role="radio"
+								aria-checked={on}
+								aria-pressed={on}
+								title={on ? `Clear the ${d.label} filter` : `Show only ${d.label}`}
+								style={on ? { background: d.color, borderColor: d.color, color: "#fff" } : { borderColor: d.color, color: d.color }}
+								onClick={() => pick(domain, d.slug, setDomain)}
+							>
+								{d.label}
+							</button>
+						);
+					})}
 				</div>
-				<div className="chip-row">
-					{categories.map((c) => (
-						<button
-							key={c}
-							className={"chip cat" + (activeCats.has(c) ? " on" : "")}
-							onClick={() => toggle(activeCats, c, setActiveCats)}
-						>
-							{c}
-						</button>
-					))}
+				<div className="chip-row" role="radiogroup" aria-label="Category">
+					{categories.map((c) => {
+						const on = category === c;
+						return (
+							<button
+								key={c}
+								className={"chip cat" + (on ? " on" : "")}
+								role="radio"
+								aria-checked={on}
+								aria-pressed={on}
+								title={on ? `Clear the ${c} filter` : `Show only ${c} projects`}
+								onClick={() => pick(category, c, setCategory)}
+							>
+								{c}
+							</button>
+						);
+					})}
 					{anyFilter ? (
-						<button
-							className="chip clear"
-							onClick={() => { setActiveDomains(new Set()); setActiveCats(new Set()); setQ(""); }}
-						>
+						<button className="chip clear" onClick={clearAll}>
 							Clear ✕
 						</button>
 					) : null}
 				</div>
-				<div className="result-count">{filtered.length} project{filtered.length === 1 ? "" : "s"}</div>
+				<div className="result-count">
+					{filtered.length} project{filtered.length === 1 ? "" : "s"}
+					<span className="filter-hint">One filter per row — click the active chip to clear it.</span>
+				</div>
 			</div>
 
 			{grouped.length === 0 ? (
