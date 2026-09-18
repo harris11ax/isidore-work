@@ -18,7 +18,7 @@ import sys
 from pathlib import Path
 
 JSON_FIELD = re.compile(r'\n[ \t]*"sourcePath"[ \t]*:[ \t]*"(?:[^"\\]|\\.)*",?')
-JSON_LINE = re.compile(r'^[ \t]*"sourcePath"[ \t]*:')
+JSON_LINE = re.compile(r'^[ \t]*"sourcePath"[ \t]*:', re.M)
 # a drive letter, a separator, then a path component - deliberately does NOT match
 # this file's own pattern literals, so the tool never eats itself
 DRIVE_PATH = re.compile(r"[A-Za-z]:[\\/][A-Za-z]")
