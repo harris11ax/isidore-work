@@ -365,7 +365,7 @@ function saveProject(req, existing) {
 		const keys = [...Object.keys(fields), 'created_at'];
 		db.prepare(
 			`INSERT INTO projects (${keys.join(', ')}) VALUES (${keys.map(() => '?').join(', ')})`,
-		).run(...[...Object.values(fields), ts], ts);
+		).run(...Object.values(fields), ts);
 	}
 	const row = projectBySlug(slug);
 

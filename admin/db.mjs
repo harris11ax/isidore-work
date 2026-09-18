@@ -161,6 +161,9 @@ export function getSetting(key, fallback = null) {
 }
 
 export function setSetting(key, value) {
+	if (value === undefined) {
+		throw new Error(`setSetting(${key}) got undefined — refusing to write a value that cannot be read back`);
+	}
 	db.prepare(
 		'INSERT INTO settings (key, value) VALUES (?, ?) ON CONFLICT(key) DO UPDATE SET value = excluded.value',
 	).run(key, JSON.stringify(value));

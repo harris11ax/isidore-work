@@ -20,10 +20,35 @@ if (count > 0 && !force) {
 }
 
 if (force) {
+	// One transaction for the whole import: a failure must never leave the content
+	// tables cleared. The rollback also happens on an uncaught exception, because
+	// the process exits with the transaction still open.
+	db.exec('BEGIN IMMEDIATE');
+	let committed = false;
+	process.on('exit', () => {
+		if (!committed) {
+			try {
+				db.exec('ROLLBACK');
+				console.error('import failed — rolled back, nothing was changed');
+			} catch {
+				/* nothing to roll back */
+			}
+		}
+	});
+	db.commit = () => {
+		committed = true;
+		db.exec('COMMIT');
+	};
+
 	for (const t of ['assets', 'project_roles', 'projects', 'roles', 'education', 'domains']) {
 		db.exec(`DELETE FROM ${t}`);
 	}
 	console.log('cleared content tables');
+} else {
+	// Fresh database: nothing to roll back to, so no transaction — but db.commit()
+	// must still exist. (Opening a transaction and never committing it here would
+	// silently discard the entire import on exit.)
+	db.commit = () => {};
 }
 
 // The site's own modules are plain ES modules, so the importer reads the real
@@ -34,13 +59,26 @@ const [rolesMod, domainsMod] = await Promise.all([
 ]);
 
 // src/consts.ts now re-exports the *generated* src/data/site, which does not
-// exist until the first generate runs — so take the pre-migration values from
-// the last commit instead.
-function committedConsts() {
-	const res = spawnSync('git', ['show', 'HEAD:src/consts.ts'], { cwd: REPO, encoding: 'utf8' });
+// exist until the first generate runs — so look for the values in, in order:
+//   1. the working tree (works once src/data/site.ts has been generated)
+//   2. the most recent commit whose src/consts.ts still had literal values
+//   3. hard defaults (so a key can never bind `undefined`)
+// The migration is a one-time job; being able to walk back through history is what
+// keeps it re-runnable after the file has been converted.
+const CONST_KEYS = ['SITE_TITLE', 'SITE_DESCRIPTION', 'EMAIL', 'EMAIL2', 'GITHUB_URL', 'LINKEDIN_URL'];
+const CONST_DEFAULTS = {
+	SITE_TITLE: 'isidore.work',
+	SITE_DESCRIPTION: '',
+	EMAIL: '',
+	EMAIL2: '',
+	GITHUB_URL: '',
+	LINKEDIN_URL: '',
+};
+
+const parseConsts = (text) => {
 	const out = {};
-	if (res.status !== 0) return out;
-	for (const m of res.stdout.matchAll(/export\s+const\s+([A-Z0-9_]+)\s*=\s*("(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*')/g)) {
+	for (const m of text.matchAll(/export\s+const\s+([A-Z0-9_]+)\s*=\s*("(?:[^"\\]|\\.)*"|'(?:[^'\\]|\\.)*')/g)) {
+		if (!CONST_KEYS.includes(m[1])) continue;
 		try {
 			out[m[1]] = JSON.parse(m[2].replace(/^'/, '"').replace(/'$/, '"'));
 		} catch {
@@ -48,24 +86,70 @@ function committedConsts() {
 		}
 	}
 	return out;
+};
+
+const git = (args) => spawnSync('git', args, { cwd: REPO, encoding: 'utf8' });
+
+async function readConsts() {
+	let source = '';
+	const found = {};
+
+	// 1. the working tree, if it still holds literals or site.ts exists
+	try {
+		const mod = await import(path.join(REPO, 'src', 'consts.ts'));
+		for (const key of CONST_KEYS) {
+			if (typeof mod[key] === 'string' && mod[key] !== '') found[key] = mod[key];
+		}
+		if (Object.keys(found).length) source = 'the working tree';
+	} catch {
+		/* consts.ts imports a file that does not exist yet */
+	}
+
+	// 2. walk back through the commits that touched src/consts.ts
+	if (!source) {
+		const log = git(['log', '-n', '25', '--format=%H', '--', 'src/consts.ts']);
+		for (const sha of (log.stdout || '').split('\n').map((s) => s.trim()).filter(Boolean)) {
+			const show = git(['show', `${sha}:src/consts.ts`]);
+			if (show.status !== 0) continue;
+			const parsed = parseConsts(show.stdout || '');
+			if (Object.keys(parsed).length) {
+				Object.assign(found, parsed);
+				source = `${sha.slice(0, 7)}:src/consts.ts`;
+				break;
+			}
+		}
+	}
+
+	const merged = { ...CONST_DEFAULTS, ...found };
+	console.log(`consts read from: ${source || 'defaults'} (${Object.keys(found).length}/${CONST_KEYS.length} found)`);
+	return merged;
 }
 
-const constsMod = committedConsts();
-console.log(`consts read from HEAD: ${Object.keys(constsMod).join(', ') || '(none found)'}`);
+const constsMod = await readConsts();
 
 const projects = JSON.parse(fs.readFileSync(path.join(dataDir, 'projects.json'), 'utf8'));
 
 // ROLE_BY_SLUG lived in professional.ts as a hand-written literal. The working
-// copy now imports the generated map instead, so read the pre-migration literal
-// out of the last commit.
+// copy now imports the generated map instead, so walk back to the most recent
+// commit whose professional.ts still carried the literal.
 function committedRoleMap() {
-	const res = spawnSync('git', ['show', 'HEAD:src/data/professional.ts'], { cwd: REPO, encoding: 'utf8' });
-	const out = {};
-	if (res.status !== 0) return out;
-	for (const m of res.stdout.matchAll(/['"]([a-z0-9-]+)['"]\s*:\s*['"]([A-Z]\d+)['"]/g)) {
-		out[m[1]] = m[2];
+	const log = spawnSync('git', ['log', '-n', '25', '--format=%H', '--', 'src/data/professional.ts'], {
+		cwd: REPO,
+		encoding: 'utf8',
+	});
+	for (const sha of (log.stdout || '').split('\n').map((s) => s.trim()).filter(Boolean)) {
+		const res = spawnSync('git', ['show', `${sha}:src/data/professional.ts`], { cwd: REPO, encoding: 'utf8' });
+		if (res.status !== 0) continue;
+		const out = {};
+		for (const m of (res.stdout || '').matchAll(/['"]([a-z0-9-]+)['"]\s*:\s*['"]([A-Z]\d+)['"]/g)) {
+			out[m[1]] = m[2];
+		}
+		if (Object.keys(out).length) {
+			console.log(`role anchors read from: ${sha.slice(0, 7)}:src/data/professional.ts`);
+			return out;
+		}
 	}
-	return out;
+	return {};
 }
 const roleBySlug = committedRoleMap();
 
@@ -254,3 +338,5 @@ console.log(`assets: ${assetCount}`);
 console.log(`media files ingested: ${mediaCount}`);
 console.log(`role anchors: ${Object.keys(roleBySlug).length}`);
 console.log(`media dir: ${MEDIA_DIR}`);
+db.commit();
+console.log('import committed');

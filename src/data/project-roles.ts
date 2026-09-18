@@ -2,19 +2,19 @@
 // out of. Edit through /admin (the project form's "CV role" field).
 
 export const ROLE_BY_SLUG: Record<string, string> = {
-	"american-energy-society-energy-startups-dashboard": "R01",
-	"aes-research-data-documentation-and-onboarding": "R01",
-	"aes-flagship-energy-startups-report": "R01",
 	"aes-energy-startup-longitudinal-database": "R01",
+	"aes-flagship-energy-startups-report": "R01",
+	"aes-research-data-documentation-and-onboarding": "R01",
+	"american-energy-society-energy-startups-dashboard": "R01",
 	"dominion-energy-summer-internship": "R04",
-	"uva-ta-applied-circuits-ece-2300": "R03",
-	"dominion-route-planning-excel-tool": "R04",
 	"dominion-municipal-and-utility-coordination": "R04",
 	"dominion-residential-power-hookup-project": "R04",
+	"dominion-route-planning-excel-tool": "R04",
 	"fairlead-electrical-assembly-technician": "R06",
 	"navy-maintenance-training-program": "R05",
-	"rkc-detroit-historical-canal-tour-and-tour-guide-manual": "R07",
 	"navy-mh53e-airframe-maintenance": "R05",
+	"rkc-coaching-and-canal-tour": "R07",
 	"rkc-coaching-records-and-fun-start-lesson-plans": "R07",
-	"rkc-coaching-and-canal-tour": "R07"
+	"rkc-detroit-historical-canal-tour-and-tour-guide-manual": "R07",
+	"uva-ta-applied-circuits-ece-2300": "R03"
 };
