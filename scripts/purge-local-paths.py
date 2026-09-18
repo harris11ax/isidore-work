@@ -18,6 +18,7 @@ import sys
 from pathlib import Path
 
 JSON_FIELD = re.compile(r'\n[ \t]*"sourcePath"[ \t]*:[ \t]*"(?:[^"\\]|\\.)*",?')
+JSON_LINE = re.compile(r'^[ \t]*"sourcePath"[ \t]*:')
 # a drive letter, a separator, then a path component - deliberately does NOT match
 # this file's own pattern literals, so the tool never eats itself
 DRIVE_PATH = re.compile(r"[A-Za-z]:[\\/][A-Za-z]")
@@ -54,11 +55,11 @@ for f in sorted(targets()):
         continue
     text = f.read_text(encoding="utf-8", errors="ignore")
     in_src = f.parts[0] == "src"
-    drop = DRIVE_PATH
     if in_src and ("sourcePath" in text or DRIVE_PATH.search(text)):
         kept = [ln for ln in text.splitlines(True) if "sourcePath" not in ln and not DRIVE_PATH.search(ln)]
-    elif DRIVE_PATH.search(text):
-        kept = [ln for ln in text.splitlines(True) if not drop.search(ln)]
+    elif JSON_LINE.search(text) or DRIVE_PATH.search(text):
+        # repo-wide: a sourcePath JSON member or a real drive path never belongs here
+        kept = [ln for ln in text.splitlines(True) if not JSON_LINE.search(ln) and not DRIVE_PATH.search(ln)]
     else:
         continue
     new = "".join(kept)
