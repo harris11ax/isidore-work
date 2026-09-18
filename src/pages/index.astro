@@ -1,17 +1,22 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { SITE_TITLE, SITE_DESCRIPTION, LINKEDIN_URL } from '../consts';
-import { projects } from '../lib/projects';
-import { DOMAINS, CATEGORIES } from '../data/domains';
-import FilterableProjects from '../components/FilterableProjects.tsx';
+import { SITE_TITLE, SITE_DESCRIPTION, EMAIL, GITHUB_URL, LINKEDIN_URL } from '../consts';
+import { professionalEntries, otherProjectCount } from '../data/professional';
+import ProfessionalWork from '../components/ProfessionalWork.astro';
 
-const years = projects.map((p) => Number(p.date.slice(0, 4))).filter((y) => !Number.isNaN(y));
-const span = years.length ? `${Math.min(...years)}–${Math.max(...years)}` : '';
+// Placeholder until a real selfie is supplied — swapped by replacing this one file.
+const SELFIE = '/blog-placeholder-about.jpg';
+const workCount = professionalEntries.length;
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
-	<section class="bio-section">
-		<div class="bio-text">
+	<section class="home-intro">
+		<figure class="home-photo">
+			<img src={SELFIE} alt="Isidore LaRocco — placeholder portrait, real photo to come" />
+			<figcaption>Placeholder — selfie to come.</figcaption>
+		</figure>
+
+		<div class="home-intro-text">
 			<h1>Isidore LaRocco</h1>
 			<p>
 				Electrical &amp; computer engineering student at the University of Virginia, after four
@@ -20,17 +25,52 @@ const span = years.length ? `${Math.min(...years)}–${Math.max(...years)}` : ''
 				science-and-technology policy.
 			</p>
 			<p>
-				{projects.length} projects below{span ? `, spanning ${span}` : ''} — filter by domain,
-				category, or search. Roles, awards and coursework records are on the
-				<a href="/cv">CV page</a>; <a href={LINKEDIN_URL} rel="me">LinkedIn</a> is the fastest way to reach me.
+				Most recently a research intern at the American Energy Society, tracking energy-tech
+				startups; before that a summer design internship at Dominion Energy and a DoD
+				Skillbridge electrical-assembly placement at Fairlead Integrated Solutions.
 			</p>
+
+			<nav class="jump-nav" aria-label="On this page">
+				<a href="#work">Professional work</a>
+				<a href="/projects">All projects</a>
+				<a href="/cv">CV</a>
+				<a href="#contact">Contact</a>
+			</nav>
 		</div>
 	</section>
 
-	<FilterableProjects
-		client:load
-		projects={projects}
-		domains={DOMAINS}
-		categories={[...CATEGORIES]}
-	/>
+	<section id="work" class="home-section">
+		<div class="domain-head" style="border-color: var(--accent)">
+			<h2 style="color: var(--accent)">Professional Work</h2>
+			<p>
+				Roles held for an employer or institution — {workCount} records, newest first. Each
+				entry links to its full write-up with the documents and images that came out of it.
+			</p>
+		</div>
+
+		<ProfessionalWork />
+	</section>
+
+	<section class="home-section home-more">
+		<h2>Everything else</h2>
+		<p>
+			Coursework, personal builds, research and volunteer programmes — {otherProjectCount} more
+			records, filterable by domain and category. Roles, awards and credentials are on the
+			<a href="/cv">CV page</a>.
+		</p>
+		<p><a class="more-link" href="/projects">Browse all projects &rarr;</a></p>
+	</section>
+
+	<section id="contact" class="home-section home-contact">
+		<h2>Get in touch</h2>
+		<p>
+			Email is the fastest way to reach me; LinkedIn works too. The
+			<a href="/contact">contact page</a> lists both addresses.
+		</p>
+		<p class="contact-links">
+			<a href={`mailto:${EMAIL}`}>{EMAIL}</a>
+			<a href={LINKEDIN_URL} rel="me">LinkedIn</a>
+			<a href={GITHUB_URL} rel="me">GitHub</a>
+		</p>
+	</section>
 </Layout>

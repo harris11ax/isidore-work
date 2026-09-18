@@ -3,7 +3,8 @@ import { SITE_TITLE } from '../consts';
 
 const currentPath = new URL(Astro.request.url).pathname;
 const links = [
-	{ href: '/', label: 'Projects' },
+	{ href: '/', label: 'Home' },
+	{ href: '/projects', label: 'Projects' },
 	{ href: '/cv', label: 'CV' },
 	{ href: '/contact', label: 'Contact' },
 ];

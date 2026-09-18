@@ -1,5 +1,9 @@
 # isidore.work — Projects Overhaul Plan
 
+> Historical: written before the first build. §3's home page was superseded on 2026-09-18 —
+> `/` is now about + selfie + Professional Work, and the filterable grid lives at `/projects/`.
+> See `AGENTS.md` for the current structure and `HANDOFF.md` for state.
+
 ## Problem / Success / Constraints
 - **Problem:** Live site is still the Astro starter. Local repo is a half-built portfolio with placeholder data and a broken in-memory API. Need all 49 real projects published, intuitively grouped, filterable, with visuals rendered and non-visual work displayed elegantly.
 - **Success:** `isidore.work` shows 49 projects grouped by domain, a working multi-select filter, visual projects rendering their real assets, text-only projects shown as clean typographic cards. Deployed via `wrangler deploy`.

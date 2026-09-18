@@ -1,0 +1,29 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { projects } from '../../lib/projects';
+import { DOMAINS, CATEGORIES } from '../../data/domains';
+import FilterableProjects from '../../components/FilterableProjects.tsx';
+
+const years = projects.map((p) => Number(p.date.slice(0, 4))).filter((y) => !Number.isNaN(y));
+const span = years.length ? `${Math.min(...years)}–${Math.max(...years)}` : '';
+---
+
+<Layout
+	title="Projects — Isidore LaRocco"
+	description={`All ${projects.length} project records: coursework, personal builds, professional work and volunteer programmes, filterable by domain and category.`}
+>
+	<h1>Projects</h1>
+	<p>
+		{projects.length} records in total{span ? `, spanning ${span}` : ''} — filter by domain,
+		category, or search. Professional work is summarised on the
+		<a href="/">homepage</a>; roles, awards and coursework records are on the
+		<a href="/cv">CV page</a>.
+	</p>
+
+	<FilterableProjects
+		client:load
+		projects={projects}
+		domains={DOMAINS}
+		categories={[...CATEGORIES]}
+	/>
+</Layout>

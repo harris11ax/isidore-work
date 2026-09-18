@@ -6,11 +6,11 @@ Source for **isidore.work**, Isidore LaRocco's personal portfolio: one page per 
 Astro 5 + `@astrojs/cloudflare`, shipped as the Cloudflare Worker `isidore-work`.
 
 ## Structure
-- Entry point: `src/pages/index.astro` (bio + filterable project grid)
-- Pages: `src/pages/index.astro`, `src/pages/projects/[slug].astro`, `src/pages/cv.astro`, `src/pages/contact.astro`
-- Components: `src/components/` (`FilterableProjects.tsx` React island, `Header.astro`, `Footer.astro`, `BaseHead.astro`)
-- Site data: `src/data/projects.json` (one record per site project) · `src/data/domains.ts` (domain taxonomy) · `src/data/roles.ts` (CV roles/awards/credentials)
-- Types/lib: `src/lib/projects.ts` (`Project` interface) · `src/consts.ts` (titles, email, social URLs)
+- Entry point: `src/pages/index.astro` (about/selfie hero + the Professional Work list)
+- Pages: `src/pages/index.astro`, `src/pages/projects/index.astro` (full filterable catalog), `src/pages/projects/[slug].astro`, `src/pages/cv.astro`, `src/pages/contact.astro`
+- Components: `src/components/` (`FilterableProjects.tsx` React island, `ProfessionalWork.astro`, `Header.astro`, `Footer.astro`, `BaseHead.astro`)
+- Site data: `src/data/projects.json` (one record per site project) · `src/data/domains.ts` (domain taxonomy) · `src/data/professional.ts` (Work slug → CV role anchor) · `src/data/roles.ts` (CV roles/awards/credentials)
+- Types/lib: `src/lib/projects.ts` (`Project` interface) · `src/lib/dates.ts` (date formatting) · `src/consts.ts` (titles, email, social URLs)
 - Static assets: `public/projects/<slug>/`
 - Local portfolio database (gitignored, local-only): `portfolio_db/` — `build_db.py` (generator) and `export_site.py` (database → `src/data/projects.json`)
 - Config: `astro.config.mjs` · `wrangler.json` · `tsconfig.json`
