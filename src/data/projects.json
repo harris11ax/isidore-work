@@ -2811,6 +2811,38 @@
 		]
 	},
 	{
+		"slug": "rkc-coaching-and-canal-tour",
+		"name": "RKC summer coaching and Detroit canal tour programme",
+		"date": "2017-06",
+		"domain": "teaching-field",
+		"category": "Work",
+		"audience": "Riverside Kayak Connection (RKC)",
+		"effort": "",
+		"timeHours": "",
+		"summary": "Youth paddling coach and historical canal tour guide; authored the tour guide manual and maintained coaching/experience records.",
+		"hasVisuals": false,
+		"tags": [
+			"coaching",
+			"public-speaking",
+			"curriculum",
+			"local-history"
+		],
+		"assets": [],
+		"course": "",
+		"term": "",
+		"org": "Riverside Kayak Connection (RKC)",
+		"kind": "Work",
+		"status": "",
+		"deliverables": [
+			"tour guide manual",
+			"lesson plans",
+			"coaching records"
+		],
+		"tools": [
+			"Google Docs"
+		]
+	},
+	{
 		"slug": "wayne-state-eng-3050-technical-writing-project",
 		"name": "ENG 3050 technical writing - Project 2 with scanned field appendix",
 		"date": "2017-03-21",
