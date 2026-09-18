@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { Fragment, useMemo, useState } from "react";
 import type { Project } from "../lib/projects";
 import type { Domain } from "../data/domains";
 
@@ -30,7 +30,7 @@ export default function FilterableProjects({ projects, domains, categories }: Pr
 			if (activeDomains.size && !activeDomains.has(p.domain)) return false;
 			if (activeCats.size && !activeCats.has(p.category)) return false;
 			if (needle) {
-				const hay = (p.name + " " + p.summary + " " + p.tags.join(" ")).toLowerCase();
+				const hay = (p.name + " " + p.summary + " " + p.tags.join(" ") + " " + (p.course ?? "") + " " + (p.org ?? "")).toLowerCase();
 				if (!hay.includes(needle)) return false;
 			}
 			return true;
@@ -114,6 +114,7 @@ export default function FilterableProjects({ projects, domains, categories }: Pr
 function Card({ p, color }: { p: Project; color: string }) {
 	const asset = p.hasVisuals ? p.assets.find((a) => a.type === "image" || a.thumb) : null;
 	const coverSrc = p.cover || (asset ? (asset.type === "image" ? asset.src : asset.thumb) : null);
+	const meta = [p.date.slice(0, 4), p.category, p.effort].filter(Boolean);
 
 	return (
 		<a href={`/projects/${p.slug}`} className={"project-card" + (coverSrc ? "" : " text-card")}>
@@ -126,11 +127,13 @@ function Card({ p, color }: { p: Project; color: string }) {
 			)}
 			<div className="card-body">
 				<div className="card-meta">
-					<span>{p.date.slice(0, 4)}</span>
-					<span>·</span>
-					<span>{p.category}</span>
-					<span>·</span>
-					<span>{p.effort}</span>
+					{meta.map((part, i) => (
+						<Fragment key={`${i}-${part}`}>
+							{i > 0 ? <span>·</span> : null}
+							<span>{part}</span>
+						</Fragment>
+					))}
+					{p.status ? <span className="status-pill">{p.status}</span> : null}
 				</div>
 				<h3>{p.name}</h3>
 				{p.summary ? <p className="card-summary">{p.summary}</p> : null}

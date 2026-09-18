@@ -361,3 +361,47 @@ main { width: 1100px; max-width: calc(100% - 2em); }
 	.filter-bar { top: 0; }
 	.bio-section { justify-content: center; text-align: center; }
 }
+
+/* status pill + detail facts */
+.status-pill {
+	background: #fff7ed; color: #b45309; border: 1px solid #fed7aa;
+	padding: 0.05em 0.6em; border-radius: 999px; font-weight: 700;
+}
+.detail-facts {
+	display: flex; gap: 0.6em; align-items: baseline; flex-wrap: wrap;
+	font-size: 0.9em; margin: 0.4em 0; color: rgb(var(--gray-dark));
+}
+.fact-label {
+	font-size: 0.72em; letter-spacing: 0.04em; text-transform: uppercase;
+	color: rgb(var(--gray)); font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
+	min-width: 6.5em;
+}
+
+/* ===== CV page ===== */
+.cv-header { margin-bottom: 2em; }
+.cv-header h1 { margin-bottom: 0.2em; }
+.cv-contact { display: flex; gap: 1em; flex-wrap: wrap; font-size: 0.95em; }
+.cv-contact a { text-decoration: none; }
+.cv-section { margin: 2.5em 0; }
+.cv-section > h2 {
+	font-size: 1.35em; border-bottom: 2px solid rgb(var(--gray-light));
+	padding-bottom: 0.3em; margin-bottom: 1.2em;
+}
+.cv-entry { margin-bottom: 1.6em; }
+.cv-entry-head {
+	display: flex; justify-content: space-between; gap: 1em; flex-wrap: wrap;
+	align-items: baseline;
+}
+.cv-entry-head h3 { margin: 0; font-size: 1.1em; }
+.cv-entry-when {
+	font-size: 0.82em; color: rgb(var(--gray));
+	font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
+	white-space: nowrap;
+}
+.cv-org { font-size: 0.95em; color: rgb(var(--gray-dark)); font-weight: 600; margin: 0.15em 0 0.4em; }
+.cv-entry p { margin: 0.3em 0; }
+.cv-achievements { margin: 0.3em 0 0.4em; padding-left: 1.1em; }
+.cv-achievements li { margin-bottom: 0.3em; }
+.cv-tags { display: flex; flex-wrap: wrap; gap: 0.35em; }
+.cv-awards { list-style: none; padding: 0; margin: 0; }
+.cv-awards li { margin-bottom: 0.6em; }

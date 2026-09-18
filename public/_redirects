@@ -1,0 +1,4 @@
+# Cloudflare Workers static-asset redirects (evaluated before the asset lookup).
+# The Fall 2026 ECE capstone page was retitled from the AutoBleedr proposal to the
+# Dog Diving / DockDogs scoring system; the old URL must keep working.
+/projects/ece-4440-4991-capstone-autobleedr-automated-bicycle-brake-bl   /projects/ece-4440-4991-capstone-dog-diving-scoring-system   301

@@ -1,5 +1,207 @@
 [
 	{
+		"slug": "sts-4500-capstone-thesis",
+		"name": "STS 4500 capstone thesis (engineering ethics)",
+		"date": "2026-09-15",
+		"domain": "policy-writing",
+		"category": "School",
+		"audience": "UVA",
+		"effort": "",
+		"timeHours": "",
+		"summary": "Senior STS thesis on the ethics of technology, developed from a topic statement through a prospectus to a full thesis.",
+		"hasVisuals": true,
+		"tags": [
+			"research",
+			"argumentation",
+			"engineering-ethics",
+			"sts-frameworks"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/sts-4500-capstone-thesis/Writing_Workshop_-_STS_Project_Selection.pptx.pdf",
+				"caption": "Topic-selection workshop deck"
+			}
+		],
+		"course": "STS 4500",
+		"term": "2026 Fall",
+		"org": "UVA",
+		"kind": "Coursework",
+		"status": "In progress",
+		"deliverables": [
+			"topic statement",
+			"thesis (in progress)"
+		],
+		"tools": [
+			"Word",
+			"Overleaf (expected)"
+		]
+	},
+	{
+		"slug": "ce-4610-hw3-smart-communities-dataset",
+		"name": "CE 4610 HW3 - smart-communities dataset notebook and report",
+		"date": "2026-09-13",
+		"domain": "software-data",
+		"category": "School",
+		"audience": "UVA",
+		"effort": "",
+		"timeHours": "",
+		"summary": "Jupyter analysis of a smart-communities dataset with a written report (CE_4610_Week_3_LaRocco).",
+		"hasVisuals": true,
+		"tags": [
+			"python",
+			"pandas",
+			"data-analysis",
+			"urban-data"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/ce-4610-hw3-smart-communities-dataset/CE_4610_Week_3_LaRocco.pdf",
+				"caption": "Week 3 dataset analysis report"
+			}
+		],
+		"course": "CE 4610",
+		"term": "2026 Fall",
+		"org": "UVA",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [
+			"dataset notebook",
+			"week 3 report PDF"
+		],
+		"tools": [
+			"Jupyter",
+			"Python"
+		]
+	},
+	{
+		"slug": "ece-4501-hw-co-design-for-ml",
+		"name": "ECE 4501/6501 Hardware-Software Co-Design for ML - coursework and lecture concept maps",
+		"date": "2026-09-10",
+		"domain": "software-data",
+		"category": "School",
+		"audience": "UVA",
+		"effort": "",
+		"timeHours": "",
+		"summary": "Graduate-level co-design for machine learning: learning types, supervised learning, neural nets, CNNs, training and representative network architectures; HW1 plus auto-generated lecture concept maps.",
+		"hasVisuals": true,
+		"tags": [
+			"machine-learning",
+			"hardware-software-co-design",
+			"neural-networks",
+			"cnn",
+			"quantisation"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/ece-4501-hw-co-design-for-ml/Fall2026-ECE4501_6501-HW1.pdf",
+				"caption": "HW1"
+			}
+		],
+		"course": "ECE 4501/6501",
+		"term": "2026 Fall",
+		"org": "UVA",
+		"kind": "Coursework",
+		"status": "In progress",
+		"deliverables": [
+			"HW1",
+			"8 lecture concept maps"
+		],
+		"tools": [
+			"Python",
+			"PyTorch (expected)"
+		]
+	},
+	{
+		"slug": "ce-4610-smart-communities-final-project",
+		"name": "CE 4610 Smart Communities - UVA HPRC high-performance-computing initiatives briefing",
+		"date": "2026-09-09",
+		"domain": "policy-writing",
+		"category": "School",
+		"audience": "UVA",
+		"effort": "",
+		"timeHours": "",
+		"summary": "Team briefing analysing UVA Research Computing (HPRC) high-performance-computing initiatives against the course's smart-communities framework.",
+		"hasVisuals": false,
+		"tags": [
+			"smart-cities",
+			"research-synthesis",
+			"policy-analysis",
+			"technical-writing"
+		],
+		"assets": [],
+		"course": "CE 4610",
+		"term": "2026 Fall",
+		"org": "UVA",
+		"kind": "Coursework",
+		"status": "In progress",
+		"deliverables": [
+			"HPRC initiatives briefing (draft V10)"
+		],
+		"tools": [
+			"Word",
+			"Google Docs"
+		]
+	},
+	{
+		"slug": "sts-4500-prospectus-critique",
+		"name": "STS 4500 prospectus critique of a peer's thesis prospectus",
+		"date": "2026-09-03",
+		"domain": "policy-writing",
+		"category": "School",
+		"audience": "UVA",
+		"effort": "",
+		"timeHours": "",
+		"summary": "Structured critique of a classmate's thesis prospectus, submitted as a formal review.",
+		"hasVisuals": false,
+		"tags": [
+			"peer-review",
+			"critical-reading",
+			"technical-writing"
+		],
+		"assets": [],
+		"course": "STS 4500",
+		"term": "2026 Fall",
+		"org": "UVA",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [
+			"prospectus critique PDF"
+		],
+		"tools": [
+			"Word"
+		]
+	},
+	{
+		"slug": "ce-4610-hw2-intelligent-cities-index",
+		"name": "CE 4610 HW2 - Intelligent Cities Index 2026 review",
+		"date": "2026-09-01",
+		"domain": "policy-writing",
+		"category": "School",
+		"audience": "UVA",
+		"effort": "",
+		"timeHours": "",
+		"summary": "Brief reviewing the Intelligent Cities Index 2026 report for the smart-communities course.",
+		"hasVisuals": false,
+		"tags": [
+			"index-analysis",
+			"benchmarking",
+			"policy-review"
+		],
+		"assets": [],
+		"course": "CE 4610",
+		"term": "2026 Fall",
+		"org": "UVA",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [
+			"HW2 brief"
+		],
+		"tools": []
+	},
+	{
 		"slug": "openboard-lecture-to-concept-map-automation-pipeline",
 		"name": "OpenBoard Lecture-to-Concept-Map Automation Pipeline (LLM + OCR + NetworkX -> self-hosted OpenBoard)",
 		"date": "2026-08-27",
@@ -16,7 +218,71 @@
 			"ocr",
 			"networkx"
 		],
-		"assets": []
+		"assets": [],
+		"course": "",
+		"term": "",
+		"org": "Self",
+		"kind": "Personal",
+		"status": "",
+		"deliverables": [],
+		"tools": []
+	},
+	{
+		"slug": "ece-4440-4991-capstone-dog-diving-scoring-system",
+		"name": "ECE 4440/4991 Capstone - Dog Diving (DockDogs) automated scoring system",
+		"date": "2026-08-26",
+		"domain": "embedded-hw",
+		"category": "School",
+		"audience": "Capstone committee / faculty",
+		"effort": "High",
+		"timeHours": "40+ (ongoing)",
+		"summary": "Fall 2026 capstone: a camera-based system that scores DockDogs dog-diving jumps automatically - detecting the dog's entry and exit at the pool edge and deriving jump distance and time - instead of relying on manual judging.",
+		"hasVisuals": true,
+		"tags": [
+			"capstone",
+			"computer-vision",
+			"edge-inference",
+			"embedded-systems",
+			"project-management"
+		],
+		"assets": [
+			{
+				"type": "image",
+				"src": "/projects/ece-4440-4991-capstone-dog-diving-scoring-system/dockdogs_pixels_1920x1080.jpg",
+				"caption": "Pool-edge frame used for detection experiments"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-4440-4991-capstone-dog-diving-scoring-system/dogdiving_draft.jpg",
+				"caption": "Early concept render of the scoring view"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-4440-4991-capstone-dog-diving-scoring-system/primitive_prey.png",
+				"caption": "Primitive-prey test frame"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/ece-4440-4991-capstone-dog-diving-scoring-system/Dog_Diving_Capstone_Project_Plan.pdf",
+				"caption": "Capstone project plan"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/ece-4440-4991-capstone-dog-diving-scoring-system/Dog_Diving_-_Gantt_Chart.pdf",
+				"caption": "Project schedule (Gantt)"
+			}
+		],
+		"course": "ECE 4440/4991",
+		"term": "2026 Fall",
+		"org": "Capstone committee / faculty",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [
+			"initial_doodle_August_17_2026.png",
+			"Project_Proposal.pdf"
+		],
+		"tools": [],
+		"redirectFrom": "ece-4440-4991-capstone-autobleedr-automated-bicycle-brake-bl"
 	},
 	{
 		"slug": "text-and-pdf-to-audiobook-converter",
@@ -35,75 +301,14 @@
 			"tkinter",
 			"cli"
 		],
-		"assets": []
-	},
-	{
-		"slug": "rkc-detroit-historical-canal-tour-and-tour-guide-manual",
-		"name": "RKC Detroit Historical Canal Tour & Tour Guide Manual",
-		"date": "2019-06-13",
-		"domain": "teaching-field",
-		"category": "Work",
-		"audience": "Tourists / program students",
-		"effort": "Medium-High",
-		"timeHours": "20+",
-		"summary": "Designed a historical canal tour of Detroit and wrote the accompanying tour-guide training manual.",
-		"hasVisuals": false,
-		"tags": [
-			"curriculum",
-			"writing",
-			"program-design"
-		],
-		"assets": [
-			{
-				"type": "pdf",
-				"src": "/projects/rkc-detroit-historical-canal-tour-and-tour-guide-manual/A_Detroit_Architect_s_Journal__Eastside_Venice__The_Fox_Creek_Canals.pdf",
-				"caption": "A Detroit Architect s Journal Eastside Venice The Fox Creek Canals"
-			}
-		]
-	},
-	{
-		"slug": "rkc-coaching-records-and-fun-start-lesson-plans",
-		"name": "RKC Coaching Records & Fun Start Lesson Plans",
-		"date": "2018-05-10",
-		"domain": "teaching-field",
-		"category": "Work",
-		"audience": "Students / program staff",
-		"effort": "Medium",
-		"timeHours": "10",
-		"summary": "Coaching records and 'Fun Start' beginner lesson plans for a rowing program.",
-		"hasVisuals": true,
-		"tags": [
-			"coaching",
-			"lesson-plans",
-			"program-design"
-		],
-		"assets": [
-			{
-				"type": "image",
-				"src": "/projects/rkc-coaching-records-and-fun-start-lesson-plans/coaching_record.jpg",
-				"caption": "coaching record"
-			},
-			{
-				"type": "image",
-				"src": "/projects/rkc-coaching-records-and-fun-start-lesson-plans/IMG_07061_01.png",
-				"caption": "IMG 07061 01"
-			},
-			{
-				"type": "image",
-				"src": "/projects/rkc-coaching-records-and-fun-start-lesson-plans/IMG_07071_02.png",
-				"caption": "IMG 07071 02"
-			},
-			{
-				"type": "image",
-				"src": "/projects/rkc-coaching-records-and-fun-start-lesson-plans/record_of_experience.jpg",
-				"caption": "record of experience"
-			},
-			{
-				"type": "pdf",
-				"src": "/projects/rkc-coaching-records-and-fun-start-lesson-plans/coaching_record.pdf",
-				"caption": "coaching record"
-			}
-		]
+		"assets": [],
+		"course": "",
+		"term": "",
+		"org": "Self",
+		"kind": "Personal",
+		"status": "",
+		"deliverables": [],
+		"tools": []
 	},
 	{
 		"slug": "american-energy-society-energy-startups-dashboard",
@@ -129,59 +334,109 @@
 				"caption": "Live demo (synthetic data)"
 			}
 		],
-		"cover": "/projects/american-energy-society-energy-startups-dashboard/cover.svg"
+		"cover": "/projects/american-energy-society-energy-startups-dashboard/cover.svg",
+		"course": "",
+		"term": "",
+		"org": "Internship employer (AES)",
+		"kind": "Work",
+		"status": "",
+		"deliverables": [],
+		"tools": []
 	},
 	{
-		"slug": "dominion-energy-summer-internship",
-		"name": "Dominion Energy Summer Internship (Design Team, field visits, feedback)",
-		"date": "2025-09-27",
-		"domain": "power-energy",
+		"slug": "aes-research-data-documentation-and-onboarding",
+		"name": "Research data-collection, cleaning and analysis documentation (intern onboarding)",
+		"date": "2026-07",
+		"domain": "software-data",
 		"category": "Work",
-		"audience": "Internship employer",
-		"effort": "Medium",
-		"timeHours": "8",
-		"summary": "Summer internship on Dominion Energy's design team — field visits, design reviews, and structured feedback.",
+		"audience": "American Energy Society",
+		"effort": "",
+		"timeHours": "",
+		"summary": "Wrote the documentation covering data collection, cleaning and analysis practices used to train incoming research interns.",
 		"hasVisuals": false,
 		"tags": [
-			"internship",
-			"power-systems",
-			"design"
+			"technical-writing",
+			"data-governance",
+			"documentation",
+			"onboarding"
 		],
-		"assets": [
-			{
-				"type": "pdf",
-				"src": "/projects/dominion-energy-summer-internship/Design_Team.pdf",
-				"caption": "Design Team"
-			}
+		"assets": [],
+		"course": "",
+		"term": "",
+		"org": "American Energy Society",
+		"kind": "Work",
+		"status": "",
+		"deliverables": [
+			"intern training documentation",
+			"data-practice SOPs"
+		],
+		"tools": [
+			"Google Docs"
 		]
 	},
 	{
-		"slug": "ece-4440-4991-capstone-autobleedr-automated-bicycle-brake-bl",
-		"name": "ECE 4440/4991 Capstone - AutoBleedr automated bicycle brake bleeder (proposal)",
-		"date": "2026-08-26",
-		"domain": "embedded-hw",
-		"category": "School",
-		"audience": "Capstone committee / faculty",
-		"effort": "High",
-		"timeHours": "40+ (ongoing)",
-		"summary": "Capstone proposal for AutoBleedr, an automated bicycle brake-bleeding machine.",
-		"hasVisuals": true,
+		"slug": "aes-flagship-energy-startups-report",
+		"name": "Flagship energy-tech startups report (analysis + visualisation)",
+		"date": "2026-06",
+		"domain": "software-data",
+		"category": "Work",
+		"audience": "American Energy Society",
+		"effort": "",
+		"timeHours": "",
+		"summary": "Analysed and visualised the sourced startup dataset with Excel and Python for the Society's flagship energy-tech startups report.",
+		"hasVisuals": false,
 		"tags": [
-			"capstone",
-			"mechatronics",
-			"hardware"
+			"data-analysis",
+			"data-visualisation",
+			"python",
+			"excel"
 		],
-		"assets": [
-			{
-				"type": "image",
-				"src": "/projects/ece-4440-4991-capstone-autobleedr-automated-bicycle-brake-bl/initial_doodle_August_17_2026.png",
-				"caption": "initial doodle August 17 2026"
-			},
-			{
-				"type": "pdf",
-				"src": "/projects/ece-4440-4991-capstone-autobleedr-automated-bicycle-brake-bl/Project_Proposal.pdf",
-				"caption": "Project Proposal"
-			}
+		"assets": [],
+		"course": "",
+		"term": "",
+		"org": "American Energy Society",
+		"kind": "Work",
+		"status": "",
+		"deliverables": [
+			"report figures",
+			"analysis notebooks"
+		],
+		"tools": [
+			"Python",
+			"Excel",
+			"D3"
+		]
+	},
+	{
+		"slug": "fixit-dc-coach",
+		"name": "Fix-It DC repair coach (electronics and appliances)",
+		"date": "2026-06",
+		"domain": "embedded-hw",
+		"category": "Personal",
+		"audience": "Fix-It DC",
+		"effort": "",
+		"timeHours": "",
+		"summary": "Repaired electronics and home appliances at free community repair events, coaching owners through the diagnosis.",
+		"hasVisuals": false,
+		"tags": [
+			"electronics-repair",
+			"diagnostics",
+			"appliance-systems",
+			"teaching"
+		],
+		"assets": [],
+		"course": "",
+		"term": "",
+		"org": "Fix-It DC",
+		"kind": "Volunteer",
+		"status": "",
+		"deliverables": [
+			"repaired items",
+			"coaching sessions"
+		],
+		"tools": [
+			"multimeter",
+			"soldering"
 		]
 	},
 	{
@@ -226,184 +481,25 @@
 				"src": "/projects/ece-4907-gupta-lab-rare-earth-element-recovery-from-hdds-res/LaRocco_Undergrad_Research_Report_2026_Spring_FIRST_SUBMISSION.pdf",
 				"caption": "LaRocco Undergrad Research Report 2026 Spring FIRST SUBMISSION"
 			}
-		]
-	},
-	{
-		"slug": "sts-3020-policy-memo-1",
-		"name": "STS 3020 Policy Memo #1",
-		"date": "2026-01-15",
-		"domain": "policy-writing",
-		"category": "School",
-		"audience": "Course instructor",
-		"effort": "Medium",
-		"timeHours": "6",
-		"summary": "Science-and-technology policy memo analyzing a current federal policy question.",
-		"hasVisuals": true,
-		"tags": [
-			"policy",
-			"writing"
 		],
-		"assets": [
-			{
-				"type": "image",
-				"src": "/projects/sts-3020-policy-memo-1/20260114_102610.jpg",
-				"caption": "20260114 102610"
-			},
-			{
-				"type": "pdf",
-				"src": "/projects/sts-3020-policy-memo-1/Policy_Memo_1_-_Isidore_LaRocco_Resume.pdf",
-				"caption": "Policy Memo 1 Isidore LaRocco Resume"
-			}
-		]
+		"course": "ECE 4907",
+		"term": "2026 Spring",
+		"org": "Research advisor / lab",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
 	},
 	{
-		"slug": "sts-3020-policy-memo-2",
-		"name": "STS 3020 Policy Memo #2 (sustainable development / STI)",
-		"date": "2026-02-01",
+		"slug": "sts-3020-course-paper-final-research-paper",
+		"name": "STS 3020 Course Paper - Final Research Paper (SMR policy)",
+		"date": "2026-05-03",
 		"domain": "policy-writing",
 		"category": "School",
-		"audience": "Course instructor",
-		"effort": "Medium",
-		"timeHours": "6",
-		"summary": "Policy memo on sustainable development and science-technology-innovation (STI) strategy.",
-		"hasVisuals": false,
-		"tags": [
-			"policy",
-			"sustainability",
-			"writing"
-		],
-		"assets": [
-			{
-				"type": "pdf",
-				"src": "/projects/sts-3020-policy-memo-2/The-Sustainable-Development-Goals-Report-2025.pdf",
-				"caption": "The Sustainable Development Goals Report 2025"
-			}
-		]
-	},
-	{
-		"slug": "sts-3020-policy-memo-3",
-		"name": "STS 3020 Policy Memo #3 (NSF indirect costs / research funding)",
-		"date": "2026-02-22",
-		"domain": "policy-writing",
-		"category": "School",
-		"audience": "Course instructor",
-		"effort": "Medium",
-		"timeHours": "6",
-		"summary": "Policy memo on NSF indirect-cost rates and federal research funding.",
-		"hasVisuals": false,
-		"tags": [
-			"policy",
-			"research-funding",
-			"writing"
-		],
-		"assets": []
-	},
-	{
-		"slug": "sts-3020-policy-memo-4",
-		"name": "STS 3020 Policy Memo #4 (health agencies / public confidence)",
-		"date": "2026-04-05",
-		"domain": "policy-writing",
-		"category": "School",
-		"audience": "Course instructor",
-		"effort": "Medium",
-		"timeHours": "6",
-		"summary": "Policy memo on health agencies and rebuilding public confidence.",
-		"hasVisuals": false,
-		"tags": [
-			"policy",
-			"public-health",
-			"writing"
-		],
-		"assets": [
-			{
-				"type": "pdf",
-				"src": "/projects/sts-3020-policy-memo-4/2025-ReadyOrNot-FINALr.pdf",
-				"caption": "2025 ReadyOrNot FINALr"
-			}
-		]
-	},
-	{
-		"slug": "sts-3020-issue-advocacy-deliverable-1-virginia-transit-prese",
-		"name": "STS 3020 Issue Advocacy Deliverable 1 - Virginia transit (CAT) presentation + summary",
-		"date": "2026-02-08",
-		"domain": "policy-writing",
-		"category": "School",
-		"audience": "Course instructor / group",
-		"effort": "Medium",
-		"timeHours": "8",
-		"summary": "Issue-advocacy presentation and summary on Virginia transit (Charlottesville Area Transit).",
-		"hasVisuals": false,
-		"tags": [
-			"policy",
-			"transit",
-			"advocacy"
-		],
-		"assets": [
-			{
-				"type": "pdf",
-				"src": "/projects/sts-3020-issue-advocacy-deliverable-1-virginia-transit-prese/Deliverable_1_presentation_Transportation.pdf",
-				"caption": "Deliverable 1 presentation Transportation"
-			}
-		]
-	},
-	{
-		"slug": "sts-3020-issue-advocacy-deliverable-2-transportation-impact",
-		"name": "STS 3020 Issue Advocacy Deliverable 2 - Transportation IMPACT",
-		"date": "2026-03-01",
-		"domain": "policy-writing",
-		"category": "School",
-		"audience": "Course instructor / group",
-		"effort": "Medium",
-		"timeHours": "8",
-		"summary": "Transportation IMPACT advocacy deliverable — building the case for local transit investment.",
-		"hasVisuals": false,
-		"tags": [
-			"policy",
-			"transit",
-			"advocacy"
-		],
-		"assets": [
-			{
-				"type": "pdf",
-				"src": "/projects/sts-3020-issue-advocacy-deliverable-2-transportation-impact/Deliverable_2_Transportation_IMPACT.pdf",
-				"caption": "Deliverable 2 Transportation IMPACT"
-			}
-		]
-	},
-	{
-		"slug": "sts-3020-issue-advocacy-deliverable-4-impact-assembly-reflec",
-		"name": "STS 3020 Issue Advocacy Deliverable 4 - IMPACT Assembly Reflections",
-		"date": "2026-03-29",
-		"domain": "policy-writing",
-		"category": "School",
-		"audience": "Course instructor / group",
-		"effort": "Low",
-		"timeHours": "2",
-		"summary": "Reflections on the IMPACT assembly and the issue-advocacy campaign outcome.",
-		"hasVisuals": false,
-		"tags": [
-			"policy",
-			"advocacy",
-			"reflection"
-		],
-		"assets": [
-			{
-				"type": "pdf",
-				"src": "/projects/sts-3020-issue-advocacy-deliverable-4-impact-assembly-reflec/IMPACT_March_9_Follow_up.pdf",
-				"caption": "IMPACT March 9 Follow up"
-			}
-		]
-	},
-	{
-		"slug": "sts-3020-course-paper-problem-statement",
-		"name": "STS 3020 Course Paper - Problem Statement (SMR nuclear regulation)",
-		"date": "2026-02-18",
-		"domain": "policy-writing",
-		"category": "School",
-		"audience": "Course instructor",
-		"effort": "Medium",
-		"timeHours": "8",
-		"summary": "Problem statement framing SMR nuclear regulation as the course-paper research question.",
+		"audience": "Course instructor / JSPG",
+		"effort": "High",
+		"timeHours": "30+",
+		"summary": "Final research paper arguing for modular regulation to accelerate small modular reactor (SMR) deployment.",
 		"hasVisuals": false,
 		"tags": [
 			"policy",
@@ -413,10 +509,146 @@
 		"assets": [
 			{
 				"type": "pdf",
-				"src": "/projects/sts-3020-course-paper-problem-statement/World_Bank_Group_Annual_Report_2025.pdf",
-				"caption": "World Bank Group Annual Report 2025"
+				"src": "/projects/sts-3020-course-paper-final-research-paper/Draft_1.pdf",
+				"caption": "Draft 1"
 			}
+		],
+		"course": "STS 3020",
+		"term": "2026 Spring",
+		"org": "Course instructor / JSPG",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
+	},
+	{
+		"slug": "aes-energy-startup-longitudinal-database",
+		"name": "Energy-tech startup longitudinal database (>1,300 companies)",
+		"date": "2026-05",
+		"domain": "software-data",
+		"category": "Work",
+		"audience": "American Energy Society",
+		"effort": "",
+		"timeHours": "",
+		"summary": "Sourced 1,300+ energy-tech startups from accelerators and pitch competitions into a longitudinal database for the American Energy Society.",
+		"hasVisuals": false,
+		"tags": [
+			"data-sourcing",
+			"dataset-curation",
+			"research-methods",
+			"longitudinal-data"
+		],
+		"assets": [],
+		"course": "",
+		"term": "",
+		"org": "American Energy Society",
+		"kind": "Work",
+		"status": "In progress",
+		"deliverables": [
+			"startup database (>1,300 records)",
+			"field definitions"
+		],
+		"tools": [
+			"Excel",
+			"Python",
+			"Google Sheets"
 		]
+	},
+	{
+		"slug": "ece-3250-individual-research-report",
+		"name": "ECE 3250 Individual Research Report",
+		"date": "2026-04-24",
+		"domain": "power-energy",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "8",
+		"summary": "Individual research report on an electromechanical energy-conversion topic.",
+		"hasVisuals": false,
+		"tags": [
+			"power",
+			"research",
+			"writing"
+		],
+		"assets": [],
+		"course": "ECE 3250",
+		"term": "2026 Spring",
+		"org": "Course instructor",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
+	},
+	{
+		"slug": "ece-3250-research-project-advanced-transmission-grid-reliabi",
+		"name": "ECE 3250 Research Project - Advanced transmission / grid reliability (group)",
+		"date": "2026-04-19",
+		"domain": "power-energy",
+		"category": "School",
+		"audience": "Course instructor (group)",
+		"effort": "Medium",
+		"timeHours": "8-15",
+		"summary": "Group research on advanced transmission technologies and grid reliability.",
+		"hasVisuals": false,
+		"tags": [
+			"grid",
+			"transmission",
+			"research"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/ece-3250-research-project-advanced-transmission-grid-reliabi/Quanta-Technology-Report-Advanced-Transmission-Technologies-Planning-Guide.pdf",
+				"caption": "Quanta Technology Report Advanced Transmission Technologies Planning Guide"
+			}
+		],
+		"course": "ECE 3250",
+		"term": "2026 Spring",
+		"org": "Course instructor (group)",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
+	},
+	{
+		"slug": "ece-3251-lab-10-synchronous-machines",
+		"name": "ECE 3251 Lab 10 - Synchronous Machines",
+		"date": "2026-04-17",
+		"domain": "power-energy",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "2-4",
+		"summary": "Lab: synchronous-machine testing and characteristic curves.",
+		"hasVisuals": true,
+		"tags": [
+			"power-lab",
+			"machines"
+		],
+		"assets": [
+			{
+				"type": "image",
+				"src": "/projects/ece-3251-lab-10-synchronous-machines/Lab10Graph.png",
+				"caption": "Lab10Graph"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-3251-lab-10-synchronous-machines/Lab10Graph_v2.png",
+				"caption": "Lab10Graph v2"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/ece-3251-lab-10-synchronous-machines/Lab10_Report_Final.pdf",
+				"caption": "Lab10 Report Final"
+			}
+		],
+		"course": "ECE 3251",
+		"term": "2026 Spring",
+		"org": "Course instructor",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
 	},
 	{
 		"slug": "sts-3020-course-paper-presentation-poster",
@@ -445,108 +677,25 @@
 				"src": "/projects/sts-3020-course-paper-presentation-poster/poster.pdf",
 				"caption": "poster"
 			}
-		]
-	},
-	{
-		"slug": "sts-3020-course-paper-final-research-paper",
-		"name": "STS 3020 Course Paper - Final Research Paper (SMR policy)",
-		"date": "2026-05-03",
-		"domain": "policy-writing",
-		"category": "School",
-		"audience": "Course instructor / JSPG",
-		"effort": "High",
-		"timeHours": "30+",
-		"summary": "Final research paper arguing for modular regulation to accelerate small modular reactor (SMR) deployment.",
-		"hasVisuals": false,
-		"tags": [
-			"policy",
-			"nuclear",
-			"smr"
 		],
-		"assets": [
-			{
-				"type": "pdf",
-				"src": "/projects/sts-3020-course-paper-final-research-paper/Draft_1.pdf",
-				"caption": "Draft 1"
-			}
-		]
+		"course": "STS 3020",
+		"term": "2026 Spring",
+		"org": "Course instructor / peers",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
 	},
 	{
-		"slug": "ece-3250-transformer-design-project",
-		"name": "ECE 3250 Transformer Design Project (Python design code + report)",
-		"date": "2026-02-25",
-		"domain": "power-energy",
-		"category": "School",
-		"audience": "Course instructor",
-		"effort": "Medium",
-		"timeHours": "10",
-		"summary": "Transformer design project — Python design code plus an engineering report.",
-		"hasVisuals": false,
-		"tags": [
-			"python",
-			"transformers",
-			"power"
-		],
-		"assets": [
-			{
-				"type": "pdf",
-				"src": "/projects/ece-3250-transformer-design-project/laminations_singlephase.pdf",
-				"caption": "laminations singlephase"
-			}
-		]
-	},
-	{
-		"slug": "ece-3250-research-project-advanced-transmission-grid-reliabi",
-		"name": "ECE 3250 Research Project - Advanced transmission / grid reliability (group)",
-		"date": "2026-04-19",
-		"domain": "power-energy",
-		"category": "School",
-		"audience": "Course instructor (group)",
-		"effort": "Medium",
-		"timeHours": "8-15",
-		"summary": "Group research on advanced transmission technologies and grid reliability.",
-		"hasVisuals": false,
-		"tags": [
-			"grid",
-			"transmission",
-			"research"
-		],
-		"assets": [
-			{
-				"type": "pdf",
-				"src": "/projects/ece-3250-research-project-advanced-transmission-grid-reliabi/Quanta-Technology-Report-Advanced-Transmission-Technologies-Planning-Guide.pdf",
-				"caption": "Quanta Technology Report Advanced Transmission Technologies Planning Guide"
-			}
-		]
-	},
-	{
-		"slug": "ece-3250-individual-research-report",
-		"name": "ECE 3250 Individual Research Report",
-		"date": "2026-04-24",
-		"domain": "power-energy",
-		"category": "School",
-		"audience": "Course instructor",
-		"effort": "Medium",
-		"timeHours": "8",
-		"summary": "Individual research report on an electromechanical energy-conversion topic.",
-		"hasVisuals": false,
-		"tags": [
-			"power",
-			"research",
-			"writing"
-		],
-		"assets": []
-	},
-	{
-		"slug": "ece-3251-lab-1-single-phase",
-		"name": "ECE 3251 Lab 1 - Single-Phase",
-		"date": "2026-01-29",
+		"slug": "ece-3251-lab-7-transformer-verification",
+		"name": "ECE 3251 Lab 7 - Transformer Verification",
+		"date": "2026-04-10",
 		"domain": "power-energy",
 		"category": "School",
 		"audience": "Course instructor",
 		"effort": "Medium",
 		"timeHours": "2-4",
-		"summary": "Lab: single-phase transformer characterization and measurements.",
+		"summary": "Lab: verifying a transformer model against measured data.",
 		"hasVisuals": false,
 		"tags": [
 			"power-lab",
@@ -555,56 +704,169 @@
 		"assets": [
 			{
 				"type": "pdf",
-				"src": "/projects/ece-3251-lab-1-single-phase/ECE3251_Lab1_Single-Phase_26S.pdf",
-				"caption": "ECE3251 Lab1 Single Phase 26S"
+				"src": "/projects/ece-3251-lab-7-transformer-verification/ECE3251_Lab7_TransformerVerification_26S.pdf",
+				"caption": "ECE3251 Lab7 TransformerVerification 26S"
 			}
-		]
+		],
+		"course": "ECE 3251",
+		"term": "2026 Spring",
+		"org": "Course instructor",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
 	},
 	{
-		"slug": "ece-3251-lab-2-three-phase",
-		"name": "ECE 3251 Lab 2 - Three-Phase",
-		"date": "2026-02-25",
+		"slug": "ece-3251-lab-9-dc-machine",
+		"name": "ECE 3251 Lab 9 - DC Machine",
+		"date": "2026-04-10",
 		"domain": "power-energy",
 		"category": "School",
 		"audience": "Course instructor",
 		"effort": "Medium",
 		"timeHours": "2-4",
-		"summary": "Lab: three-phase transformer connections and measurements.",
+		"summary": "Lab: DC-machine characterization under varying load.",
 		"hasVisuals": false,
 		"tags": [
 			"power-lab",
-			"three-phase"
+			"machines"
 		],
 		"assets": [
 			{
 				"type": "pdf",
-				"src": "/projects/ece-3251-lab-2-three-phase/ECE3251_Lab2_Three-Phase_26S.pdf",
-				"caption": "ECE3251 Lab2 Three Phase 26S"
+				"src": "/projects/ece-3251-lab-9-dc-machine/ECE3251_Lab9_DC_Machine_26S.pdf",
+				"caption": "ECE3251 Lab9 DC Machine 26S"
 			}
-		]
+		],
+		"course": "ECE 3251",
+		"term": "2026 Spring",
+		"org": "Course instructor",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
 	},
 	{
-		"slug": "ece-3251-lab-3-solenoid",
-		"name": "ECE 3251 Lab 3 - Solenoid",
-		"date": "2026-02-25",
+		"slug": "sts-3020-policy-memo-4",
+		"name": "STS 3020 Policy Memo #4 (health agencies / public confidence)",
+		"date": "2026-04-05",
+		"domain": "policy-writing",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "6",
+		"summary": "Policy memo on health agencies and rebuilding public confidence.",
+		"hasVisuals": false,
+		"tags": [
+			"policy",
+			"public-health",
+			"writing"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/sts-3020-policy-memo-4/2025-ReadyOrNot-FINALr.pdf",
+				"caption": "2025 ReadyOrNot FINALr"
+			}
+		],
+		"course": "STS 3020",
+		"term": "2026 Spring",
+		"org": "Course instructor",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
+	},
+	{
+		"slug": "ece-3251-lab-8-induction-machine",
+		"name": "ECE 3251 Lab 8 - Induction Machine",
+		"date": "2026-04-03",
 		"domain": "power-energy",
 		"category": "School",
 		"audience": "Course instructor",
 		"effort": "Medium",
 		"timeHours": "2-4",
-		"summary": "Lab: solenoid actuator characterization.",
+		"summary": "Lab: induction-machine testing and performance curves.",
 		"hasVisuals": false,
 		"tags": [
 			"power-lab",
-			"magnetics"
+			"machines"
 		],
 		"assets": [
 			{
 				"type": "pdf",
-				"src": "/projects/ece-3251-lab-3-solenoid/ECE3251_Lab3_Solenoid_26S.pdf",
-				"caption": "ECE3251 Lab3 Solenoid 26S"
+				"src": "/projects/ece-3251-lab-8-induction-machine/ECE3250_Lect23_InductionMachineMeasurements_26S.pdf",
+				"caption": "ECE3250 Lect23 InductionMachineMeasurements 26S"
 			}
-		]
+		],
+		"course": "ECE 3251",
+		"term": "2026 Spring",
+		"org": "Course instructor",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
+	},
+	{
+		"slug": "sts-3020-issue-advocacy-deliverable-4-impact-assembly-reflec",
+		"name": "STS 3020 Issue Advocacy Deliverable 4 - IMPACT Assembly Reflections",
+		"date": "2026-03-29",
+		"domain": "policy-writing",
+		"category": "School",
+		"audience": "Course instructor / group",
+		"effort": "Low",
+		"timeHours": "2",
+		"summary": "Reflections on the IMPACT assembly and the issue-advocacy campaign outcome.",
+		"hasVisuals": false,
+		"tags": [
+			"policy",
+			"advocacy",
+			"reflection"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/sts-3020-issue-advocacy-deliverable-4-impact-assembly-reflec/IMPACT_March_9_Follow_up.pdf",
+				"caption": "IMPACT March 9 Follow up"
+			}
+		],
+		"course": "STS 3020",
+		"term": "2026 Spring",
+		"org": "Course instructor / group",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
+	},
+	{
+		"slug": "ece-3251-lab-5-iron-core-transformers",
+		"name": "ECE 3251 Lab 5 - Iron-Core Transformers",
+		"date": "2026-03-27",
+		"domain": "power-energy",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "2-4",
+		"summary": "Lab: iron-core transformer behavior and losses.",
+		"hasVisuals": false,
+		"tags": [
+			"power-lab",
+			"transformers"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/ece-3251-lab-5-iron-core-transformers/ECE3251_Lab5_Iron-CoreTransformers_26S.pdf",
+				"caption": "ECE3251 Lab5 Iron CoreTransformers 26S"
+			}
+		],
+		"course": "ECE 3251",
+		"term": "2026 Spring",
+		"org": "Course instructor",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
 	},
 	{
 		"slug": "ece-3251-lab-4-magnetic-non-linearities",
@@ -647,30 +909,14 @@
 				"src": "/projects/ece-3251-lab-4-magnetic-non-linearities/ECE3251_Lab4_MagneticNonLinearities_26S.pdf",
 				"caption": "ECE3251 Lab4 MagneticNonLinearities 26S"
 			}
-		]
-	},
-	{
-		"slug": "ece-3251-lab-5-iron-core-transformers",
-		"name": "ECE 3251 Lab 5 - Iron-Core Transformers",
-		"date": "2026-03-27",
-		"domain": "power-energy",
-		"category": "School",
-		"audience": "Course instructor",
-		"effort": "Medium",
-		"timeHours": "2-4",
-		"summary": "Lab: iron-core transformer behavior and losses.",
-		"hasVisuals": false,
-		"tags": [
-			"power-lab",
-			"transformers"
 		],
-		"assets": [
-			{
-				"type": "pdf",
-				"src": "/projects/ece-3251-lab-5-iron-core-transformers/ECE3251_Lab5_Iron-CoreTransformers_26S.pdf",
-				"caption": "ECE3251 Lab5 Iron CoreTransformers 26S"
-			}
-		]
+		"course": "ECE 3251",
+		"term": "2026 Spring",
+		"org": "Course instructor",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
 	},
 	{
 		"slug": "ece-3251-lab-6-reverse-engineering",
@@ -693,18 +939,265 @@
 				"src": "/projects/ece-3251-lab-6-reverse-engineering/ECE3250_Lect17_3PhaseTransformers_26S.pdf",
 				"caption": "ECE3250 Lect17 3PhaseTransformers 26S"
 			}
-		]
+		],
+		"course": "ECE 3251",
+		"term": "2026 Spring",
+		"org": "Course instructor",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
 	},
 	{
-		"slug": "ece-3251-lab-7-transformer-verification",
-		"name": "ECE 3251 Lab 7 - Transformer Verification",
-		"date": "2026-04-10",
+		"slug": "sts-3020-issue-advocacy-deliverable-2-transportation-impact",
+		"name": "STS 3020 Issue Advocacy Deliverable 2 - Transportation IMPACT",
+		"date": "2026-03-01",
+		"domain": "policy-writing",
+		"category": "School",
+		"audience": "Course instructor / group",
+		"effort": "Medium",
+		"timeHours": "8",
+		"summary": "Transportation IMPACT advocacy deliverable — building the case for local transit investment.",
+		"hasVisuals": false,
+		"tags": [
+			"policy",
+			"transit",
+			"advocacy"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/sts-3020-issue-advocacy-deliverable-2-transportation-impact/Deliverable_2_Transportation_IMPACT.pdf",
+				"caption": "Deliverable 2 Transportation IMPACT"
+			}
+		],
+		"course": "STS 3020",
+		"term": "2026 Spring",
+		"org": "Course instructor / group",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
+	},
+	{
+		"slug": "ece-3250-transformer-design-project",
+		"name": "ECE 3250 Transformer Design Project (Python design code + report)",
+		"date": "2026-02-25",
+		"domain": "power-energy",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "10",
+		"summary": "Transformer design project — Python design code plus an engineering report.",
+		"hasVisuals": false,
+		"tags": [
+			"python",
+			"transformers",
+			"power"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/ece-3250-transformer-design-project/laminations_singlephase.pdf",
+				"caption": "laminations singlephase"
+			}
+		],
+		"course": "ECE 3250",
+		"term": "2026 Spring",
+		"org": "Course instructor",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
+	},
+	{
+		"slug": "ece-3251-lab-2-three-phase",
+		"name": "ECE 3251 Lab 2 - Three-Phase",
+		"date": "2026-02-25",
 		"domain": "power-energy",
 		"category": "School",
 		"audience": "Course instructor",
 		"effort": "Medium",
 		"timeHours": "2-4",
-		"summary": "Lab: verifying a transformer model against measured data.",
+		"summary": "Lab: three-phase transformer connections and measurements.",
+		"hasVisuals": false,
+		"tags": [
+			"power-lab",
+			"three-phase"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/ece-3251-lab-2-three-phase/ECE3251_Lab2_Three-Phase_26S.pdf",
+				"caption": "ECE3251 Lab2 Three Phase 26S"
+			}
+		],
+		"course": "ECE 3251",
+		"term": "2026 Spring",
+		"org": "Course instructor",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
+	},
+	{
+		"slug": "ece-3251-lab-3-solenoid",
+		"name": "ECE 3251 Lab 3 - Solenoid",
+		"date": "2026-02-25",
+		"domain": "power-energy",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "2-4",
+		"summary": "Lab: solenoid actuator characterization.",
+		"hasVisuals": false,
+		"tags": [
+			"power-lab",
+			"magnetics"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/ece-3251-lab-3-solenoid/ECE3251_Lab3_Solenoid_26S.pdf",
+				"caption": "ECE3251 Lab3 Solenoid 26S"
+			}
+		],
+		"course": "ECE 3251",
+		"term": "2026 Spring",
+		"org": "Course instructor",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
+	},
+	{
+		"slug": "sts-3020-policy-memo-3",
+		"name": "STS 3020 Policy Memo #3 (NSF indirect costs / research funding)",
+		"date": "2026-02-22",
+		"domain": "policy-writing",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "6",
+		"summary": "Policy memo on NSF indirect-cost rates and federal research funding.",
+		"hasVisuals": false,
+		"tags": [
+			"policy",
+			"research-funding",
+			"writing"
+		],
+		"assets": [],
+		"course": "STS 3020",
+		"term": "2026 Spring",
+		"org": "Course instructor",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
+	},
+	{
+		"slug": "sts-3020-course-paper-problem-statement",
+		"name": "STS 3020 Course Paper - Problem Statement (SMR nuclear regulation)",
+		"date": "2026-02-18",
+		"domain": "policy-writing",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "8",
+		"summary": "Problem statement framing SMR nuclear regulation as the course-paper research question.",
+		"hasVisuals": false,
+		"tags": [
+			"policy",
+			"nuclear",
+			"smr"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/sts-3020-course-paper-problem-statement/World_Bank_Group_Annual_Report_2025.pdf",
+				"caption": "World Bank Group Annual Report 2025"
+			}
+		],
+		"course": "STS 3020",
+		"term": "2026 Spring",
+		"org": "Course instructor",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
+	},
+	{
+		"slug": "sts-3020-issue-advocacy-deliverable-1-virginia-transit-prese",
+		"name": "STS 3020 Issue Advocacy Deliverable 1 - Virginia transit (CAT) presentation + summary",
+		"date": "2026-02-08",
+		"domain": "policy-writing",
+		"category": "School",
+		"audience": "Course instructor / group",
+		"effort": "Medium",
+		"timeHours": "8",
+		"summary": "Issue-advocacy presentation and summary on Virginia transit (Charlottesville Area Transit).",
+		"hasVisuals": false,
+		"tags": [
+			"policy",
+			"transit",
+			"advocacy"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/sts-3020-issue-advocacy-deliverable-1-virginia-transit-prese/Deliverable_1_presentation_Transportation.pdf",
+				"caption": "Deliverable 1 presentation Transportation"
+			}
+		],
+		"course": "STS 3020",
+		"term": "2026 Spring",
+		"org": "Course instructor / group",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
+	},
+	{
+		"slug": "sts-3020-policy-memo-2",
+		"name": "STS 3020 Policy Memo #2 (sustainable development / STI)",
+		"date": "2026-02-01",
+		"domain": "policy-writing",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "6",
+		"summary": "Policy memo on sustainable development and science-technology-innovation (STI) strategy.",
+		"hasVisuals": false,
+		"tags": [
+			"policy",
+			"sustainability",
+			"writing"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/sts-3020-policy-memo-2/The-Sustainable-Development-Goals-Report-2025.pdf",
+				"caption": "The Sustainable Development Goals Report 2025"
+			}
+		],
+		"course": "STS 3020",
+		"term": "2026 Spring",
+		"org": "Course instructor",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
+	},
+	{
+		"slug": "ece-3251-lab-1-single-phase",
+		"name": "ECE 3251 Lab 1 - Single-Phase",
+		"date": "2026-01-29",
+		"domain": "power-energy",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "2-4",
+		"summary": "Lab: single-phase transformer characterization and measurements.",
 		"hasVisuals": false,
 		"tags": [
 			"power-lab",
@@ -713,128 +1206,77 @@
 		"assets": [
 			{
 				"type": "pdf",
-				"src": "/projects/ece-3251-lab-7-transformer-verification/ECE3251_Lab7_TransformerVerification_26S.pdf",
-				"caption": "ECE3251 Lab7 TransformerVerification 26S"
+				"src": "/projects/ece-3251-lab-1-single-phase/ECE3251_Lab1_Single-Phase_26S.pdf",
+				"caption": "ECE3251 Lab1 Single Phase 26S"
 			}
-		]
-	},
-	{
-		"slug": "ece-3251-lab-8-induction-machine",
-		"name": "ECE 3251 Lab 8 - Induction Machine",
-		"date": "2026-04-03",
-		"domain": "power-energy",
-		"category": "School",
-		"audience": "Course instructor",
-		"effort": "Medium",
-		"timeHours": "2-4",
-		"summary": "Lab: induction-machine testing and performance curves.",
-		"hasVisuals": false,
-		"tags": [
-			"power-lab",
-			"machines"
 		],
-		"assets": [
-			{
-				"type": "pdf",
-				"src": "/projects/ece-3251-lab-8-induction-machine/ECE3250_Lect23_InductionMachineMeasurements_26S.pdf",
-				"caption": "ECE3250 Lect23 InductionMachineMeasurements 26S"
-			}
-		]
+		"course": "ECE 3251",
+		"term": "2026 Spring",
+		"org": "Course instructor",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
 	},
 	{
-		"slug": "ece-3251-lab-9-dc-machine",
-		"name": "ECE 3251 Lab 9 - DC Machine",
-		"date": "2026-04-10",
-		"domain": "power-energy",
+		"slug": "sts-3020-policy-memo-1",
+		"name": "STS 3020 Policy Memo #1",
+		"date": "2026-01-15",
+		"domain": "policy-writing",
 		"category": "School",
 		"audience": "Course instructor",
 		"effort": "Medium",
-		"timeHours": "2-4",
-		"summary": "Lab: DC-machine characterization under varying load.",
-		"hasVisuals": false,
-		"tags": [
-			"power-lab",
-			"machines"
-		],
-		"assets": [
-			{
-				"type": "pdf",
-				"src": "/projects/ece-3251-lab-9-dc-machine/ECE3251_Lab9_DC_Machine_26S.pdf",
-				"caption": "ECE3251 Lab9 DC Machine 26S"
-			}
-		]
-	},
-	{
-		"slug": "ece-3251-lab-10-synchronous-machines",
-		"name": "ECE 3251 Lab 10 - Synchronous Machines",
-		"date": "2026-04-17",
-		"domain": "power-energy",
-		"category": "School",
-		"audience": "Course instructor",
-		"effort": "Medium",
-		"timeHours": "2-4",
-		"summary": "Lab: synchronous-machine testing and characteristic curves.",
+		"timeHours": "6",
+		"summary": "Science-and-technology policy memo analyzing a current federal policy question.",
 		"hasVisuals": true,
 		"tags": [
-			"power-lab",
-			"machines"
+			"policy",
+			"writing"
 		],
 		"assets": [
 			{
 				"type": "image",
-				"src": "/projects/ece-3251-lab-10-synchronous-machines/Lab10Graph.png",
-				"caption": "Lab10Graph"
-			},
-			{
-				"type": "image",
-				"src": "/projects/ece-3251-lab-10-synchronous-machines/Lab10Graph_v2.png",
-				"caption": "Lab10Graph v2"
+				"src": "/projects/sts-3020-policy-memo-1/20260114_102610.jpg",
+				"caption": "20260114 102610"
 			},
 			{
 				"type": "pdf",
-				"src": "/projects/ece-3251-lab-10-synchronous-machines/Lab10_Report_Final.pdf",
-				"caption": "Lab10 Report Final"
+				"src": "/projects/sts-3020-policy-memo-1/Policy_Memo_1_-_Isidore_LaRocco_Resume.pdf",
+				"caption": "Policy Memo 1 Isidore LaRocco Resume"
 			}
-		]
+		],
+		"course": "STS 3020",
+		"term": "2026 Spring",
+		"org": "Course instructor",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
 	},
 	{
-		"slug": "ece-2300-applied-circuits-boost-converter-pcb-project",
-		"name": "ECE 2300 Applied Circuits - Boost Converter PCB Project (KiCad + Multisim)",
-		"date": "2025-04-30",
+		"slug": "ece-3430-embedded-systems-final-project-video",
+		"name": "ECE 3430 Embedded Systems - Final Project Video (Team 20)",
+		"date": "2025-12-16",
 		"domain": "embedded-hw",
 		"category": "School",
 		"audience": "Course instructor",
-		"effort": "High",
-		"timeHours": "20",
-		"summary": "Designed and laid out a boost-converter PCB in KiCad, validated in Multisim.",
-		"hasVisuals": true,
+		"effort": "Medium-High",
+		"timeHours": "10-20",
+		"summary": "Demo video for the Team 20 embedded-systems final project.",
+		"hasVisuals": false,
 		"tags": [
-			"pcb",
-			"kicad",
-			"power-electronics"
+			"embedded",
+			"demo",
+			"video"
 		],
-		"assets": [
-			{
-				"type": "image",
-				"src": "/projects/ece-2300-applied-circuits-boost-converter-pcb-project/BoostConverterWaveForm.png",
-				"caption": "BoostConverterWaveForm"
-			},
-			{
-				"type": "image",
-				"src": "/projects/ece-2300-applied-circuits-boost-converter-pcb-project/Copy_of_Screenshot_2025-03-26_210549.png",
-				"caption": "Copy of Screenshot 2025 03 26 210549"
-			},
-			{
-				"type": "image",
-				"src": "/projects/ece-2300-applied-circuits-boost-converter-pcb-project/Screenshot_2025-03-26_210549.png",
-				"caption": "Screenshot 2025 03 26 210549"
-			},
-			{
-				"type": "pdf",
-				"src": "/projects/ece-2300-applied-circuits-boost-converter-pcb-project/Practical_Waveforms_25S.pdf",
-				"caption": "Practical Waveforms 25S"
-			}
-		]
+		"assets": [],
+		"course": "ECE 3430",
+		"term": "2025 Fall",
+		"org": "Course instructor",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
 	},
 	{
 		"slug": "ece-2600-electronics-audio-analyzer-final-project",
@@ -878,51 +1320,14 @@
 				"src": "/projects/ece-2600-electronics-audio-analyzer-final-project/AudioAnalyzer_Schematic_zdn5uf.pdf",
 				"caption": "AudioAnalyzer Schematic zdn5uf"
 			}
-		]
-	},
-	{
-		"slug": "ece-2600-electronics-studios-1-8",
-		"name": "ECE 2600 Electronics - Studios 1-8 (lab activities)",
-		"date": "2025-11-23",
-		"domain": "embedded-hw",
-		"category": "School",
-		"audience": "Course instructor",
-		"effort": "Medium",
-		"timeHours": "16",
-		"summary": "Studio lab sequence covering core analog electronics building blocks.",
-		"hasVisuals": true,
-		"tags": [
-			"analog",
-			"electronics",
-			"labs"
 		],
-		"assets": [
-			{
-				"type": "image",
-				"src": "/projects/ece-2600-electronics-studios-1-8/Studio3_Diode_1N4001_waveform.png",
-				"caption": "Studio3 Diode 1N4001 waveform"
-			},
-			{
-				"type": "image",
-				"src": "/projects/ece-2600-electronics-studios-1-8/Studio3_Red_LED_waveform.png",
-				"caption": "Studio3 Red LED waveform"
-			},
-			{
-				"type": "image",
-				"src": "/projects/ece-2600-electronics-studios-1-8/studio4_differentiator_bode_plot.png",
-				"caption": "studio4 differentiator bode plot"
-			},
-			{
-				"type": "image",
-				"src": "/projects/ece-2600-electronics-studios-1-8/studio6_graph_I_D_over_V_RD.png",
-				"caption": "studio6 graph I D over V RD"
-			},
-			{
-				"type": "pdf",
-				"src": "/projects/ece-2600-electronics-studios-1-8/2._Bode_Plot.pdf",
-				"caption": "2. Bode Plot"
-			}
-		]
+		"course": "ECE 2600",
+		"term": "2025 Fall",
+		"org": "Course instructor",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
 	},
 	{
 		"slug": "ece-2700-signals-and-systems-dc-ac-converter-final-project",
@@ -961,7 +1366,14 @@
 				"src": "/projects/ece-2700-signals-and-systems-dc-ac-converter-final-project/schematic.pdf",
 				"caption": "schematic"
 			}
-		]
+		],
+		"course": "ECE 2700",
+		"term": "2025 Fall",
+		"org": "Course instructor",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
 	},
 	{
 		"slug": "ece-3430-embedded-systems-final-project",
@@ -1005,25 +1417,123 @@
 				"src": "/projects/ece-3430-embedded-systems-final-project/BOOSTXL-EDUMKII_Schematic.pdf",
 				"caption": "BOOSTXL EDUMKII Schematic"
 			}
-		]
+		],
+		"course": "ECE 3430",
+		"term": "2025 Fall",
+		"org": "Course instructor",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
 	},
 	{
-		"slug": "ece-3430-embedded-systems-final-project-video",
-		"name": "ECE 3430 Embedded Systems - Final Project Video (Team 20)",
-		"date": "2025-12-16",
+		"slug": "ece-2600-electronics-studios-1-8",
+		"name": "ECE 2600 Electronics - Studios 1-8 (lab activities)",
+		"date": "2025-11-23",
 		"domain": "embedded-hw",
 		"category": "School",
 		"audience": "Course instructor",
-		"effort": "Medium-High",
-		"timeHours": "10-20",
-		"summary": "Demo video for the Team 20 embedded-systems final project.",
+		"effort": "Medium",
+		"timeHours": "16",
+		"summary": "Studio lab sequence covering core analog electronics building blocks.",
+		"hasVisuals": true,
+		"tags": [
+			"analog",
+			"electronics",
+			"labs"
+		],
+		"assets": [
+			{
+				"type": "image",
+				"src": "/projects/ece-2600-electronics-studios-1-8/Studio3_Diode_1N4001_waveform.png",
+				"caption": "Studio3 Diode 1N4001 waveform"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-2600-electronics-studios-1-8/Studio3_Red_LED_waveform.png",
+				"caption": "Studio3 Red LED waveform"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-2600-electronics-studios-1-8/studio4_differentiator_bode_plot.png",
+				"caption": "studio4 differentiator bode plot"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-2600-electronics-studios-1-8/studio6_graph_I_D_over_V_RD.png",
+				"caption": "studio6 graph I D over V RD"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/ece-2600-electronics-studios-1-8/2._Bode_Plot.pdf",
+				"caption": "2. Bode Plot"
+			}
+		],
+		"course": "ECE 2600",
+		"term": "2025 Fall",
+		"org": "Course instructor",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
+	},
+	{
+		"slug": "dominion-energy-summer-internship",
+		"name": "Dominion Energy Summer Internship (Design Team, field visits, feedback)",
+		"date": "2025-09-27",
+		"domain": "power-energy",
+		"category": "Work",
+		"audience": "Internship employer",
+		"effort": "Medium",
+		"timeHours": "8",
+		"summary": "Summer internship on Dominion Energy's design team — field visits, design reviews, and structured feedback.",
 		"hasVisuals": false,
 		"tags": [
-			"embedded",
-			"demo",
-			"video"
+			"internship",
+			"power-systems",
+			"design"
 		],
-		"assets": []
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/dominion-energy-summer-internship/Design_Team.pdf",
+				"caption": "Design Team"
+			}
+		],
+		"course": "",
+		"term": "",
+		"org": "Internship employer",
+		"kind": "Work",
+		"status": "",
+		"deliverables": [],
+		"tools": []
+	},
+	{
+		"slug": "civic-cornerstone-fellowship",
+		"name": "Civic Cornerstone Fellowship cohort member",
+		"date": "2025-09",
+		"domain": "policy-writing",
+		"category": "Personal",
+		"audience": "University of Virginia",
+		"effort": "",
+		"timeHours": "",
+		"summary": "Selected member of a UVA civic-dialogue cohort (September 2025 - present).",
+		"hasVisuals": false,
+		"tags": [
+			"civic-dialogue",
+			"facilitation",
+			"public-reasoning"
+		],
+		"assets": [],
+		"course": "",
+		"term": "",
+		"org": "University of Virginia",
+		"kind": "Fellowship",
+		"status": "In progress",
+		"deliverables": [
+			"cohort participation"
+		],
+		"tools": []
 	},
 	{
 		"slug": "ece-3209-electromagnetic-fields-labs-1-6",
@@ -1073,25 +1583,192 @@
 				"src": "/projects/ece-3209-electromagnetic-fields-labs-1-6/Basic_Oscilloscope_Fundamentals.pdf",
 				"caption": "Basic Oscilloscope Fundamentals"
 			}
+		],
+		"course": "ECE 3209",
+		"term": "2025 Fall",
+		"org": "Course instructor",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
+	},
+	{
+		"slug": "uva-ta-applied-circuits-ece-2300",
+		"name": "Teaching Assistant - Applied Circuits (ECE 2300)",
+		"date": "2025-08",
+		"domain": "teaching-field",
+		"category": "Work",
+		"audience": "University of Virginia",
+		"effort": "",
+		"timeHours": "",
+		"summary": "Supported the ECE 2300 Applied Circuits labs and student success as an undergraduate teaching assistant.",
+		"hasVisuals": false,
+		"tags": [
+			"lab-instruction",
+			"circuit-analysis",
+			"grading",
+			"student-mentoring"
+		],
+		"assets": [],
+		"course": "ECE 2300",
+		"term": "2025 Fall",
+		"org": "University of Virginia",
+		"kind": "Role",
+		"status": "",
+		"deliverables": [
+			"lab support",
+			"worked solutions",
+			"grading"
+		],
+		"tools": [
+			"Multisim",
+			"AD2"
 		]
 	},
 	{
-		"slug": "ece-4103-solid-state-devices-project-1",
-		"name": "ECE 4103 Solid State Devices - Project 1 (MATLAB)",
-		"date": "2025-01-24",
+		"slug": "dominion-route-planning-excel-tool",
+		"name": "Excel site-visit route-planning tool (Google Maps limit workaround)",
+		"date": "2025-06",
 		"domain": "software-data",
-		"category": "School",
-		"audience": "Course instructor",
-		"effort": "Low",
-		"timeHours": "4",
-		"summary": "MATLAB project modeling solid-state device behavior for renewable-energy conversion.",
+		"category": "Work",
+		"audience": "Dominion Energy",
+		"effort": "",
+		"timeHours": "",
+		"summary": "Built an Excel-based tool that bypasses Google Maps' default waypoint limits so design staff can build long site-visit routes; presented it in a team demo and wrote a job aid for adoption.",
 		"hasVisuals": false,
 		"tags": [
-			"matlab",
-			"semiconductors",
-			"modeling"
+			"tooling",
+			"process-automation",
+			"excel-vba",
+			"training-and-adoption"
 		],
-		"assets": []
+		"assets": [],
+		"course": "",
+		"term": "",
+		"org": "Dominion Energy",
+		"kind": "Work",
+		"status": "",
+		"deliverables": [
+			"route-planning tool",
+			"job aid",
+			"team demo"
+		],
+		"tools": [
+			"Excel",
+			"Google Maps"
+		]
+	},
+	{
+		"slug": "dominion-residential-power-hookup-project",
+		"name": "Residential power hookup - full project cycle",
+		"date": "2025-05",
+		"domain": "power-energy",
+		"category": "Work",
+		"audience": "Dominion Energy",
+		"effort": "",
+		"timeHours": "",
+		"summary": "Completed all phases of a residential power hookup: site visits, load calculations, permitting and construction sketches, liaising between internal stakeholders and the customer.",
+		"hasVisuals": false,
+		"tags": [
+			"distribution-design",
+			"load-calculation",
+			"permitting",
+			"construction-documentation",
+			"stakeholder-liaison"
+		],
+		"assets": [],
+		"course": "",
+		"term": "",
+		"org": "Dominion Energy",
+		"kind": "Work",
+		"status": "",
+		"deliverables": [
+			"construction sketches",
+			"permit packages",
+			"site-visit records"
+		],
+		"tools": [
+			"AutoCAD",
+			"Excel"
+		]
+	},
+	{
+		"slug": "dominion-municipal-and-utility-coordination",
+		"name": "Municipal / utility / nonprofit coordination for construction readiness",
+		"date": "2025-05",
+		"domain": "power-energy",
+		"category": "Work",
+		"audience": "Dominion Energy",
+		"effort": "",
+		"timeHours": "",
+		"summary": "Coordinated with Chesapeake and Norfolk city offices, local businesses and the Elizabeth River Project on traffic permitting, telecommunication joint-use and construction site-readiness.",
+		"hasVisuals": false,
+		"tags": [
+			"permitting",
+			"joint-use",
+			"stakeholder-engagement",
+			"project-coordination"
+		],
+		"assets": [],
+		"course": "",
+		"term": "",
+		"org": "Dominion Energy",
+		"kind": "Work",
+		"status": "",
+		"deliverables": [
+			"permit coordination",
+			"site-readiness records"
+		],
+		"tools": [
+			"Excel",
+			"Outlook"
+		]
+	},
+	{
+		"slug": "ece-2300-applied-circuits-boost-converter-pcb-project",
+		"name": "ECE 2300 Applied Circuits - Boost Converter PCB Project (KiCad + Multisim)",
+		"date": "2025-04-30",
+		"domain": "embedded-hw",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "High",
+		"timeHours": "20",
+		"summary": "Designed and laid out a boost-converter PCB in KiCad, validated in Multisim.",
+		"hasVisuals": true,
+		"tags": [
+			"pcb",
+			"kicad",
+			"power-electronics"
+		],
+		"assets": [
+			{
+				"type": "image",
+				"src": "/projects/ece-2300-applied-circuits-boost-converter-pcb-project/BoostConverterWaveForm.png",
+				"caption": "BoostConverterWaveForm"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-2300-applied-circuits-boost-converter-pcb-project/Copy_of_Screenshot_2025-03-26_210549.png",
+				"caption": "Copy of Screenshot 2025 03 26 210549"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-2300-applied-circuits-boost-converter-pcb-project/Screenshot_2025-03-26_210549.png",
+				"caption": "Screenshot 2025 03 26 210549"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/ece-2300-applied-circuits-boost-converter-pcb-project/Practical_Waveforms_25S.pdf",
+				"caption": "Practical Waveforms 25S"
+			}
+		],
+		"course": "ECE 2300",
+		"term": "2025 Spring",
+		"org": "Course instructor",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
 	},
 	{
 		"slug": "ece-4103-hw8-solar-cell-lab",
@@ -1135,6 +1812,154 @@
 				"src": "/projects/ece-4103-hw8-solar-cell-lab/HW8_Solar_cell_lab_final.pdf",
 				"caption": "HW8 Solar cell lab final"
 			}
+		],
+		"course": "ECE 4103",
+		"term": "2025 Spring",
+		"org": "Course instructor",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
+	},
+	{
+		"slug": "hoohacks-2025",
+		"name": "HooHacks 2025 (hackathon - topic brainstorm)",
+		"date": "2025-03-30",
+		"domain": "software-data",
+		"category": "School",
+		"audience": "Hackathon",
+		"effort": "Low",
+		"timeHours": "3",
+		"summary": "HooHacks 2025 hackathon — project ideation and topic brainstorming.",
+		"hasVisuals": false,
+		"tags": [
+			"hackathon",
+			"ideation"
+		],
+		"assets": [],
+		"course": "",
+		"term": "",
+		"org": "Hackathon",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
+	},
+	{
+		"slug": "photoshop-living-room-gallery-wall",
+		"name": "Living-room gallery wall - generative/reference composite",
+		"date": "2025-03-15",
+		"domain": "creative-media",
+		"category": "Personal",
+		"audience": "Self",
+		"effort": "",
+		"timeHours": "",
+		"summary": "Photographed a living-room wall, then composited a full gallery-wall layout in Paint.NET/Photoshop as a visual planning tool before hanging anything.",
+		"hasVisuals": true,
+		"tags": [
+			"photo-compositing",
+			"paint.net",
+			"spatial-planning",
+			"visual-design"
+		],
+		"assets": [
+			{
+				"type": "image",
+				"src": "/projects/photoshop-living-room-gallery-wall/gallery_wall_1.jpg",
+				"caption": "Interior photograph"
+			},
+			{
+				"type": "image",
+				"src": "/projects/photoshop-living-room-gallery-wall/20250315_202506.jpg",
+				"caption": "Layout plan drawn over the photograph"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/photoshop-living-room-gallery-wall/gallery_wall.pdf",
+				"caption": "Gallery-wall layout PDF"
+			}
+		],
+		"course": "",
+		"term": "",
+		"org": "Personal",
+		"kind": "Personal",
+		"status": "",
+		"deliverables": [
+			"gallery wall composite (.pdn + .jpg)",
+			"layout PDF"
+		],
+		"tools": [
+			"Paint.NET",
+			"Photoshop"
+		]
+	},
+	{
+		"slug": "photoshop-bathroom-pete",
+		"name": "'Bathroom Pete' - interior photo composite",
+		"date": "2025-03-15",
+		"domain": "creative-media",
+		"category": "Personal",
+		"audience": "Self",
+		"effort": "",
+		"timeHours": "",
+		"summary": "Interior photograph cleaned up and recomposited into a finished image (bathroom_petey.png) from three source frames.",
+		"hasVisuals": true,
+		"tags": [
+			"photo-retouching",
+			"compositing"
+		],
+		"assets": [
+			{
+				"type": "image",
+				"src": "/projects/photoshop-bathroom-pete/PXL_20240413_135602593.jpg",
+				"caption": "Source frame"
+			},
+			{
+				"type": "image",
+				"src": "/projects/photoshop-bathroom-pete/bathroom_petey.jpg",
+				"caption": "Finished composite"
+			}
+		],
+		"course": "",
+		"term": "",
+		"org": "Personal",
+		"kind": "Personal",
+		"status": "",
+		"deliverables": [
+			"bathroom_petey.png finished composite"
+		],
+		"tools": [
+			"Paint.NET",
+			"Photoshop"
+		]
+	},
+	{
+		"slug": "thevenin-equivalent-website",
+		"name": "Thevenin-equivalent explainer website",
+		"date": "2025-03-11",
+		"domain": "software-data",
+		"category": "Personal",
+		"audience": "Self",
+		"effort": "",
+		"timeHours": "",
+		"summary": "A small teaching site explaining Thevenin equivalent circuits, built after taking ECE 2300 Applied Circuits.",
+		"hasVisuals": false,
+		"tags": [
+			"circuit-analysis",
+			"technical-explanation",
+			"web"
+		],
+		"assets": [],
+		"course": "",
+		"term": "",
+		"org": "Personal",
+		"kind": "Personal",
+		"status": "",
+		"deliverables": [
+			"explainer site"
+		],
+		"tools": [
+			"HTML/CSS (presumed)"
 		]
 	},
 	{
@@ -1153,7 +1978,212 @@
 			"linear-algebra",
 			"numerics"
 		],
-		"assets": []
+		"assets": [],
+		"course": "APMA 3080",
+		"term": "2025 Spring",
+		"org": "Course instructor",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
+	},
+	{
+		"slug": "ece-4103-solid-state-devices-project-1",
+		"name": "ECE 4103 Solid State Devices - Project 1 (MATLAB)",
+		"date": "2025-01-24",
+		"domain": "software-data",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Low",
+		"timeHours": "4",
+		"summary": "MATLAB project modeling solid-state device behavior for renewable-energy conversion.",
+		"hasVisuals": false,
+		"tags": [
+			"matlab",
+			"semiconductors",
+			"modeling"
+		],
+		"assets": [],
+		"course": "ECE 4103",
+		"term": "2025 Spring",
+		"org": "Course instructor",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
+	},
+	{
+		"slug": "cs-2130-computer-systems-and-org-1-labs-1-13",
+		"name": "CS 2130 Computer Systems & Org 1 - Labs 1-13 (C programming)",
+		"date": "2025-01-21",
+		"domain": "software-data",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "20",
+		"summary": "Computer-systems lab sequence (Labs 1–13) in C — memory, systems programming, and tooling.",
+		"hasVisuals": false,
+		"tags": [
+			"c",
+			"systems",
+			"labs"
+		],
+		"assets": [],
+		"course": "CS 2130",
+		"term": "2025 Spring",
+		"org": "Course instructor",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
+	},
+	{
+		"slug": "ece-3103-solid-state-devices-problem-sets",
+		"name": "ECE 3103 Solid State Devices - problem sets, quizzes and final exam review",
+		"date": "2025-01-01",
+		"domain": "research-lab",
+		"category": "School",
+		"audience": "UVA",
+		"effort": "",
+		"timeHours": "",
+		"summary": "Nine graded problem sets, quizzes, a bonus assignment and an exam-review pack covering semiconductor device physics.",
+		"hasVisuals": true,
+		"tags": [
+			"semiconductor-physics",
+			"device-modelling",
+			"problem-solving"
+		],
+		"assets": [
+			{
+				"type": "image",
+				"src": "/projects/ece-3103-solid-state-devices-problem-sets/iv-curve.png",
+				"caption": "Bonus assignment: I-V curve"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/ece-3103-solid-state-devices-problem-sets/HW1_zdn5uf.pdf",
+				"caption": "Homework 1"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/ece-3103-solid-state-devices-problem-sets/HW9_zdn5uf.pdf",
+				"caption": "Homework 9"
+			}
+		],
+		"course": "ECE 3103",
+		"term": "term not recorded in folder name",
+		"org": "UVA",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [
+			"HW1-HW9",
+			"quizzes",
+			"final exam review"
+		],
+		"tools": []
+	},
+	{
+		"slug": "ece-2410-intro-to-ml-final-project",
+		"name": "ECE 2410 Intro to ML - Final Project (student performance, kNN + linear regression)",
+		"date": "2024-12-02",
+		"domain": "software-data",
+		"category": "School",
+		"audience": "Course instructor (group)",
+		"effort": "Medium",
+		"timeHours": "10-20",
+		"summary": "Group ML final project predicting student performance with kNN and linear regression.",
+		"hasVisuals": false,
+		"tags": [
+			"machine-learning",
+			"knn",
+			"regression"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/ece-2410-intro-to-ml-final-project/Project_Summary.pdf",
+				"caption": "Project Summary"
+			}
+		],
+		"course": "ECE 2410",
+		"term": "2024 Fall",
+		"org": "Course instructor (group)",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
+	},
+	{
+		"slug": "sts-2600-engineering-ethics-essays",
+		"name": "STS 2600 Introduction to Engineering Ethics - essays and debate",
+		"date": "2024-12-01",
+		"domain": "policy-writing",
+		"category": "School",
+		"audience": "UVA",
+		"effort": "",
+		"timeHours": "",
+		"summary": "Written essays and a structured debate on engineering ethics.",
+		"hasVisuals": true,
+		"tags": [
+			"ethics",
+			"argumentation",
+			"writing"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/sts-2600-engineering-ethics-essays/LaRocco_-_Personal_Ethics_Statement.pdf",
+				"caption": "Personal ethics statement"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/sts-2600-engineering-ethics-essays/Ed_Pierson_-_Boeing_Whistleblower.pdf",
+				"caption": "Boeing whistleblower case essay"
+			}
+		],
+		"course": "STS 2600",
+		"term": "2024 Fall",
+		"org": "UVA",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [
+			"5 essays",
+			"debate materials"
+		],
+		"tools": [
+			"Word"
+		]
+	},
+	{
+		"slug": "apma-3100-probability-project-2",
+		"name": "APMA 3100 Probability - Project 2 (Jupyter notebook + report + appendix)",
+		"date": "2024-11-03",
+		"domain": "software-data",
+		"category": "School",
+		"audience": "Course instructor",
+		"effort": "Medium",
+		"timeHours": "8-12",
+		"summary": "Probability project in a Jupyter notebook with report and appendix — simulation and analysis.",
+		"hasVisuals": false,
+		"tags": [
+			"python",
+			"jupyter",
+			"probability"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/apma-3100-probability-project-2/Project_2_-_Stage_2.pdf",
+				"caption": "Project 2 Stage 2"
+			}
+		],
+		"course": "APMA 3100",
+		"term": "2024 Fall",
+		"org": "Course instructor",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
 	},
 	{
 		"slug": "apma-3100-probability-project-1",
@@ -1196,55 +2226,14 @@
 				"src": "/projects/apma-3100-probability-project-1/APMA_3100_Project_1_zdn5uf.pdf",
 				"caption": "APMA 3100 Project 1 zdn5uf"
 			}
-		]
-	},
-	{
-		"slug": "apma-3100-probability-project-2",
-		"name": "APMA 3100 Probability - Project 2 (Jupyter notebook + report + appendix)",
-		"date": "2024-11-03",
-		"domain": "software-data",
-		"category": "School",
-		"audience": "Course instructor",
-		"effort": "Medium",
-		"timeHours": "8-12",
-		"summary": "Probability project in a Jupyter notebook with report and appendix — simulation and analysis.",
-		"hasVisuals": false,
-		"tags": [
-			"python",
-			"jupyter",
-			"probability"
 		],
-		"assets": [
-			{
-				"type": "pdf",
-				"src": "/projects/apma-3100-probability-project-2/Project_2_-_Stage_2.pdf",
-				"caption": "Project 2 Stage 2"
-			}
-		]
-	},
-	{
-		"slug": "ece-2410-intro-to-ml-final-project",
-		"name": "ECE 2410 Intro to ML - Final Project (student performance, kNN + linear regression)",
-		"date": "2024-12-02",
-		"domain": "software-data",
-		"category": "School",
-		"audience": "Course instructor (group)",
-		"effort": "Medium",
-		"timeHours": "10-20",
-		"summary": "Group ML final project predicting student performance with kNN and linear regression.",
-		"hasVisuals": false,
-		"tags": [
-			"machine-learning",
-			"knn",
-			"regression"
-		],
-		"assets": [
-			{
-				"type": "pdf",
-				"src": "/projects/ece-2410-intro-to-ml-final-project/Project_Summary.pdf",
-				"caption": "Project Summary"
-			}
-		]
+		"course": "APMA 3100",
+		"term": "2024 Fall",
+		"org": "Course instructor",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
 	},
 	{
 		"slug": "ece-2330-digital-logic-design-learning-activities",
@@ -1278,59 +2267,209 @@
 				"src": "/projects/ece-2330-digital-logic-design-learning-activities/LA10_Waveform.pdf",
 				"caption": "LA10 Waveform"
 			}
+		],
+		"course": "ECE 2330",
+		"term": "2024 Fall",
+		"org": "Course instructor",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
+	},
+	{
+		"slug": "egr-125-intro-engineering-final-exam",
+		"name": "EGR 125 Introduction to Engineering - design/analysis final exam project",
+		"date": "2024-05-02",
+		"domain": "software-data",
+		"category": "School",
+		"audience": "Germanna Community College",
+		"effort": "",
+		"timeHours": "",
+		"summary": "Final exam project for EGR 125, completed as a Code::Blocks C project with a written layout and supporting materials.",
+		"hasVisuals": true,
+		"tags": [
+			"c-programming",
+			"engineering-fundamentals"
+		],
+		"assets": [
+			{
+				"type": "image",
+				"src": "/projects/egr-125-intro-engineering-final-exam/PXL_20240301_010221706.jpg",
+				"caption": "Module 4 project build"
+			},
+			{
+				"type": "image",
+				"src": "/projects/egr-125-intro-engineering-final-exam/PXL_20240301_010211707.jpg",
+				"caption": "Module 4 project build"
+			},
+			{
+				"type": "image",
+				"src": "/projects/egr-125-intro-engineering-final-exam/Module3-ICA_UTS.png",
+				"caption": "Ultimate-tensile-strength module output"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/egr-125-intro-engineering-final-exam/Module4-ICA-Vending-Machine-Code.pdf",
+				"caption": "Vending-machine C program"
+			}
+		],
+		"course": "EGR 125",
+		"term": "2024 Spring",
+		"org": "Germanna Community College",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [
+			"final exam project (C)"
+		],
+		"tools": [
+			"Code::Blocks",
+			"C"
 		]
 	},
 	{
-		"slug": "cs-2130-computer-systems-and-org-1-labs-1-13",
-		"name": "CS 2130 Computer Systems & Org 1 - Labs 1-13 (C programming)",
-		"date": "2025-01-21",
-		"domain": "software-data",
-		"category": "School",
-		"audience": "Course instructor",
-		"effort": "Medium",
-		"timeHours": "20",
-		"summary": "Computer-systems lab sequence (Labs 1–13) in C — memory, systems programming, and tooling.",
-		"hasVisuals": false,
-		"tags": [
-			"c",
-			"systems",
-			"labs"
-		],
-		"assets": []
-	},
-	{
-		"slug": "hoohacks-2025",
-		"name": "HooHacks 2025 (hackathon - topic brainstorm)",
-		"date": "2025-03-30",
-		"domain": "software-data",
-		"category": "School",
-		"audience": "Hackathon",
-		"effort": "Low",
-		"timeHours": "3",
-		"summary": "HooHacks 2025 hackathon — project ideation and topic brainstorming.",
-		"hasVisuals": false,
-		"tags": [
-			"hackathon",
-			"ideation"
-		],
-		"assets": []
-	},
-	{
-		"slug": "bio-2870-anatomy-lab-6-study-guide",
-		"name": "BIO 2870 Anatomy - Lab 6 Study Guide (group)",
-		"date": "2018-03-13",
+		"slug": "mth-267-differential-equations-coursework",
+		"name": "MTH 267 Differential Equations - coursework",
+		"date": "2023-08-21",
 		"domain": "research-lab",
 		"category": "School",
-		"audience": "Course peers",
-		"effort": "Low",
-		"timeHours": "3",
-		"summary": "Group-authored anatomy study guide for Lab 6.",
+		"audience": "Tidewater Community College",
+		"effort": "",
+		"timeHours": "",
+		"summary": "Differential equations coursework taken at Tidewater Community College during the Navy years.",
+		"hasVisuals": true,
+		"tags": [
+			"differential-equations",
+			"applied-maths"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/mth-267-differential-equations-coursework/MTH_267_OL1C_Dale_FA23_-_Differential_Equations.pdf",
+				"caption": "Course syllabus"
+			}
+		],
+		"course": "MTH 267",
+		"term": "2023 Fall",
+		"org": "Tidewater Community College",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [
+			"coursework (syllabus on file)"
+		],
+		"tools": []
+	},
+	{
+		"slug": "fairlead-electrical-assembly-technician",
+		"name": "1st Class Electrical Assembly Technician (DoD Skillbridge)",
+		"date": "2023-03",
+		"domain": "embedded-hw",
+		"category": "Work",
+		"audience": "Fairlead Integrated Solutions",
+		"effort": "",
+		"timeHours": "",
+		"summary": "Electrical assembly work on naval/marine electronic systems via the DoD Skillbridge programme, including EMI filtering troubleshooting.",
 		"hasVisuals": false,
 		"tags": [
-			"biology",
-			"study-guide"
+			"electrical-assembly",
+			"emi-filtering",
+			"harnessing",
+			"mil-spec-workmanship"
 		],
-		"assets": []
+		"assets": [],
+		"course": "",
+		"term": "",
+		"org": "Fairlead Integrated Solutions",
+		"kind": "Work",
+		"status": "",
+		"deliverables": [
+			"EMI filter troubleshooting notes",
+			"assembly work"
+		],
+		"tools": [
+			"hand tools",
+			"test equipment"
+		]
+	},
+	{
+		"slug": "navy-maintenance-training-program",
+		"name": "Maintenance training programme for 56 personnel (compliance 91% -> 97%)",
+		"date": "2023-01",
+		"domain": "teaching-field",
+		"category": "Work",
+		"audience": "U.S. Navy (HM-12)",
+		"effort": "",
+		"timeHours": "",
+		"summary": "Managed training for 56 personnel and documented corrective actions in detailed maintenance reports, raising programme compliance from 91% to 97% over ten months.",
+		"hasVisuals": false,
+		"tags": [
+			"training-management",
+			"compliance-auditing",
+			"technical-documentation",
+			"leadership"
+		],
+		"assets": [],
+		"course": "",
+		"term": "",
+		"org": "U.S. Navy (HM-12)",
+		"kind": "Work",
+		"status": "",
+		"deliverables": [
+			"training records",
+			"corrective-action documentation"
+		],
+		"tools": [
+			"Naval Aviation maintenance reporting"
+		]
+	},
+	{
+		"slug": "arduino-weather-house",
+		"name": "Arduino 'Weather House' - MEGA temp/humidity + LCD + stepper build",
+		"date": "2022-03",
+		"domain": "embedded-hw",
+		"category": "Personal",
+		"audience": "Self",
+		"effort": "",
+		"timeHours": "",
+		"summary": "A MEGA-based desktop weather station: DHT11 temperature/humidity sensing, 1602A LCD readout and a stepper-motor mechanism, assembled into a house-shaped enclosure.",
+		"hasVisuals": true,
+		"tags": [
+			"arduino",
+			"dht11",
+			"lcd-i2c",
+			"stepper-control",
+			"enclosure-build"
+		],
+		"assets": [
+			{
+				"type": "image",
+				"src": "/projects/arduino-weather-house/circuit-DHT11.png",
+				"caption": "DHT11 sensor circuit"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/arduino-weather-house/MEGA_Components_temp-humid_LCD_stepper-motor.pdf",
+				"caption": "Component set: temperature/humidity, LCD and stepper"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/arduino-weather-house/MEGA_Lesson_9_Servo.pdf",
+				"caption": "Servo lesson"
+			}
+		],
+		"course": "",
+		"term": "",
+		"org": "Personal",
+		"kind": "Personal",
+		"status": "",
+		"deliverables": [
+			"weather-station firmware",
+			"circuit diagrams",
+			"build PDFs"
+		],
+		"tools": [
+			"Arduino IDE",
+			"C++"
+		]
 	},
 	{
 		"slug": "chm-111-general-chemistry-i-lab-reports",
@@ -1373,6 +2512,342 @@
 				"src": "/projects/chm-111-general-chemistry-i-lab-reports/jet_fuel.pdf",
 				"caption": "jet fuel"
 			}
+		],
+		"course": "CHM 111",
+		"term": "2021",
+		"org": "Course instructor",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
+	},
+	{
+		"slug": "arduino-elegoo-mega-33-lesson-kit",
+		"name": "Arduino ELEGOO Mega 2560 - 33-lesson kit build-through",
+		"date": "2021-07",
+		"domain": "embedded-hw",
+		"category": "Personal",
+		"audience": "Self",
+		"effort": "",
+		"timeHours": "",
+		"summary": "Worked through all 33 lessons of the ELEGOO Mega 2560 kit - LCD, DHT11, ultrasonic, RFID, servos, steppers, IR, dot-matrix, relays - with working sketches and a de-bounce/watchdog pair written alongside.",
+		"hasVisuals": false,
+		"tags": [
+			"arduino",
+			"embedded-c",
+			"embedded-peripherals",
+			"sensors",
+			"actuators"
+		],
+		"assets": [],
+		"course": "",
+		"term": "",
+		"org": "Personal",
+		"kind": "Personal",
+		"status": "",
+		"deliverables": [
+			"33 lesson sketches",
+			"custom de-bounce and watchdog sketches"
+		],
+		"tools": [
+			"Arduino IDE",
+			"C++"
+		]
+	},
+	{
+		"slug": "rkc-detroit-historical-canal-tour-and-tour-guide-manual",
+		"name": "RKC Detroit Historical Canal Tour & Tour Guide Manual",
+		"date": "2019-06-13",
+		"domain": "teaching-field",
+		"category": "Work",
+		"audience": "Tourists / program students",
+		"effort": "Medium-High",
+		"timeHours": "20+",
+		"summary": "Designed a historical canal tour of Detroit and wrote the accompanying tour-guide training manual.",
+		"hasVisuals": false,
+		"tags": [
+			"curriculum",
+			"writing",
+			"program-design"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/rkc-detroit-historical-canal-tour-and-tour-guide-manual/A_Detroit_Architect_s_Journal__Eastside_Venice__The_Fox_Creek_Canals.pdf",
+				"caption": "A Detroit Architect s Journal Eastside Venice The Fox Creek Canals"
+			}
+		],
+		"course": "",
+		"term": "",
+		"org": "Tourists / program students",
+		"kind": "Work",
+		"status": "",
+		"deliverables": [],
+		"tools": []
+	},
+	{
+		"slug": "navy-mh53e-airframe-maintenance",
+		"name": "MH-53E Sea Dragon flight-critical airframe maintenance",
+		"date": "2019-04",
+		"domain": "embedded-hw",
+		"category": "Work",
+		"audience": "U.S. Navy (HM-12)",
+		"effort": "",
+		"timeHours": "",
+		"summary": "Inspected and repaired flight-critical systems - landing gear, hydraulics and flight controls - on MH-53E heavy-lift helicopters to Naval Aviation maintenance and safety standards.",
+		"hasVisuals": false,
+		"tags": [
+			"hydraulics",
+			"flight-controls",
+			"airframe-systems",
+			"technical-manuals",
+			"quality-compliance"
+		],
+		"assets": [],
+		"course": "",
+		"term": "",
+		"org": "U.S. Navy (HM-12)",
+		"kind": "Work",
+		"status": "",
+		"deliverables": [
+			"repair records",
+			"discrepancy resolution"
+		],
+		"tools": [
+			"Naval Aviation maintenance directives"
+		]
+	},
+	{
+		"slug": "gel-3100-environmental-inquiry-ocean-garbage",
+		"name": "GEL 3100 Environmental Systems Analysis - Environmental Inquiry: ocean garbage",
+		"date": "2018-12-04",
+		"domain": "research-lab",
+		"category": "School",
+		"audience": "Wayne State University",
+		"effort": "",
+		"timeHours": "",
+		"summary": "Environmental inquiry unit on ocean plastic: referenced articles, a slide deck and two adapted K-12 lesson plans (beach clean-up, talking trash).",
+		"hasVisuals": true,
+		"tags": [
+			"environmental-systems",
+			"outreach",
+			"lesson-design",
+			"research"
+		],
+		"assets": [
+			{
+				"type": "image",
+				"src": "/projects/gel-3100-environmental-inquiry-ocean-garbage/beach-clean-up-lesson.png",
+				"caption": "Beach clean-up lesson plan"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/gel-3100-environmental-inquiry-ocean-garbage/beach-clean-up-lesson.pdf",
+				"caption": "Beach clean-up lesson plan"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/gel-3100-environmental-inquiry-ocean-garbage/talking-trash-educational.pdf",
+				"caption": "Talking trash lesson plan"
+			}
+		],
+		"course": "GEL 3100",
+		"term": "2018 Fall",
+		"org": "Wayne State University",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [
+			"inquiry deck",
+			"sources",
+			"2 lesson plans"
+		],
+		"tools": [
+			"Google Slides",
+			"Docs"
+		]
+	},
+	{
+		"slug": "ps-1030-american-government-federal-budget",
+		"name": "PS 1030 American Government - Federal Budget Challenge and House representation",
+		"date": "2018-09-30",
+		"domain": "policy-writing",
+		"category": "School",
+		"audience": "Wayne State University",
+		"effort": "",
+		"timeHours": "",
+		"summary": "Federal Budget Challenge exercise, a Senate/representation assignment and an American Revolution-to-Constitutional-Convention deck.",
+		"hasVisuals": true,
+		"tags": [
+			"civics",
+			"policy-literacy",
+			"presentation"
+		],
+		"assets": [
+			{
+				"type": "pdf",
+				"src": "/projects/ps-1030-american-government-federal-budget/Federal_Budget_Challenge.pdf",
+				"caption": "Federal Budget Challenge write-up"
+			}
+		],
+		"course": "PS 1030",
+		"term": "2018 Fall",
+		"org": "Wayne State University",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [
+			"budget challenge",
+			"representation paper",
+			"deck"
+		],
+		"tools": [
+			"PowerPoint",
+			"Word"
+		]
+	},
+	{
+		"slug": "rkc-coaching-records-and-fun-start-lesson-plans",
+		"name": "RKC Coaching Records & Fun Start Lesson Plans",
+		"date": "2018-05-10",
+		"domain": "teaching-field",
+		"category": "Work",
+		"audience": "Students / program staff",
+		"effort": "Medium",
+		"timeHours": "10",
+		"summary": "Coaching records and 'Fun Start' beginner lesson plans for a rowing program.",
+		"hasVisuals": true,
+		"tags": [
+			"coaching",
+			"lesson-plans",
+			"program-design"
+		],
+		"assets": [
+			{
+				"type": "image",
+				"src": "/projects/rkc-coaching-records-and-fun-start-lesson-plans/coaching_record.jpg",
+				"caption": "coaching record"
+			},
+			{
+				"type": "image",
+				"src": "/projects/rkc-coaching-records-and-fun-start-lesson-plans/IMG_07061_01.png",
+				"caption": "IMG 07061 01"
+			},
+			{
+				"type": "image",
+				"src": "/projects/rkc-coaching-records-and-fun-start-lesson-plans/IMG_07071_02.png",
+				"caption": "IMG 07071 02"
+			},
+			{
+				"type": "image",
+				"src": "/projects/rkc-coaching-records-and-fun-start-lesson-plans/record_of_experience.jpg",
+				"caption": "record of experience"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/rkc-coaching-records-and-fun-start-lesson-plans/coaching_record.pdf",
+				"caption": "coaching record"
+			}
+		],
+		"course": "",
+		"term": "",
+		"org": "Students / program staff",
+		"kind": "Work",
+		"status": "",
+		"deliverables": [],
+		"tools": []
+	},
+	{
+		"slug": "bio-2870-anatomy-lab-6-study-guide",
+		"name": "BIO 2870 Anatomy - Lab 6 Study Guide (group)",
+		"date": "2018-03-13",
+		"domain": "research-lab",
+		"category": "School",
+		"audience": "Course peers",
+		"effort": "Low",
+		"timeHours": "3",
+		"summary": "Group-authored anatomy study guide for Lab 6.",
+		"hasVisuals": false,
+		"tags": [
+			"biology",
+			"study-guide"
+		],
+		"assets": [],
+		"course": "BIO 2870",
+		"term": "2018 Winter",
+		"org": "Course peers",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [],
+		"tools": []
+	},
+	{
+		"slug": "wayne-state-phy-2130-lab-reports",
+		"name": "PHY 2130 Physics for the Life Sciences I - labs 3-5",
+		"date": "2017-11-16",
+		"domain": "research-lab",
+		"category": "School",
+		"audience": "Wayne State University",
+		"effort": "",
+		"timeHours": "",
+		"summary": "Lab sequence with data sheets, chart work and a lab-manual report set (microsphere settling experiments).",
+		"hasVisuals": false,
+		"tags": [
+			"measurement",
+			"data-analysis",
+			"lab-reporting"
+		],
+		"assets": [],
+		"course": "PHY 2130",
+		"term": "2017 Fall",
+		"org": "Wayne State University",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [
+			"lab data sheets",
+			"charts",
+			"lab 4 report"
+		],
+		"tools": [
+			"Excel"
+		]
+	},
+	{
+		"slug": "wayne-state-eng-3050-technical-writing-project",
+		"name": "ENG 3050 technical writing - Project 2 with scanned field appendix",
+		"date": "2017-03-21",
+		"domain": "policy-writing",
+		"category": "School",
+		"audience": "Wayne State University",
+		"effort": "",
+		"timeHours": "",
+		"summary": "Technical writing project with a multi-page scanned appendix documenting the source material.",
+		"hasVisuals": true,
+		"tags": [
+			"technical-writing",
+			"documentation"
+		],
+		"assets": [
+			{
+				"type": "image",
+				"src": "/projects/wayne-state-eng-3050-technical-writing-project/Scan_2017-03-21_23.55.39.jpg",
+				"caption": "Scanned field appendix"
+			},
+			{
+				"type": "image",
+				"src": "/projects/wayne-state-eng-3050-technical-writing-project/Scan_2017-03-09_11.21.52.jpg",
+				"caption": "Scanned field appendix"
+			}
+		],
+		"course": "ENG 3050",
+		"term": "2017 Winter",
+		"org": "Wayne State University",
+		"kind": "Coursework",
+		"status": "",
+		"deliverables": [
+			"Project 2 report + appendix"
+		],
+		"tools": [
+			"Word",
+			"scanner"
 		]
 	}
 ]

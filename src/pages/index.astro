@@ -1,22 +1,29 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { SITE_TITLE, SITE_DESCRIPTION, LINKEDIN_URL } from '../consts';
 import { projects } from '../lib/projects';
 import { DOMAINS, CATEGORIES } from '../data/domains';
 import FilterableProjects from '../components/FilterableProjects.tsx';
+
+const years = projects.map((p) => Number(p.date.slice(0, 4))).filter((y) => !Number.isNaN(y));
+const span = years.length ? `${Math.min(...years)}–${Math.max(...years)}` : '';
 ---
 
 <Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
 	<section class="bio-section">
-		<img src="/blog-placeholder-about.jpg" alt="Headshot" class="bio-headshot" />
 		<div class="bio-text">
-			<h1>About</h1>
+			<h1>Isidore LaRocco</h1>
 			<p>
-				[Placeholder bio.] Electrical & computer engineering student and maker —
-				work spanning power &amp; energy systems, embedded hardware, software &amp;
-				data, lab research, and science-and-technology policy.
+				Electrical &amp; computer engineering student at the University of Virginia, after four
+				years as an MH-53E Sea Dragon airframe mechanic in the U.S. Navy. Work across power
+				&amp; energy systems, embedded hardware, software &amp; data, lab research and
+				science-and-technology policy.
 			</p>
-			<p>Browse and filter {projects.length} projects below.</p>
+			<p>
+				{projects.length} projects below{span ? `, spanning ${span}` : ''} — filter by domain,
+				category, or search. Roles, awards and coursework records are on the
+				<a href="/cv">CV page</a>; <a href={LINKEDIN_URL} rel="me">LinkedIn</a> is the fastest way to reach me.
+			</p>
 		</div>
 	</section>
 

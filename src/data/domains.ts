@@ -13,6 +13,7 @@ export const DOMAINS: Domain[] = [
 	{ slug: "research-lab", label: "Research & Lab Science", blurb: "Spectroscopy, fields, materials & bench work.", color: "#0d9488" },
 	{ slug: "policy-writing", label: "Policy & Writing", blurb: "Science-and-technology policy memos & advocacy.", color: "#65a30d" },
 	{ slug: "teaching-field", label: "Teaching & Field Work", blurb: "Coaching, tours & program instruction.", color: "#db2777" },
+	{ slug: "creative-media", label: "Creative & Media", blurb: "Photograph compositing, layout planning & visual design.", color: "#0891b2" },
 ];
 
 export const CATEGORIES = ["School", "Work", "Personal"] as const;

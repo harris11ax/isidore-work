@@ -1,0 +1,108 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { POSITIONS, AWARDS, EDUCATION } from '../data/roles';
+import { EMAIL, LINKEDIN_URL, GITHUB_URL, EMAIL2 } from '../consts';
+
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+// "2026-05" -> "May 2026"; "present" stays "Present"; anything else passes through
+function fmt(value: string): string {
+	if (!value) return '';
+	if (value.toLowerCase() === 'present') return 'Present';
+	const m = value.match(/^(\d{4})-(\d{2})$/);
+	if (!m) return value;
+	return `${MONTHS[Number(m[2]) - 1]} ${m[1]}`;
+}
+
+function period(r: { start: string; end: string; current: boolean }): string {
+	const from = fmt(r.start);
+	const to = r.current ? 'Present' : r.end ? fmt(r.end) : '';
+	return to ? `${from} – ${to}` : from;
+}
+
+const positions = POSITIONS.slice().sort((a, b) => (a.start < b.start ? 1 : -1));
+const awards = AWARDS.slice().sort((a, b) => (a.start < b.start ? 1 : -1));
+const skillList = Array.from(new Set(positions.flatMap((p) => p.skills))).sort();
+---
+
+<Layout title="CV — Isidore LaRocco" description="Experience, education, awards and credentials.">
+	<div class="cv-header">
+		<h1>Isidore LaRocco</h1>
+		<p>
+			Electrical &amp; computer engineering student at the University of Virginia; four years
+			as an active-duty MH-53E helicopter airframe mechanic before that.
+		</p>
+		<div class="cv-contact">
+			<a href={`mailto:${EMAIL}`}>{EMAIL}</a>
+			<a href={LINKEDIN_URL} rel="me">LinkedIn</a>
+			<a href={GITHUB_URL} rel="me">GitHub</a>
+			<a href="/">Projects ↗</a>
+		</div>
+	</div>
+
+	<section class="cv-section">
+		<h2>Experience</h2>
+		{positions.map((role) => (
+			<div class="cv-entry">
+				<div class="cv-entry-head">
+					<h3>{role.title}</h3>
+					<span class="cv-entry-when">{period(role)}</span>
+				</div>
+				<p class="cv-org">
+					{role.org}{role.location ? ` — ${role.location}` : ''}
+					{role.employment ? ` · ${role.employment}` : ''}
+				</p>
+				{role.summary ? <p>{role.summary}</p> : null}
+				{role.achievements.length ? (
+					<ul class="cv-achievements">
+						{role.achievements.map((a) => <li>{a}</li>)}
+					</ul>
+				) : null}
+				{role.skills.length ? (
+					<div class="cv-tags">
+						{role.skills.map((s) => <span class="tag">{s}</span>)}
+					</div>
+				) : null}
+			</div>
+		))}
+	</section>
+
+	<section class="cv-section">
+		<h2>Education</h2>
+		{EDUCATION.map((e) => (
+			<div class="cv-entry">
+				<div class="cv-entry-head">
+					<h3>{e.institution}</h3>
+					<span class="cv-entry-when">{e.from}{e.to && e.to !== e.from ? ` – ${e.current ? 'present' : e.to}` : ''}</span>
+				</div>
+			</div>
+		))}
+	</section>
+
+	<section class="cv-section">
+		<h2>Awards &amp; credentials</h2>
+		<ul class="cv-awards">
+			{awards.map((a) => (
+				<li>
+					<strong>{a.title}</strong>
+					{a.org ? ` — ${a.org}` : ''}
+					{a.start ? <span class="cv-entry-when"> ({fmt(a.start)})</span> : null}
+					{a.summary ? <div>{a.summary}</div> : null}
+				</li>
+			))}
+		</ul>
+	</section>
+
+	{skillList.length ? (
+		<section class="cv-section">
+			<h2>Skills</h2>
+			<div class="cv-tags">
+				{skillList.map((s) => <span class="tag">{s}</span>)}
+			</div>
+		</section>
+	) : null}
+
+	<p class="cv-entry-when">
+		Also reachable at {EMAIL2}. Full project write-ups with images and documents are on the <a href="/">projects page</a>.
+	</p>
+</Layout>

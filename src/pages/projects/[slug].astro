@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { projects, getProjectBySlug } from '../../lib/projects';
+import { projects, getProjectBySlug, metaLine } from '../../lib/projects';
 import { domainMap } from '../../data/domains';
 
 export function getStaticPaths() {
@@ -12,6 +12,7 @@ const project = getProjectBySlug(slug)!;
 const domain = domainMap[project.domain];
 const cover = project.assets.find((a) => a.type === 'image' || a.thumb);
 const coverImg = cover && (cover.type === 'image' ? cover.src : cover.thumb);
+const meta = metaLine(project);
 ---
 
 <Layout title={project.name} description={project.summary || project.name} image={coverImg || '/blog-placeholder-1.jpg'}>
@@ -22,18 +23,30 @@ const coverImg = cover && (cover.type === 'image' ? cover.src : cover.thumb);
 		<h1>{project.name}</h1>
 
 		<div class="detail-meta">
-			<span>{project.date}</span>
-			<span>·</span>
-			<span>{project.category}</span>
-			<span>·</span>
-			<span>Audience: {project.audience}</span>
-			<span>·</span>
-			<span>Effort: {project.effort}</span>
-			<span>·</span>
-			<span>{project.timeHours} hrs</span>
+			{meta.map((part, i) => (
+				<>
+					{i > 0 ? <span>·</span> : null}
+					<span>{part}</span>
+				</>
+			))}
+			{project.status ? <span class="status-pill">{project.status}</span> : null}
 		</div>
 
 		{project.summary ? <p class="detail-summary">{project.summary}</p> : null}
+
+		{project.deliverables && project.deliverables.length ? (
+			<div class="detail-facts">
+				<span class="fact-label">Deliverables</span>
+				<span>{project.deliverables.join(' · ')}</span>
+			</div>
+		) : null}
+
+		{project.tools && project.tools.length ? (
+			<div class="detail-facts">
+				<span class="fact-label">Tools</span>
+				<span>{project.tools.join(' · ')}</span>
+			</div>
+		) : null}
 
 		{project.tags.length ? (
 			<div class="card-tags">
@@ -63,7 +76,7 @@ const coverImg = cover && (cover.type === 'image' ? cover.src : cover.thumb);
 			</div>
 		) : (
 			<div class="no-assets" style={`border-color:${domain.color}`}>
-				<p>This is a text-based deliverable. Source materials live in the project archive.</p>
+				<p>A text-based deliverable — nothing to show here yet.</p>
 			</div>
 		)}
 	</article>

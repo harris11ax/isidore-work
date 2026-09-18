@@ -200,3 +200,11 @@ dist
 
 ### Astro ###
 .astro/
+
+### isidore-work local-only data (agent + research)
+# portfolio_db carries source_path (local filesystem paths) - never publish
+portfolio_db/
+# scrape_live is a local archive of the live site + 150 MB of assets
+scrape_live/
+# session handoff state (agent-only, churns every wrap-up)
+HANDOFF.md
