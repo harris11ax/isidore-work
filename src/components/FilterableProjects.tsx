@@ -116,7 +116,7 @@ export default function FilterableProjects({ projects, domains, categories }: Pr
 						</div>
 						<div className="project-grid">
 							{g.items.map((p) => (
-								<Card key={p.slug} p={p} color={g.domain.color} />
+								<Card key={p.slug} p={p} color={p.accentColor || g.domain.color} />
 							))}
 						</div>
 					</section>

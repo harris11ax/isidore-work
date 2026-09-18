@@ -21,6 +21,8 @@ export interface Project {
 	summary: string;
 	hasVisuals: boolean;
 	cover?: string; // card-only cover image; not shown in the detail gallery
+	accentColor?: string; // per-project override of the domain accent colour
+	body?: string; // long description, markdown-ish, rendered on the detail page
 	tags: string[];
 	assets: Asset[];
 	// facts from the portfolio database; optional so a hand-written record stays valid

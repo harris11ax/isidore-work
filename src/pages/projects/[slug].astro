@@ -10,16 +10,40 @@ export function getStaticPaths() {
 const { slug } = Astro.props as { slug: string };
 const project = getProjectBySlug(slug)!;
 const domain = domainMap[project.domain];
+// A project may override the domain accent; fall back to the domain colour.
+const accent = project.accentColor || domain.color;
 const cover = project.assets.find((a) => a.type === 'image' || a.thumb);
 const coverImg = cover && (cover.type === 'image' ? cover.src : cover.thumb);
 const meta = metaLine(project);
+
+/** Minimal, deliberately small markdown subset for the long description. */
+function renderBody(md: string): string {
+	const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+	const inline = (s: string) =>
+		esc(s)
+			.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
+			.replace(/(^|[^*])\*([^*]+?)\*/g, '$1<em>$2</em>')
+			.replace(/\[([^\]]+)\]\((https?:[^)\s]+|\/[^)\s]*)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+	return md
+		.split(/\n{2,}/)
+		.map((block) => {
+			const trimmed = block.trim();
+			if (!trimmed) return '';
+			const bullets = trimmed.split('\n').filter((l) => /^\s*[-*]\s+/.test(l));
+			if (bullets.length === trimmed.split('\n').length) {
+				return `<ul>${bullets.map((l) => `<li>${inline(l.replace(/^\s*[-*]\s+/, ''))}</li>`).join('')}</ul>`;
+			}
+			return `<p>${inline(trimmed).replace(/\n/g, '<br>')}</p>`;
+		})
+		.join('\n');
+}
 ---
 
 <Layout title={project.name} description={project.summary || project.name} image={coverImg || '/blog-placeholder-1.jpg'}>
 	<article class="project-detail">
 		<a href="/projects" class="back">&larr; All projects</a>
 
-		<div class="detail-tag" style={`background:${domain.color}`}>{domain.label}</div>
+		<div class="detail-tag" style={`background:${accent}`}>{domain.label}</div>
 		<h1>{project.name}</h1>
 
 		<div class="detail-meta">
@@ -33,6 +57,8 @@ const meta = metaLine(project);
 		</div>
 
 		{project.summary ? <p class="detail-summary">{project.summary}</p> : null}
+
+		{project.body ? <div class="detail-body" set:html={renderBody(project.body)} /> : null}
 
 		{project.deliverables && project.deliverables.length ? (
 			<div class="detail-facts">
@@ -75,7 +101,7 @@ const meta = metaLine(project);
 				))}
 			</div>
 		) : (
-			<div class="no-assets" style={`border-color:${domain.color}`}>
+			<div class="no-assets" style={`border-color:${accent}`}>
 				<p>A text-based deliverable — nothing to show here yet.</p>
 			</div>
 		)}

@@ -1,0 +1,34 @@
+[Unit]
+Description=isidore.work admin portal (content backend for the portfolio)
+Documentation=file:/home/izzy/projects/isidore-work/admin/README.md
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=izzy
+Group=izzy
+WorkingDirectory=/home/izzy/projects/isidore-work/admin
+Environment=NODE_ENV=production
+Environment=PORT=8099
+Environment=HOST=127.0.0.1
+Environment=ISIDORE_CONTENT_DIR=/home/izzy/isidore-content
+ExecStart=/usr/bin/node --no-warnings server.mjs
+Restart=always
+RestartSec=3
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=isidore-admin
+
+# Hardening. Deliberately NOT ProtectHome=read-only: publishing shells out to
+# npm/wrangler, which need to write their own caches under $HOME, and a read-only
+# home would turn an obvious publish failure into a confusing npm error.
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectKernelTunables=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+
+[Install]
+WantedBy=multi-user.target

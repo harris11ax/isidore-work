@@ -1,0 +1,21 @@
+{
+	"name": "isidore-admin",
+	"private": true,
+	"version": "1.0.0",
+	"type": "module",
+	"description": "Content admin portal for isidore.work — the backend that lives on izzyserver.",
+	"scripts": {
+		"start": "node --no-warnings server.mjs",
+		"import": "node --no-warnings import-content.mjs",
+		"generate": "node --no-warnings generate.mjs",
+		"publish": "node --no-warnings publish.mjs",
+		"set-password": "node --no-warnings set-password.mjs"
+	},
+	"dependencies": {
+		"express": "^4.21.2",
+		"multer": "^2.0.0"
+	},
+	"engines": {
+		"node": ">=22.5.0"
+	}
+}

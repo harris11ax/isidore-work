@@ -65,7 +65,6 @@
 		"term": "2026 Fall",
 		"org": "UVA",
 		"kind": "Coursework",
-		"status": "",
 		"deliverables": [
 			"dataset notebook",
 			"week 3 report PDF"
@@ -166,7 +165,6 @@
 		"term": "2026 Fall",
 		"org": "UVA",
 		"kind": "Coursework",
-		"status": "",
 		"deliverables": [
 			"prospectus critique PDF"
 		],
@@ -195,11 +193,9 @@
 		"term": "2026 Fall",
 		"org": "UVA",
 		"kind": "Coursework",
-		"status": "",
 		"deliverables": [
 			"HW2 brief"
-		],
-		"tools": []
+		]
 	},
 	{
 		"slug": "openboard-lecture-to-concept-map-automation-pipeline",
@@ -219,13 +215,8 @@
 			"networkx"
 		],
 		"assets": [],
-		"course": "",
-		"term": "",
 		"org": "Self",
-		"kind": "Personal",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Personal"
 	},
 	{
 		"slug": "ece-4440-4991-capstone-dog-diving-scoring-system",
@@ -276,12 +267,10 @@
 		"term": "2026 Fall",
 		"org": "Capstone committee / faculty",
 		"kind": "Coursework",
-		"status": "",
 		"deliverables": [
 			"initial_doodle_August_17_2026.png",
 			"Project_Proposal.pdf"
 		],
-		"tools": [],
 		"redirectFrom": "ece-4440-4991-capstone-autobleedr-automated-bicycle-brake-bl"
 	},
 	{
@@ -302,13 +291,8 @@
 			"cli"
 		],
 		"assets": [],
-		"course": "",
-		"term": "",
 		"org": "Self",
-		"kind": "Personal",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Personal"
 	},
 	{
 		"slug": "american-energy-society-energy-startups-dashboard",
@@ -335,13 +319,8 @@
 			}
 		],
 		"cover": "/projects/american-energy-society-energy-startups-dashboard/cover.svg",
-		"course": "",
-		"term": "",
 		"org": "Internship employer (AES)",
-		"kind": "Work",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Work"
 	},
 	{
 		"slug": "aes-research-data-documentation-and-onboarding",
@@ -361,11 +340,8 @@
 			"onboarding"
 		],
 		"assets": [],
-		"course": "",
-		"term": "",
 		"org": "American Energy Society",
 		"kind": "Work",
-		"status": "",
 		"deliverables": [
 			"intern training documentation",
 			"data-practice SOPs"
@@ -392,11 +368,8 @@
 			"excel"
 		],
 		"assets": [],
-		"course": "",
-		"term": "",
 		"org": "American Energy Society",
 		"kind": "Work",
-		"status": "",
 		"deliverables": [
 			"report figures",
 			"analysis notebooks"
@@ -425,11 +398,8 @@
 			"teaching"
 		],
 		"assets": [],
-		"course": "",
-		"term": "",
 		"org": "Fix-It DC",
 		"kind": "Volunteer",
-		"status": "",
 		"deliverables": [
 			"repaired items",
 			"coaching sessions"
@@ -485,10 +455,7 @@
 		"course": "ECE 4907",
 		"term": "2026 Spring",
 		"org": "Research advisor / lab",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "sts-3020-course-paper-final-research-paper",
@@ -500,7 +467,7 @@
 		"effort": "High",
 		"timeHours": "30+",
 		"summary": "Final research paper arguing for modular regulation to accelerate small modular reactor (SMR) deployment.",
-		"hasVisuals": false,
+		"hasVisuals": true,
 		"tags": [
 			"policy",
 			"nuclear",
@@ -516,10 +483,7 @@
 		"course": "STS 3020",
 		"term": "2026 Spring",
 		"org": "Course instructor / JSPG",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "aes-energy-startup-longitudinal-database",
@@ -539,8 +503,6 @@
 			"longitudinal-data"
 		],
 		"assets": [],
-		"course": "",
-		"term": "",
 		"org": "American Energy Society",
 		"kind": "Work",
 		"status": "In progress",
@@ -574,10 +536,7 @@
 		"course": "ECE 3250",
 		"term": "2026 Spring",
 		"org": "Course instructor",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "ece-3250-research-project-advanced-transmission-grid-reliabi",
@@ -589,7 +548,7 @@
 		"effort": "Medium",
 		"timeHours": "8-15",
 		"summary": "Group research on advanced transmission technologies and grid reliability.",
-		"hasVisuals": false,
+		"hasVisuals": true,
 		"tags": [
 			"grid",
 			"transmission",
@@ -605,10 +564,7 @@
 		"course": "ECE 3250",
 		"term": "2026 Spring",
 		"org": "Course instructor (group)",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "ece-3251-lab-10-synchronous-machines",
@@ -645,10 +601,7 @@
 		"course": "ECE 3251",
 		"term": "2026 Spring",
 		"org": "Course instructor",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "sts-3020-course-paper-presentation-poster",
@@ -681,10 +634,7 @@
 		"course": "STS 3020",
 		"term": "2026 Spring",
 		"org": "Course instructor / peers",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "ece-3251-lab-7-transformer-verification",
@@ -696,7 +646,7 @@
 		"effort": "Medium",
 		"timeHours": "2-4",
 		"summary": "Lab: verifying a transformer model against measured data.",
-		"hasVisuals": false,
+		"hasVisuals": true,
 		"tags": [
 			"power-lab",
 			"transformers"
@@ -711,10 +661,7 @@
 		"course": "ECE 3251",
 		"term": "2026 Spring",
 		"org": "Course instructor",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "ece-3251-lab-9-dc-machine",
@@ -726,7 +673,7 @@
 		"effort": "Medium",
 		"timeHours": "2-4",
 		"summary": "Lab: DC-machine characterization under varying load.",
-		"hasVisuals": false,
+		"hasVisuals": true,
 		"tags": [
 			"power-lab",
 			"machines"
@@ -741,10 +688,7 @@
 		"course": "ECE 3251",
 		"term": "2026 Spring",
 		"org": "Course instructor",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "sts-3020-policy-memo-4",
@@ -756,7 +700,7 @@
 		"effort": "Medium",
 		"timeHours": "6",
 		"summary": "Policy memo on health agencies and rebuilding public confidence.",
-		"hasVisuals": false,
+		"hasVisuals": true,
 		"tags": [
 			"policy",
 			"public-health",
@@ -772,10 +716,7 @@
 		"course": "STS 3020",
 		"term": "2026 Spring",
 		"org": "Course instructor",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "ece-3251-lab-8-induction-machine",
@@ -787,7 +728,7 @@
 		"effort": "Medium",
 		"timeHours": "2-4",
 		"summary": "Lab: induction-machine testing and performance curves.",
-		"hasVisuals": false,
+		"hasVisuals": true,
 		"tags": [
 			"power-lab",
 			"machines"
@@ -802,10 +743,7 @@
 		"course": "ECE 3251",
 		"term": "2026 Spring",
 		"org": "Course instructor",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "sts-3020-issue-advocacy-deliverable-4-impact-assembly-reflec",
@@ -817,7 +755,7 @@
 		"effort": "Low",
 		"timeHours": "2",
 		"summary": "Reflections on the IMPACT assembly and the issue-advocacy campaign outcome.",
-		"hasVisuals": false,
+		"hasVisuals": true,
 		"tags": [
 			"policy",
 			"advocacy",
@@ -833,10 +771,7 @@
 		"course": "STS 3020",
 		"term": "2026 Spring",
 		"org": "Course instructor / group",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "ece-3251-lab-5-iron-core-transformers",
@@ -848,7 +783,7 @@
 		"effort": "Medium",
 		"timeHours": "2-4",
 		"summary": "Lab: iron-core transformer behavior and losses.",
-		"hasVisuals": false,
+		"hasVisuals": true,
 		"tags": [
 			"power-lab",
 			"transformers"
@@ -863,10 +798,7 @@
 		"course": "ECE 3251",
 		"term": "2026 Spring",
 		"org": "Course instructor",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "ece-3251-lab-4-magnetic-non-linearities",
@@ -913,10 +845,7 @@
 		"course": "ECE 3251",
 		"term": "2026 Spring",
 		"org": "Course instructor",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "ece-3251-lab-6-reverse-engineering",
@@ -928,7 +857,7 @@
 		"effort": "Medium",
 		"timeHours": "2-4",
 		"summary": "Lab: reverse-engineering an unknown electromagnetic device from measurements.",
-		"hasVisuals": false,
+		"hasVisuals": true,
 		"tags": [
 			"power-lab",
 			"measurement"
@@ -943,10 +872,7 @@
 		"course": "ECE 3251",
 		"term": "2026 Spring",
 		"org": "Course instructor",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "sts-3020-issue-advocacy-deliverable-2-transportation-impact",
@@ -958,7 +884,7 @@
 		"effort": "Medium",
 		"timeHours": "8",
 		"summary": "Transportation IMPACT advocacy deliverable — building the case for local transit investment.",
-		"hasVisuals": false,
+		"hasVisuals": true,
 		"tags": [
 			"policy",
 			"transit",
@@ -974,10 +900,7 @@
 		"course": "STS 3020",
 		"term": "2026 Spring",
 		"org": "Course instructor / group",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "ece-3250-transformer-design-project",
@@ -989,7 +912,7 @@
 		"effort": "Medium",
 		"timeHours": "10",
 		"summary": "Transformer design project — Python design code plus an engineering report.",
-		"hasVisuals": false,
+		"hasVisuals": true,
 		"tags": [
 			"python",
 			"transformers",
@@ -1005,10 +928,7 @@
 		"course": "ECE 3250",
 		"term": "2026 Spring",
 		"org": "Course instructor",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "ece-3251-lab-2-three-phase",
@@ -1020,7 +940,7 @@
 		"effort": "Medium",
 		"timeHours": "2-4",
 		"summary": "Lab: three-phase transformer connections and measurements.",
-		"hasVisuals": false,
+		"hasVisuals": true,
 		"tags": [
 			"power-lab",
 			"three-phase"
@@ -1035,10 +955,7 @@
 		"course": "ECE 3251",
 		"term": "2026 Spring",
 		"org": "Course instructor",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "ece-3251-lab-3-solenoid",
@@ -1050,7 +967,7 @@
 		"effort": "Medium",
 		"timeHours": "2-4",
 		"summary": "Lab: solenoid actuator characterization.",
-		"hasVisuals": false,
+		"hasVisuals": true,
 		"tags": [
 			"power-lab",
 			"magnetics"
@@ -1065,10 +982,7 @@
 		"course": "ECE 3251",
 		"term": "2026 Spring",
 		"org": "Course instructor",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "sts-3020-policy-memo-3",
@@ -1090,10 +1004,7 @@
 		"course": "STS 3020",
 		"term": "2026 Spring",
 		"org": "Course instructor",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "sts-3020-course-paper-problem-statement",
@@ -1105,7 +1016,7 @@
 		"effort": "Medium",
 		"timeHours": "8",
 		"summary": "Problem statement framing SMR nuclear regulation as the course-paper research question.",
-		"hasVisuals": false,
+		"hasVisuals": true,
 		"tags": [
 			"policy",
 			"nuclear",
@@ -1121,10 +1032,7 @@
 		"course": "STS 3020",
 		"term": "2026 Spring",
 		"org": "Course instructor",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "sts-3020-issue-advocacy-deliverable-1-virginia-transit-prese",
@@ -1136,7 +1044,7 @@
 		"effort": "Medium",
 		"timeHours": "8",
 		"summary": "Issue-advocacy presentation and summary on Virginia transit (Charlottesville Area Transit).",
-		"hasVisuals": false,
+		"hasVisuals": true,
 		"tags": [
 			"policy",
 			"transit",
@@ -1152,10 +1060,7 @@
 		"course": "STS 3020",
 		"term": "2026 Spring",
 		"org": "Course instructor / group",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "sts-3020-policy-memo-2",
@@ -1167,7 +1072,7 @@
 		"effort": "Medium",
 		"timeHours": "6",
 		"summary": "Policy memo on sustainable development and science-technology-innovation (STI) strategy.",
-		"hasVisuals": false,
+		"hasVisuals": true,
 		"tags": [
 			"policy",
 			"sustainability",
@@ -1183,10 +1088,7 @@
 		"course": "STS 3020",
 		"term": "2026 Spring",
 		"org": "Course instructor",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "ece-3251-lab-1-single-phase",
@@ -1198,7 +1100,7 @@
 		"effort": "Medium",
 		"timeHours": "2-4",
 		"summary": "Lab: single-phase transformer characterization and measurements.",
-		"hasVisuals": false,
+		"hasVisuals": true,
 		"tags": [
 			"power-lab",
 			"transformers"
@@ -1213,10 +1115,7 @@
 		"course": "ECE 3251",
 		"term": "2026 Spring",
 		"org": "Course instructor",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "sts-3020-policy-memo-1",
@@ -1248,10 +1147,7 @@
 		"course": "STS 3020",
 		"term": "2026 Spring",
 		"org": "Course instructor",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "ece-3430-embedded-systems-final-project-video",
@@ -1273,10 +1169,7 @@
 		"course": "ECE 3430",
 		"term": "2025 Fall",
 		"org": "Course instructor",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "ece-2600-electronics-audio-analyzer-final-project",
@@ -1324,10 +1217,7 @@
 		"course": "ECE 2600",
 		"term": "2025 Fall",
 		"org": "Course instructor",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "ece-2700-signals-and-systems-dc-ac-converter-final-project",
@@ -1370,10 +1260,7 @@
 		"course": "ECE 2700",
 		"term": "2025 Fall",
 		"org": "Course instructor",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "ece-3430-embedded-systems-final-project",
@@ -1421,10 +1308,7 @@
 		"course": "ECE 3430",
 		"term": "2025 Fall",
 		"org": "Course instructor",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "ece-2600-electronics-studios-1-8",
@@ -1472,10 +1356,7 @@
 		"course": "ECE 2600",
 		"term": "2025 Fall",
 		"org": "Course instructor",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "dominion-energy-summer-internship",
@@ -1487,7 +1368,7 @@
 		"effort": "Medium",
 		"timeHours": "8",
 		"summary": "Summer internship on Dominion Energy's design team — field visits, design reviews, and structured feedback.",
-		"hasVisuals": false,
+		"hasVisuals": true,
 		"tags": [
 			"internship",
 			"power-systems",
@@ -1500,13 +1381,8 @@
 				"caption": "Design Team"
 			}
 		],
-		"course": "",
-		"term": "",
 		"org": "Internship employer",
-		"kind": "Work",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Work"
 	},
 	{
 		"slug": "civic-cornerstone-fellowship",
@@ -1525,15 +1401,12 @@
 			"public-reasoning"
 		],
 		"assets": [],
-		"course": "",
-		"term": "",
 		"org": "University of Virginia",
 		"kind": "Fellowship",
 		"status": "In progress",
 		"deliverables": [
 			"cohort participation"
-		],
-		"tools": []
+		]
 	},
 	{
 		"slug": "ece-3209-electromagnetic-fields-labs-1-6",
@@ -1575,8 +1448,8 @@
 			{
 				"type": "video",
 				"src": "/projects/ece-3209-electromagnetic-fields-labs-1-6/20251028_133549.mp4",
-				"thumb": "/projects/ece-3209-electromagnetic-fields-labs-1-6/20251028_133549-poster.jpg",
-				"caption": "20251028 133549"
+				"caption": "20251028 133549",
+				"thumb": "/projects/ece-3209-electromagnetic-fields-labs-1-6/20251028_133549-poster.jpg"
 			},
 			{
 				"type": "pdf",
@@ -1587,10 +1460,7 @@
 		"course": "ECE 3209",
 		"term": "2025 Fall",
 		"org": "Course instructor",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "uva-ta-applied-circuits-ece-2300",
@@ -1614,7 +1484,6 @@
 		"term": "2025 Fall",
 		"org": "University of Virginia",
 		"kind": "Role",
-		"status": "",
 		"deliverables": [
 			"lab support",
 			"worked solutions",
@@ -1643,11 +1512,8 @@
 			"training-and-adoption"
 		],
 		"assets": [],
-		"course": "",
-		"term": "",
 		"org": "Dominion Energy",
 		"kind": "Work",
-		"status": "",
 		"deliverables": [
 			"route-planning tool",
 			"job aid",
@@ -1677,11 +1543,8 @@
 			"stakeholder-liaison"
 		],
 		"assets": [],
-		"course": "",
-		"term": "",
 		"org": "Dominion Energy",
 		"kind": "Work",
-		"status": "",
 		"deliverables": [
 			"construction sketches",
 			"permit packages",
@@ -1710,11 +1573,8 @@
 			"project-coordination"
 		],
 		"assets": [],
-		"course": "",
-		"term": "",
 		"org": "Dominion Energy",
 		"kind": "Work",
-		"status": "",
 		"deliverables": [
 			"permit coordination",
 			"site-readiness records"
@@ -1765,10 +1625,7 @@
 		"course": "ECE 2300",
 		"term": "2025 Spring",
 		"org": "Course instructor",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "ece-4103-hw8-solar-cell-lab",
@@ -1816,10 +1673,7 @@
 		"course": "ECE 4103",
 		"term": "2025 Spring",
 		"org": "Course instructor",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "hoohacks-2025",
@@ -1837,13 +1691,8 @@
 			"ideation"
 		],
 		"assets": [],
-		"course": "",
-		"term": "",
 		"org": "Hackathon",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "photoshop-living-room-gallery-wall",
@@ -1879,11 +1728,8 @@
 				"caption": "Gallery-wall layout PDF"
 			}
 		],
-		"course": "",
-		"term": "",
 		"org": "Personal",
 		"kind": "Personal",
-		"status": "",
 		"deliverables": [
 			"gallery wall composite (.pdn + .jpg)",
 			"layout PDF"
@@ -1920,11 +1766,8 @@
 				"caption": "Finished composite"
 			}
 		],
-		"course": "",
-		"term": "",
 		"org": "Personal",
 		"kind": "Personal",
-		"status": "",
 		"deliverables": [
 			"bathroom_petey.png finished composite"
 		],
@@ -1950,11 +1793,8 @@
 			"web"
 		],
 		"assets": [],
-		"course": "",
-		"term": "",
 		"org": "Personal",
 		"kind": "Personal",
-		"status": "",
 		"deliverables": [
 			"explainer site"
 		],
@@ -1982,10 +1822,7 @@
 		"course": "APMA 3080",
 		"term": "2025 Spring",
 		"org": "Course instructor",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "ece-4103-solid-state-devices-project-1",
@@ -2007,10 +1844,7 @@
 		"course": "ECE 4103",
 		"term": "2025 Spring",
 		"org": "Course instructor",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "cs-2130-computer-systems-and-org-1-labs-1-13",
@@ -2032,10 +1866,7 @@
 		"course": "CS 2130",
 		"term": "2025 Spring",
 		"org": "Course instructor",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "ece-3103-solid-state-devices-problem-sets",
@@ -2074,13 +1905,11 @@
 		"term": "term not recorded in folder name",
 		"org": "UVA",
 		"kind": "Coursework",
-		"status": "",
 		"deliverables": [
 			"HW1-HW9",
 			"quizzes",
 			"final exam review"
-		],
-		"tools": []
+		]
 	},
 	{
 		"slug": "ece-2410-intro-to-ml-final-project",
@@ -2092,7 +1921,7 @@
 		"effort": "Medium",
 		"timeHours": "10-20",
 		"summary": "Group ML final project predicting student performance with kNN and linear regression.",
-		"hasVisuals": false,
+		"hasVisuals": true,
 		"tags": [
 			"machine-learning",
 			"knn",
@@ -2108,10 +1937,7 @@
 		"course": "ECE 2410",
 		"term": "2024 Fall",
 		"org": "Course instructor (group)",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "sts-2600-engineering-ethics-essays",
@@ -2145,7 +1971,6 @@
 		"term": "2024 Fall",
 		"org": "UVA",
 		"kind": "Coursework",
-		"status": "",
 		"deliverables": [
 			"5 essays",
 			"debate materials"
@@ -2164,7 +1989,7 @@
 		"effort": "Medium",
 		"timeHours": "8-12",
 		"summary": "Probability project in a Jupyter notebook with report and appendix — simulation and analysis.",
-		"hasVisuals": false,
+		"hasVisuals": true,
 		"tags": [
 			"python",
 			"jupyter",
@@ -2180,10 +2005,7 @@
 		"course": "APMA 3100",
 		"term": "2024 Fall",
 		"org": "Course instructor",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "apma-3100-probability-project-1",
@@ -2230,10 +2052,7 @@
 		"course": "APMA 3100",
 		"term": "2024 Fall",
 		"org": "Course instructor",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "ece-2330-digital-logic-design-learning-activities",
@@ -2271,10 +2090,7 @@
 		"course": "ECE 2330",
 		"term": "2024 Fall",
 		"org": "Course instructor",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "egr-125-intro-engineering-final-exam",
@@ -2317,7 +2133,6 @@
 		"term": "2024 Spring",
 		"org": "Germanna Community College",
 		"kind": "Coursework",
-		"status": "",
 		"deliverables": [
 			"final exam project (C)"
 		],
@@ -2352,11 +2167,9 @@
 		"term": "2023 Fall",
 		"org": "Tidewater Community College",
 		"kind": "Coursework",
-		"status": "",
 		"deliverables": [
 			"coursework (syllabus on file)"
-		],
-		"tools": []
+		]
 	},
 	{
 		"slug": "fairlead-electrical-assembly-technician",
@@ -2376,11 +2189,8 @@
 			"mil-spec-workmanship"
 		],
 		"assets": [],
-		"course": "",
-		"term": "",
 		"org": "Fairlead Integrated Solutions",
 		"kind": "Work",
-		"status": "",
 		"deliverables": [
 			"EMI filter troubleshooting notes",
 			"assembly work"
@@ -2408,11 +2218,8 @@
 			"leadership"
 		],
 		"assets": [],
-		"course": "",
-		"term": "",
 		"org": "U.S. Navy (HM-12)",
 		"kind": "Work",
-		"status": "",
 		"deliverables": [
 			"training records",
 			"corrective-action documentation"
@@ -2456,11 +2263,8 @@
 				"caption": "Servo lesson"
 			}
 		],
-		"course": "",
-		"term": "",
 		"org": "Personal",
 		"kind": "Personal",
-		"status": "",
 		"deliverables": [
 			"weather-station firmware",
 			"circuit diagrams",
@@ -2516,10 +2320,7 @@
 		"course": "CHM 111",
 		"term": "2021",
 		"org": "Course instructor",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "arduino-elegoo-mega-33-lesson-kit",
@@ -2540,11 +2341,8 @@
 			"actuators"
 		],
 		"assets": [],
-		"course": "",
-		"term": "",
 		"org": "Personal",
 		"kind": "Personal",
-		"status": "",
 		"deliverables": [
 			"33 lesson sketches",
 			"custom de-bounce and watchdog sketches"
@@ -2564,7 +2362,7 @@
 		"effort": "Medium-High",
 		"timeHours": "20+",
 		"summary": "Designed a historical canal tour of Detroit and wrote the accompanying tour-guide training manual.",
-		"hasVisuals": false,
+		"hasVisuals": true,
 		"tags": [
 			"curriculum",
 			"writing",
@@ -2577,13 +2375,8 @@
 				"caption": "A Detroit Architect s Journal Eastside Venice The Fox Creek Canals"
 			}
 		],
-		"course": "",
-		"term": "",
 		"org": "Tourists / program students",
-		"kind": "Work",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Work"
 	},
 	{
 		"slug": "navy-mh53e-airframe-maintenance",
@@ -2604,11 +2397,8 @@
 			"quality-compliance"
 		],
 		"assets": [],
-		"course": "",
-		"term": "",
 		"org": "U.S. Navy (HM-12)",
 		"kind": "Work",
-		"status": "",
 		"deliverables": [
 			"repair records",
 			"discrepancy resolution"
@@ -2655,7 +2445,6 @@
 		"term": "2018 Fall",
 		"org": "Wayne State University",
 		"kind": "Coursework",
-		"status": "",
 		"deliverables": [
 			"inquiry deck",
 			"sources",
@@ -2693,7 +2482,6 @@
 		"term": "2018 Fall",
 		"org": "Wayne State University",
 		"kind": "Coursework",
-		"status": "",
 		"deliverables": [
 			"budget challenge",
 			"representation paper",
@@ -2747,13 +2535,8 @@
 				"caption": "coaching record"
 			}
 		],
-		"course": "",
-		"term": "",
 		"org": "Students / program staff",
-		"kind": "Work",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Work"
 	},
 	{
 		"slug": "bio-2870-anatomy-lab-6-study-guide",
@@ -2774,10 +2557,7 @@
 		"course": "BIO 2870",
 		"term": "2018 Winter",
 		"org": "Course peers",
-		"kind": "Coursework",
-		"status": "",
-		"deliverables": [],
-		"tools": []
+		"kind": "Coursework"
 	},
 	{
 		"slug": "wayne-state-phy-2130-lab-reports",
@@ -2800,7 +2580,6 @@
 		"term": "2017 Fall",
 		"org": "Wayne State University",
 		"kind": "Coursework",
-		"status": "",
 		"deliverables": [
 			"lab data sheets",
 			"charts",
@@ -2828,11 +2607,8 @@
 			"local-history"
 		],
 		"assets": [],
-		"course": "",
-		"term": "",
 		"org": "Riverside Kayak Connection (RKC)",
 		"kind": "Work",
-		"status": "",
 		"deliverables": [
 			"tour guide manual",
 			"lesson plans",
@@ -2873,7 +2649,6 @@
 		"term": "2017 Winter",
 		"org": "Wayne State University",
 		"kind": "Coursework",
-		"status": "",
 		"deliverables": [
 			"Project 2 report + appendix"
 		],

@@ -10,5 +10,8 @@
 	"observability": {
 		"enabled": true
 	},
-	"upload_source_maps": true
+	"upload_source_maps": true,
+	"vars": {
+		"ADMIN_ORIGIN": "https://backend.isidore.work"
+	}
 }
