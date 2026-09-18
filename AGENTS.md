@@ -36,5 +36,7 @@ resume from its RESUME section; the structure above is already in context. If no
   critique (another student's unpublished work), third-party DockDogs competition video,
   course solution keys, and personal information (phone numbers, references, ID numbers).
   Check an image with `vision_analyze` before copying it into `public/`.
-- Rebuild the database with the Python 3.11 interpreter (the Hermes venv one lacks
+- Rebuild `portfolio_db/` with a Python 3.11 interpreter that has `openpyxl` (the Hermes
+  venv one does not — use `py -3.11 build_db.py`), then regenerate the site data with
+  `python export_site.py` in the same folder.
 - Ask before `wrangler deploy`; `npm run build` must pass first.
