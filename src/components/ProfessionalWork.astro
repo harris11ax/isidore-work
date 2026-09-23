@@ -60,7 +60,8 @@ const entries = professionalEntries.map((e) => ({ ...e, cover: coverOf(e.project
 
 				{cover ? (
 					<div class="work-media">
-						<img src={cover} alt={project.name} loading="lazy" />
+						{/* decorative: the entry's <h3> link already names the project */}
+						<img src={cover} alt="" loading="lazy" />
 					</div>
 				) : null}
 			</div>

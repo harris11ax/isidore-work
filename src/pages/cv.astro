@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { POSITIONS, AWARDS, EDUCATION } from '../data/roles';
+import { LANDING } from '../consts';
 import { fmt, period } from '../lib/dates';
 import { EMAIL, LINKEDIN_URL, GITHUB_URL, EMAIL2 } from '../consts';
 
@@ -9,13 +10,14 @@ const awards = AWARDS.slice().sort((a, b) => (a.start < b.start ? 1 : -1));
 const skillList = Array.from(new Set(positions.flatMap((p) => p.skills))).sort();
 ---
 
-<Layout title="CV — Isidore LaRocco" description="Experience, education, awards and credentials.">
+<Layout title="Isidore LaRocco — CV" description="Experience, education, awards and credentials.">
 	<div class="cv-header">
 		<h1>Isidore LaRocco</h1>
 		<p>
 			Electrical &amp; computer engineering student at the University of Virginia; four years
 			as an active-duty MH-53E helicopter airframe mechanic before that.
 		</p>
+		{LANDING.availability ? <p class="availability">{LANDING.availability}</p> : null}
 		<div class="cv-contact">
 			<a href={`mailto:${EMAIL}`}>{EMAIL}</a>
 			<a href={LINKEDIN_URL} rel="me">LinkedIn</a>

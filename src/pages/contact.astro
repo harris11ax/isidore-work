@@ -3,11 +3,11 @@ import Layout from '../layouts/Layout.astro';
 import { EMAIL, EMAIL2, GITHUB_URL, LINKEDIN_URL } from '../consts';
 ---
 
-<Layout title="Contact" description="Get in touch">
+<Layout title="Isidore LaRocco — Contact" description="Get in touch">
 	<h1>Contact</h1>
 	<p>Feel free to reach out to me through any of these channels.</p>
 
-	<div style="max-width: 600px; margin: 3em auto;">
+	<div class="contact-block">
 		<h2>Email</h2>
 		<p>
 			<a href={`mailto:${EMAIL}`} style="font-size: 1.1em;">{EMAIL}</a><br />
@@ -33,6 +33,12 @@ import { EMAIL, EMAIL2, GITHUB_URL, LINKEDIN_URL } from '../consts';
 </Layout>
 
 <style>
+	/* Flush left with the rest of the page rather than a centred 600px island. */
+	.contact-block {
+		max-width: 34em;
+		margin-top: 2em;
+	}
+
 	.contact-buttons {
 		display: flex;
 		gap: 2em;

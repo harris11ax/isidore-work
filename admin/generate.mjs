@@ -100,6 +100,7 @@ const landing = {
 	landing_name: settings.landing_name || '',
 	landing_selfie: settings.landing_selfie || '',
 	landing_selfie_caption: settings.landing_selfie_caption || '',
+	landing_availability: settings.landing_availability || '',
 	landing_bio: settings.landing_bio || [],
 	work_heading: settings.work_heading || 'Professional Work',
 	work_blurb: settings.work_blurb || '',
@@ -129,6 +130,7 @@ export interface Landing {
 	name: string;
 	selfie: string;
 	selfieCaption: string;
+	availability: string;
 	bio: string[];
 	workHeading: string;
 	workBlurb: string;
@@ -143,6 +145,7 @@ export const LANDING: Landing = ${JSON.stringify(
 			name: landing.landing_name,
 			selfie: landing.landing_selfie,
 			selfieCaption: landing.landing_selfie_caption,
+			availability: landing.landing_availability,
 			bio: landing.landing_bio,
 			workHeading: landing.work_heading,
 			workBlurb: landing.work_blurb,

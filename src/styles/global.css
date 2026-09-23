@@ -8,9 +8,18 @@
 	--accent: #2337ff;
 	--accent-dark: #000d8a;
 	--black: 15, 18, 25;
-	--gray: 96, 115, 159;
+	--gray: 88, 104, 146;
 	--gray-light: 229, 233, 240;
 	--gray-dark: 34, 41, 57;
+	/* One shell for the page: the reading column, its gutter, and the resulting
+	   outer width shared by <main>, the header nav and the footer, so their left
+	   edges line up. Never restate width/max-width on main elsewhere — the
+	   Layout's scoped rule used to win over the responsive cap and pinned the
+	   page to 1100px on every viewport. */
+	--content: 1100px;
+	--gutter: 1em;
+	--shell: min(calc(var(--content) + 2 * var(--gutter)), 100%);
+	--header-h: 58px;
 	--gray-gradient: rgba(var(--gray-light), 50%), #fff;
 	--box-shadow:
 		0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
@@ -43,10 +52,11 @@ body {
 	line-height: 1.6;
 }
 main {
-	width: 720px;
-	max-width: calc(100% - 2em);
-	margin: auto;
-	padding: 3em 1em;
+	box-sizing: border-box;
+	width: var(--shell);
+	margin: 0 auto;
+	padding: 3em var(--gutter);
+	scroll-margin-top: var(--header-h);
 }
 h1,
 h2,
@@ -59,19 +69,19 @@ h6 {
 	line-height: 1.2;
 }
 h1 {
-	font-size: 3.052em;
+	font-size: 2.6em;
 }
 h2 {
-	font-size: 2.441em;
+	font-size: 1.75em;
 }
 h3 {
-	font-size: 1.953em;
+	font-size: 1.35em;
 }
 h4 {
-	font-size: 1.563em;
+	font-size: 1.15em;
 }
 h5 {
-	font-size: 1.25em;
+	font-size: 1em;
 }
 strong,
 b {
@@ -251,7 +261,10 @@ hr {
 }
 
 /* ===== Portfolio: bio, filter, cards, detail ===== */
-main { width: 1100px; max-width: calc(100% - 2em); }
+/* The reading column and its cap come from --shell (:root). This rule used to
+   restate `width: 1100px; max-width: calc(100% - 2em)`, which the Layout's scoped
+   `main` rule outranked — the page stayed 1100px wide on every viewport and the
+   responsive media queries below could not save it. */
 
 .bio-section {
 	display: flex; gap: 2em; align-items: center;
@@ -267,8 +280,8 @@ main { width: 1100px; max-width: calc(100% - 2em); }
 
 /* filter bar */
 .filter-bar {
-	position: sticky; top: 60px; z-index: 50;
-	background: rgba(250,250,250,0.92); backdrop-filter: blur(6px);
+	position: sticky; top: var(--header-h); z-index: 50;
+	background: #fafafa;
 	padding: 1em 0; margin-bottom: 1.5em;
 	border-bottom: 1px solid rgb(var(--gray-light));
 }
@@ -318,14 +331,14 @@ main { width: 1100px; max-width: calc(100% - 2em); }
 .card-body { padding: 1em 1.1em 1.2em; display: flex; flex-direction: column; gap: 0.5em; }
 .card-meta {
 	display: flex; gap: 0.4em; flex-wrap: wrap;
-	font-size: 0.72em; letter-spacing: 0.03em; text-transform: uppercase;
+	font-size: 0.76em; letter-spacing: 0.03em; text-transform: uppercase;
 	color: rgb(var(--gray)); font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
 }
 .card-body h3 { margin: 0; font-size: 1.05em; line-height: 1.25; }
 .card-summary { margin: 0; font-size: 0.9em; color: rgb(var(--gray-dark)); }
 .card-tags { display: flex; flex-wrap: wrap; gap: 0.35em; margin-top: 0.2em; }
 .tag {
-	font-size: 0.72em; padding: 0.15em 0.55em; border-radius: 999px;
+	font-size: 0.76em; padding: 0.15em 0.55em; border-radius: 999px;
 	background: rgb(var(--gray-light)); color: rgb(var(--gray-dark));
 }
 .empty { text-align: center; color: rgb(var(--gray)); padding: 3em 0; }
@@ -359,8 +372,121 @@ main { width: 1100px; max-width: calc(100% - 2em); }
 .no-assets p { margin: 0; }
 
 @media (max-width: 720px) {
-	.filter-bar { top: 0; }
+	:root { --header-h: 104px; }
 	.bio-section { justify-content: center; text-align: center; }
+}
+
+/* ===== Accessibility: skip link, focus ring, motion, print ===== */
+.skip-link {
+	position: absolute;
+	left: -9999px;
+	top: 0;
+	z-index: 200;
+	background: #fff;
+	color: rgb(var(--black));
+	padding: 0.75em 1em;
+	border: 1px solid rgb(var(--gray-light));
+	border-radius: 0 0 8px 0;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.skip-link:focus {
+	left: 0;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+[tabindex]:focus-visible {
+	outline: 3px solid var(--accent);
+	outline-offset: 2px;
+}
+
+/* Availability line on the homepage hero and the CV header. */
+.availability {
+	font-weight: 600;
+	color: rgb(var(--gray-dark));
+}
+
+/* Text-only project cards get the same media band as image cards, tinted with the
+   domain colour, so a mixed grid keeps an even rhythm instead of ragged rows. */
+.card-media--text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.78em;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		transition-duration: 0.01ms !important;
+		animation-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+
+	.project-card:hover,
+	.chip:hover,
+	.contact-btn-large:hover {
+		transform: none;
+	}
+}
+
+/* The CV is the page people print. */
+@media print {
+	header,
+	footer,
+	.jump-nav,
+	.filter-bar,
+	.back,
+	.skip-link,
+	.contact-buttons,
+	.availability {
+		display: none !important;
+	}
+
+	body {
+		background: #fff;
+		color: #000;
+		font-size: 10.5pt;
+		line-height: 1.45;
+	}
+
+	main {
+		width: auto;
+		max-width: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	h1 { font-size: 20pt; }
+	h2 { font-size: 13pt; }
+	h3 { font-size: 11pt; }
+
+	a {
+		color: #000;
+		text-decoration: none;
+	}
+
+	.cv-entry,
+	.work-entry,
+	.project-card,
+	.detail-facts {
+		break-inside: avoid;
+	}
+
+	.cv-section > h2 {
+		border-bottom: 1px solid #999;
+	}
+
+	@page {
+		margin: 15mm;
+	}
 }
 
 /* status pill + detail facts */
@@ -373,7 +499,7 @@ main { width: 1100px; max-width: calc(100% - 2em); }
 	font-size: 0.9em; margin: 0.4em 0; color: rgb(var(--gray-dark));
 }
 .fact-label {
-	font-size: 0.72em; letter-spacing: 0.04em; text-transform: uppercase;
+	font-size: 0.76em; letter-spacing: 0.04em; text-transform: uppercase;
 	color: rgb(var(--gray)); font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
 	min-width: 6.5em;
 }
@@ -389,7 +515,7 @@ main { width: 1100px; max-width: calc(100% - 2em); }
 	border-radius: 12px; background: #e0e0e0; box-shadow: var(--box-shadow);
 }
 .home-photo figcaption {
-	font-size: 0.72em; color: rgb(var(--gray)); text-align: center; margin-top: 0.5em;
+	font-size: 0.75em; color: rgb(var(--gray)); text-align: center; margin-top: 0.5em;
 }
 .home-intro-text { flex: 1 1 360px; }
 .home-intro-text h1 { margin-top: 0; }
@@ -398,12 +524,12 @@ main { width: 1100px; max-width: calc(100% - 2em); }
 .jump-nav { display: flex; flex-wrap: wrap; gap: 0.6em; margin-top: 1.2em; }
 .jump-nav a {
 	font-size: 0.85em; text-decoration: none; background: #fff; color: rgb(var(--gray-dark));
-	border: 1px solid rgb(var(--gray-light)); border-radius: 999px; padding: 0.3em 0.9em;
+	border: 1px solid rgb(var(--gray-light)); border-radius: 999px; padding: 0.45em 0.95em;
 	transition: border-color 0.15s, color 0.15s;
 }
 .jump-nav a:hover { border-color: var(--accent); color: var(--accent); }
 
-.home-section { margin: 3em 0; scroll-margin-top: 70px; }
+.home-section { margin: 3em 0; scroll-margin-top: calc(var(--header-h) + 0.5em); }
 .home-more { background: #fff; border: 1px solid rgb(var(--gray-light)); border-radius: 12px; padding: 1.5em; }
 .home-more h2 { margin-top: 0; }
 .more-link { font-weight: 700; text-decoration: none; }
@@ -433,7 +559,7 @@ main { width: 1100px; max-width: calc(100% - 2em); }
 .work-text { flex: 1 1 380px; }
 .work-summary { margin: 0 0 0.6em; }
 .work-label {
-	font-size: 0.72em; letter-spacing: 0.04em; text-transform: uppercase;
+	font-size: 0.76em; letter-spacing: 0.04em; text-transform: uppercase;
 	color: rgb(var(--gray)); margin: 0.8em 0 0.2em;
 	font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
 }

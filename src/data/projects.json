@@ -567,43 +567,6 @@
 		"kind": "Coursework"
 	},
 	{
-		"slug": "ece-3251-lab-10-synchronous-machines",
-		"name": "ECE 3251 Lab 10 - Synchronous Machines",
-		"date": "2026-04-17",
-		"domain": "power-energy",
-		"category": "School",
-		"audience": "Course instructor",
-		"effort": "Medium",
-		"timeHours": "2-4",
-		"summary": "Lab: synchronous-machine testing and characteristic curves.",
-		"hasVisuals": true,
-		"tags": [
-			"power-lab",
-			"machines"
-		],
-		"assets": [
-			{
-				"type": "image",
-				"src": "/projects/ece-3251-lab-10-synchronous-machines/Lab10Graph.png",
-				"caption": "Lab10Graph"
-			},
-			{
-				"type": "image",
-				"src": "/projects/ece-3251-lab-10-synchronous-machines/Lab10Graph_v2.png",
-				"caption": "Lab10Graph v2"
-			},
-			{
-				"type": "pdf",
-				"src": "/projects/ece-3251-lab-10-synchronous-machines/Lab10_Report_Final.pdf",
-				"caption": "Lab10 Report Final"
-			}
-		],
-		"course": "ECE 3251",
-		"term": "2026 Spring",
-		"org": "Course instructor",
-		"kind": "Coursework"
-	},
-	{
 		"slug": "sts-3020-course-paper-presentation-poster",
 		"name": "STS 3020 Course Paper - Presentation + Poster (Accelerate Nuclear Power with Modular Regulations)",
 		"date": "2026-04-13",
@@ -637,60 +600,6 @@
 		"kind": "Coursework"
 	},
 	{
-		"slug": "ece-3251-lab-7-transformer-verification",
-		"name": "ECE 3251 Lab 7 - Transformer Verification",
-		"date": "2026-04-10",
-		"domain": "power-energy",
-		"category": "School",
-		"audience": "Course instructor",
-		"effort": "Medium",
-		"timeHours": "2-4",
-		"summary": "Lab: verifying a transformer model against measured data.",
-		"hasVisuals": true,
-		"tags": [
-			"power-lab",
-			"transformers"
-		],
-		"assets": [
-			{
-				"type": "pdf",
-				"src": "/projects/ece-3251-lab-7-transformer-verification/ECE3251_Lab7_TransformerVerification_26S.pdf",
-				"caption": "ECE3251 Lab7 TransformerVerification 26S"
-			}
-		],
-		"course": "ECE 3251",
-		"term": "2026 Spring",
-		"org": "Course instructor",
-		"kind": "Coursework"
-	},
-	{
-		"slug": "ece-3251-lab-9-dc-machine",
-		"name": "ECE 3251 Lab 9 - DC Machine",
-		"date": "2026-04-10",
-		"domain": "power-energy",
-		"category": "School",
-		"audience": "Course instructor",
-		"effort": "Medium",
-		"timeHours": "2-4",
-		"summary": "Lab: DC-machine characterization under varying load.",
-		"hasVisuals": true,
-		"tags": [
-			"power-lab",
-			"machines"
-		],
-		"assets": [
-			{
-				"type": "pdf",
-				"src": "/projects/ece-3251-lab-9-dc-machine/ECE3251_Lab9_DC_Machine_26S.pdf",
-				"caption": "ECE3251 Lab9 DC Machine 26S"
-			}
-		],
-		"course": "ECE 3251",
-		"term": "2026 Spring",
-		"org": "Course instructor",
-		"kind": "Coursework"
-	},
-	{
 		"slug": "sts-3020-policy-memo-4",
 		"name": "STS 3020 Policy Memo #4 (health agencies / public confidence)",
 		"date": "2026-04-05",
@@ -714,33 +623,6 @@
 			}
 		],
 		"course": "STS 3020",
-		"term": "2026 Spring",
-		"org": "Course instructor",
-		"kind": "Coursework"
-	},
-	{
-		"slug": "ece-3251-lab-8-induction-machine",
-		"name": "ECE 3251 Lab 8 - Induction Machine",
-		"date": "2026-04-03",
-		"domain": "power-energy",
-		"category": "School",
-		"audience": "Course instructor",
-		"effort": "Medium",
-		"timeHours": "2-4",
-		"summary": "Lab: induction-machine testing and performance curves.",
-		"hasVisuals": true,
-		"tags": [
-			"power-lab",
-			"machines"
-		],
-		"assets": [
-			{
-				"type": "pdf",
-				"src": "/projects/ece-3251-lab-8-induction-machine/ECE3250_Lect23_InductionMachineMeasurements_26S.pdf",
-				"caption": "ECE3250 Lect23 InductionMachineMeasurements 26S"
-			}
-		],
-		"course": "ECE 3251",
 		"term": "2026 Spring",
 		"org": "Course instructor",
 		"kind": "Coursework"
@@ -771,107 +653,6 @@
 		"course": "STS 3020",
 		"term": "2026 Spring",
 		"org": "Course instructor / group",
-		"kind": "Coursework"
-	},
-	{
-		"slug": "ece-3251-lab-5-iron-core-transformers",
-		"name": "ECE 3251 Lab 5 - Iron-Core Transformers",
-		"date": "2026-03-27",
-		"domain": "power-energy",
-		"category": "School",
-		"audience": "Course instructor",
-		"effort": "Medium",
-		"timeHours": "2-4",
-		"summary": "Lab: iron-core transformer behavior and losses.",
-		"hasVisuals": true,
-		"tags": [
-			"power-lab",
-			"transformers"
-		],
-		"assets": [
-			{
-				"type": "pdf",
-				"src": "/projects/ece-3251-lab-5-iron-core-transformers/ECE3251_Lab5_Iron-CoreTransformers_26S.pdf",
-				"caption": "ECE3251 Lab5 Iron CoreTransformers 26S"
-			}
-		],
-		"course": "ECE 3251",
-		"term": "2026 Spring",
-		"org": "Course instructor",
-		"kind": "Coursework"
-	},
-	{
-		"slug": "ece-3251-lab-4-magnetic-non-linearities",
-		"name": "ECE 3251 Lab 4 - Magnetic Non-Linearities",
-		"date": "2026-03-26",
-		"domain": "power-energy",
-		"category": "School",
-		"audience": "Course instructor",
-		"effort": "Medium",
-		"timeHours": "2-4",
-		"summary": "Lab: measuring magnetic non-linearities and hysteresis.",
-		"hasVisuals": true,
-		"tags": [
-			"power-lab",
-			"magnetics"
-		],
-		"assets": [
-			{
-				"type": "image",
-				"src": "/projects/ece-3251-lab-4-magnetic-non-linearities/120v_current.png",
-				"caption": "120v current"
-			},
-			{
-				"type": "image",
-				"src": "/projects/ece-3251-lab-4-magnetic-non-linearities/120v_hysteresis.png",
-				"caption": "120v hysteresis"
-			},
-			{
-				"type": "image",
-				"src": "/projects/ece-3251-lab-4-magnetic-non-linearities/120v_resistive_hysteresis.png",
-				"caption": "120v resistive hysteresis"
-			},
-			{
-				"type": "image",
-				"src": "/projects/ece-3251-lab-4-magnetic-non-linearities/80v_current.png",
-				"caption": "80v current"
-			},
-			{
-				"type": "pdf",
-				"src": "/projects/ece-3251-lab-4-magnetic-non-linearities/ECE3251_Lab4_MagneticNonLinearities_26S.pdf",
-				"caption": "ECE3251 Lab4 MagneticNonLinearities 26S"
-			}
-		],
-		"course": "ECE 3251",
-		"term": "2026 Spring",
-		"org": "Course instructor",
-		"kind": "Coursework"
-	},
-	{
-		"slug": "ece-3251-lab-6-reverse-engineering",
-		"name": "ECE 3251 Lab 6 - Reverse Engineering",
-		"date": "2026-03-13",
-		"domain": "power-energy",
-		"category": "School",
-		"audience": "Course instructor",
-		"effort": "Medium",
-		"timeHours": "2-4",
-		"summary": "Lab: reverse-engineering an unknown electromagnetic device from measurements.",
-		"hasVisuals": true,
-		"tags": [
-			"power-lab",
-			"measurement"
-		],
-		"assets": [
-			{
-				"type": "pdf",
-				"src": "/projects/ece-3251-lab-6-reverse-engineering/ECE3250_Lect17_3PhaseTransformers_26S.pdf",
-				"caption": "ECE3250 Lect17 3PhaseTransformers 26S"
-			}
-		],
-		"course": "ECE 3251",
-		"term": "2026 Spring",
-		"org": "Course instructor",
 		"kind": "Coursework"
 	},
 	{
@@ -926,60 +707,6 @@
 			}
 		],
 		"course": "ECE 3250",
-		"term": "2026 Spring",
-		"org": "Course instructor",
-		"kind": "Coursework"
-	},
-	{
-		"slug": "ece-3251-lab-2-three-phase",
-		"name": "ECE 3251 Lab 2 - Three-Phase",
-		"date": "2026-02-25",
-		"domain": "power-energy",
-		"category": "School",
-		"audience": "Course instructor",
-		"effort": "Medium",
-		"timeHours": "2-4",
-		"summary": "Lab: three-phase transformer connections and measurements.",
-		"hasVisuals": true,
-		"tags": [
-			"power-lab",
-			"three-phase"
-		],
-		"assets": [
-			{
-				"type": "pdf",
-				"src": "/projects/ece-3251-lab-2-three-phase/ECE3251_Lab2_Three-Phase_26S.pdf",
-				"caption": "ECE3251 Lab2 Three Phase 26S"
-			}
-		],
-		"course": "ECE 3251",
-		"term": "2026 Spring",
-		"org": "Course instructor",
-		"kind": "Coursework"
-	},
-	{
-		"slug": "ece-3251-lab-3-solenoid",
-		"name": "ECE 3251 Lab 3 - Solenoid",
-		"date": "2026-02-25",
-		"domain": "power-energy",
-		"category": "School",
-		"audience": "Course instructor",
-		"effort": "Medium",
-		"timeHours": "2-4",
-		"summary": "Lab: solenoid actuator characterization.",
-		"hasVisuals": true,
-		"tags": [
-			"power-lab",
-			"magnetics"
-		],
-		"assets": [
-			{
-				"type": "pdf",
-				"src": "/projects/ece-3251-lab-3-solenoid/ECE3251_Lab3_Solenoid_26S.pdf",
-				"caption": "ECE3251 Lab3 Solenoid 26S"
-			}
-		],
-		"course": "ECE 3251",
 		"term": "2026 Spring",
 		"org": "Course instructor",
 		"kind": "Coursework"
@@ -1091,25 +818,104 @@
 		"kind": "Coursework"
 	},
 	{
-		"slug": "ece-3251-lab-1-single-phase",
-		"name": "ECE 3251 Lab 1 - Single-Phase",
+		"slug": "ece-3251-electric-machines-labs-1-10",
+		"name": "ECE 3251 Electric Machines and Transformers - Labs 1-10",
 		"date": "2026-01-29",
 		"domain": "power-energy",
 		"category": "School",
 		"audience": "Course instructor",
 		"effort": "Medium",
-		"timeHours": "2-4",
-		"summary": "Lab: single-phase transformer characterization and measurements.",
+		"timeHours": "30",
+		"summary": "Transformers, magnetics and electric machines lab sequence (Labs 1–10): connections, non-linearities and machine characterisation.",
 		"hasVisuals": true,
 		"tags": [
 			"power-lab",
-			"transformers"
+			"transformers",
+			"three-phase",
+			"magnetics",
+			"measurement",
+			"machines"
 		],
 		"assets": [
 			{
 				"type": "pdf",
-				"src": "/projects/ece-3251-lab-1-single-phase/ECE3251_Lab1_Single-Phase_26S.pdf",
-				"caption": "ECE3251 Lab1 Single Phase 26S"
+				"src": "/projects/ece-3251-electric-machines-labs-1-10/ECE3251_Lab1_Single-Phase_26S.pdf",
+				"caption": "Lab 1 — single-phase transformer characterization and measurements (report)"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/ece-3251-electric-machines-labs-1-10/ECE3251_Lab2_Three-Phase_26S.pdf",
+				"caption": "Lab 2 — three-phase transformer connections and measurements (report)"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/ece-3251-electric-machines-labs-1-10/ECE3251_Lab3_Solenoid_26S.pdf",
+				"caption": "Lab 3 — solenoid actuator characterization (report)"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-3251-electric-machines-labs-1-10/120v_current.png",
+				"caption": "Lab 4 — 120v current"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-3251-electric-machines-labs-1-10/120v_hysteresis.png",
+				"caption": "Lab 4 — 120v hysteresis"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-3251-electric-machines-labs-1-10/120v_resistive_hysteresis.png",
+				"caption": "Lab 4 — 120v resistive hysteresis"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-3251-electric-machines-labs-1-10/80v_current.png",
+				"caption": "Lab 4 — 80v current"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/ece-3251-electric-machines-labs-1-10/ECE3251_Lab4_MagneticNonLinearities_26S.pdf",
+				"caption": "Lab 4 — measuring magnetic non-linearities and hysteresis (report)"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/ece-3251-electric-machines-labs-1-10/ECE3251_Lab5_Iron-CoreTransformers_26S.pdf",
+				"caption": "Lab 5 — iron-core transformer behavior and losses (report)"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/ece-3251-electric-machines-labs-1-10/ECE3250_Lect17_3PhaseTransformers_26S.pdf",
+				"caption": "Lab 6 — ECE3250 Lect17 3PhaseTransformers 26S"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/ece-3251-electric-machines-labs-1-10/ECE3251_Lab7_TransformerVerification_26S.pdf",
+				"caption": "Lab 7 — verifying a transformer model against measured data (report)"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/ece-3251-electric-machines-labs-1-10/ECE3250_Lect23_InductionMachineMeasurements_26S.pdf",
+				"caption": "Lab 8 — ECE3250 Lect23 InductionMachineMeasurements 26S"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/ece-3251-electric-machines-labs-1-10/ECE3251_Lab9_DC_Machine_26S.pdf",
+				"caption": "Lab 9 — DC-machine characterization under varying load (report)"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-3251-electric-machines-labs-1-10/Lab10Graph.png",
+				"caption": "Lab 10 — Lab10Graph"
+			},
+			{
+				"type": "image",
+				"src": "/projects/ece-3251-electric-machines-labs-1-10/Lab10Graph_v2.png",
+				"caption": "Lab 10 — Lab10Graph v2"
+			},
+			{
+				"type": "pdf",
+				"src": "/projects/ece-3251-electric-machines-labs-1-10/Lab10_Report_Final.pdf",
+				"caption": "Lab 10 — synchronous-machine testing and characteristic curves (report)"
 			}
 		],
 		"course": "ECE 3251",

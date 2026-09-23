@@ -39,7 +39,7 @@ function renderBody(md: string): string {
 }
 ---
 
-<Layout title={project.name} description={project.summary || project.name} image={coverImg || '/blog-placeholder-1.jpg'}>
+<Layout title={`${project.name} — Isidore LaRocco`} description={project.summary || project.name} image={coverImg || '/blog-placeholder-1.jpg'}>
 	<article class="project-detail">
 		<a href="/projects" class="back">&larr; All projects</a>
 
@@ -102,7 +102,7 @@ function renderBody(md: string): string {
 			</div>
 		) : (
 			<div class="no-assets" style={`border-color:${accent}`}>
-				<p>A text-based deliverable — nothing to show here yet.</p>
+				<p>This record is text-only — no attachments.</p>
 			</div>
 		)}
 	</article>

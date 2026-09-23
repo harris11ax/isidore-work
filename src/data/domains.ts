@@ -12,10 +12,10 @@ export const DOMAINS: Domain[] = [
 	{ slug: "power-energy", label: "Power & Energy Systems", blurb: "Machines, transformers, converters, grid & renewables.", color: "#c2410c" },
 	{ slug: "embedded-hw", label: "Embedded & Hardware", blurb: "PCBs, FPGAs, microcontrollers, analog & mixed-signal.", color: "#7c3aed" },
 	{ slug: "software-data", label: "Software, Data & ML", blurb: "Pipelines, dashboards, machine learning & numerics.", color: "#2563eb" },
-	{ slug: "research-lab", label: "Research & Lab Science", blurb: "Spectroscopy, fields, materials & bench work.", color: "#0d9488" },
-	{ slug: "policy-writing", label: "Policy & Writing", blurb: "Science-and-technology policy memos & advocacy.", color: "#65a30d" },
-	{ slug: "teaching-field", label: "Teaching & Field Work", blurb: "Coaching, tours & program instruction.", color: "#db2777" },
-	{ slug: "creative-media", label: "Creative & Media", blurb: "Photograph compositing, layout planning & visual design.", color: "#0891b2" },
+	{ slug: "research-lab", label: "Research & Lab Science", blurb: "Spectroscopy, fields, materials & bench work.", color: "#0f766e" },
+	{ slug: "policy-writing", label: "Policy & Writing", blurb: "Science-and-technology policy memos & advocacy.", color: "#4d7c0f" },
+	{ slug: "teaching-field", label: "Teaching & Field Work", blurb: "Coaching, tours & program instruction.", color: "#be185d" },
+	{ slug: "creative-media", label: "Creative & Media", blurb: "Photograph compositing, layout planning & visual design.", color: "#0e7490" },
 ];
 
 export const CATEGORIES = ["School","Work","Personal"] as const;

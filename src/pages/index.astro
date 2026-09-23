@@ -1,23 +1,28 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { SITE_TITLE, SITE_DESCRIPTION, EMAIL, GITHUB_URL, LINKEDIN_URL, LANDING } from '../consts';
+import { SITE_DESCRIPTION, EMAIL, GITHUB_URL, LINKEDIN_URL, LANDING } from '../consts';
 import { professionalEntries, otherProjectCount } from '../data/professional';
 import ProfessionalWork from '../components/ProfessionalWork.astro';
 
 const workCount = professionalEntries.length;
 const fill = (text: string, n: number) => text.replace(/\{count\}/g, String(n));
+const pageTitle = `${LANDING.name} — Electrical & Computer Engineering, UVA`;
 ---
 
-<Layout title={SITE_TITLE} description={SITE_DESCRIPTION}>
+<Layout title={pageTitle} description={SITE_DESCRIPTION}>
 	<section class="home-intro">
-		<figure class="home-photo">
-			<img src={LANDING.selfie} alt={`${LANDING.name} — portrait`} />
-			{LANDING.selfieCaption ? <figcaption>{LANDING.selfieCaption}</figcaption> : null}
-		</figure>
+		{LANDING.selfie ? (
+			<figure class="home-photo">
+				<img src={LANDING.selfie} alt={`${LANDING.name} — portrait`} />
+				{LANDING.selfieCaption ? <figcaption>{LANDING.selfieCaption}</figcaption> : null}
+			</figure>
+		) : null}
 
 		<div class="home-intro-text">
 			<h1>{LANDING.name}</h1>
 			{LANDING.bio.map((paragraph) => <p set:html={paragraph} />)}
+
+			{LANDING.availability ? <p class="availability">{LANDING.availability}</p> : null}
 
 			<nav class="jump-nav" aria-label="On this page">
 				<a href="#work">Professional work</a>
