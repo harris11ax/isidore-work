@@ -1,17 +1,32 @@
 # Cloudflare Workers static-asset redirects (evaluated before the asset lookup).
+# Both spellings are listed: the site's own links use trailing slashes, but external
+# links and search results also carry the bare path, and _redirects matches the path
+# exactly as written.
+#
 # The Fall 2026 ECE capstone page was retitled from the AutoBleedr proposal to the
 # Dog Diving / DockDogs scoring system; the old URL must keep working.
-/projects/ece-4440-4991-capstone-autobleedr-automated-bicycle-brake-bl   /projects/ece-4440-4991-capstone-dog-diving-scoring-system   301
+/projects/ece-4440-4991-capstone-autobleedr-automated-bicycle-brake-bl    /projects/ece-4440-4991-capstone-dog-diving-scoring-system   301
+/projects/ece-4440-4991-capstone-autobleedr-automated-bicycle-brake-bl/   /projects/ece-4440-4991-capstone-dog-diving-scoring-system   301
 
 # The ten per-lab ECE 3251 records were folded into one course record (Sep 2026),
 # matching ECE 3209 / ECE 2600 / CHM 111. Every old lab URL keeps working.
-/projects/ece-3251-lab-1-single-phase            /projects/ece-3251-electric-machines-labs-1-10   301
-/projects/ece-3251-lab-2-three-phase             /projects/ece-3251-electric-machines-labs-1-10   301
-/projects/ece-3251-lab-3-solenoid                /projects/ece-3251-electric-machines-labs-1-10   301
+/projects/ece-3251-lab-1-single-phase             /projects/ece-3251-electric-machines-labs-1-10   301
+/projects/ece-3251-lab-1-single-phase/            /projects/ece-3251-electric-machines-labs-1-10   301
+/projects/ece-3251-lab-2-three-phase              /projects/ece-3251-electric-machines-labs-1-10   301
+/projects/ece-3251-lab-2-three-phase/             /projects/ece-3251-electric-machines-labs-1-10   301
+/projects/ece-3251-lab-3-solenoid                 /projects/ece-3251-electric-machines-labs-1-10   301
+/projects/ece-3251-lab-3-solenoid/                /projects/ece-3251-electric-machines-labs-1-10   301
 /projects/ece-3251-lab-4-magnetic-non-linearities /projects/ece-3251-electric-machines-labs-1-10   301
-/projects/ece-3251-lab-5-iron-core-transformers  /projects/ece-3251-electric-machines-labs-1-10   301
-/projects/ece-3251-lab-6-reverse-engineering     /projects/ece-3251-electric-machines-labs-1-10   301
+/projects/ece-3251-lab-4-magnetic-non-linearities/ /projects/ece-3251-electric-machines-labs-1-10  301
+/projects/ece-3251-lab-5-iron-core-transformers   /projects/ece-3251-electric-machines-labs-1-10   301
+/projects/ece-3251-lab-5-iron-core-transformers/  /projects/ece-3251-electric-machines-labs-1-10   301
+/projects/ece-3251-lab-6-reverse-engineering      /projects/ece-3251-electric-machines-labs-1-10   301
+/projects/ece-3251-lab-6-reverse-engineering/     /projects/ece-3251-electric-machines-labs-1-10   301
 /projects/ece-3251-lab-7-transformer-verification /projects/ece-3251-electric-machines-labs-1-10   301
-/projects/ece-3251-lab-8-induction-machine       /projects/ece-3251-electric-machines-labs-1-10   301
-/projects/ece-3251-lab-9-dc-machine              /projects/ece-3251-electric-machines-labs-1-10   301
-/projects/ece-3251-lab-10-synchronous-machines   /projects/ece-3251-electric-machines-labs-1-10   301
+/projects/ece-3251-lab-7-transformer-verification/ /projects/ece-3251-electric-machines-labs-1-10  301
+/projects/ece-3251-lab-8-induction-machine        /projects/ece-3251-electric-machines-labs-1-10   301
+/projects/ece-3251-lab-8-induction-machine/       /projects/ece-3251-electric-machines-labs-1-10   301
+/projects/ece-3251-lab-9-dc-machine               /projects/ece-3251-electric-machines-labs-1-10   301
+/projects/ece-3251-lab-9-dc-machine/              /projects/ece-3251-electric-machines-labs-1-10   301
+/projects/ece-3251-lab-10-synchronous-machines    /projects/ece-3251-electric-machines-labs-1-10   301
+/projects/ece-3251-lab-10-synchronous-machines/   /projects/ece-3251-electric-machines-labs-1-10   301
