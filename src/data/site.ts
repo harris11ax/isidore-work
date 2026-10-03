@@ -4,7 +4,7 @@
 export const SITE_TITLE = "Isidore LaRocco";
 export const SITE_DESCRIPTION = "Projects across power & energy, embedded hardware, software & data, research, and policy.";
 export const EMAIL = "isidore@virginia.edu";
-export const EMAIL2 = "isidore2048@gmail.com";
+export const EMAIL2 = "";
 export const GITHUB_URL = "https://github.com/harris11ax";
 export const LINKEDIN_URL = "https://www.linkedin.com/in/isidore-larocco/";
 export const INSTAGRAM_URL = "";
@@ -25,7 +25,7 @@ export interface Landing {
 
 export const LANDING: Landing = {
 	"name": "Isidore LaRocco",
-	"selfie": "/blog-placeholder-about.jpg",
+	"selfie": "/media/LaRocco_Isidore.png",
 	"selfieCaption": "",
 	"availability": "Open to Summer 2027 internships",
 	"bio": [

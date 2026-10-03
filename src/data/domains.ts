@@ -18,6 +18,6 @@ export const DOMAINS: Domain[] = [
 	{ slug: "creative-media", label: "Creative & Media", blurb: "Photograph compositing, layout planning & visual design.", color: "#0e7490" },
 ];
 
-export const CATEGORIES = ["School","Work","Personal"] as const;
+export const CATEGORIES = [] as const;
 
 export const domainMap = Object.fromEntries(DOMAINS.map((d) => [d.slug, d]));
